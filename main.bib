@@ -28,6 +28,17 @@
   year      = {2012}
 }
 
+
+@incollection{cgal-range,
+  author = {Gabriele Neyer},
+  title = {{dD} Range and Segment Trees},
+  publisher = {{CGAL Editorial Board}},
+  edition = {{4.10}},
+  booktitle = {{CGAL} User and Reference Manual},
+  url = {http://doc.cgal.org/4.10/Manual/packages.html},
+  year = 2017
+}
+
 @article{singh2021fresh,
   author    = {Aditi Singh and
                Suhas Jayaram Subramanya and
@@ -90,7 +101,6 @@ address = {USA}
   title={A concurrency-optimal binary search tree},
   author={Aksenov, Vitaly and Gramoli, Vincent and Kuznetsov, Petr and Malova, Anna and Ravi, Srivatsan},
   booktitle=europar,
-  pages={580--593},
   year={2017},
   organization={Springer}
 }
@@ -113,11 +123,17 @@ address = {USA}
   organization={IEEE}
 }
 
+@misc{ISOCPPparallelism,
+  title={ISO/IEC TS 19570:2018: Programming Languages -- Technical Specification for C++ Extensions for Parallelism},
+  author={International Organization for Standardization, Geneva, Switzerland},
+  year={2018},
+  note={\url{https://www.iso.org/standard/70588.html}}
+}
+
 @inproceedings{basin2017kiwi,
-  title={Kiwi: A key-value map for scalable real-time analytics},
+  title={{KiWi}: A key-value map for scalable real-time analytics},
   author={Basin, Dmitry and Bortnikov, Edward and Braginsky, Anastasia and Golan-Gueta, Guy and Hillel, Eshcar and Keidar, Idit and Sulamy, Moshe},
   booktitle=ppopp,
-  pages={357--369},
   year={2017}
 }
 
@@ -275,7 +291,6 @@ year = {2009},
   title = "The {W}eb{G}raph Framework {I}: {C}ompression Techniques",
   year = 2004,
   booktitle = www,
-  pages = "595--602",
 }
 
 @misc{dimacs-shortest-paths,
@@ -289,8 +304,7 @@ year = {2009},
  author = {Kwak, Haewoon and Lee, Changhyun and Park, Hosung and Moon, Sue},
  title = {What is Twitter, a Social Network or a News Media?},
  booktitle = www,
- year = {2010},
- pages = {591-600}
+ year = {2010}
 }
 
 @inproceedings{Stergiou2018,
@@ -388,9 +402,8 @@ howpublished = "http://www.lmdb.tech/doc/"
  author = {Blandford, Daniel K. and Blelloch, Guy E.},
  title = {Compact Representations of Ordered Sets},
  booktitle = soda,
- year = {2004},
- pages = {11--19},
-}
+ year = {2004}
+ }
 
 @inproceedings{hekaton1,
   title={Hekaton: {SQL} server's memory-optimized {OLTP} engine},
@@ -1219,15 +1232,13 @@ journal = {Advances in Intelligent Systems and Computing}
   title={Low-latency graph streaming using compressed purely-functional trees},
   author={Dhulipala, Laxman and Blelloch, Guy E and Shun, Julian},
   booktitle=pldi,
-  pages={918--934},
   year={2019}
 }
 
 @inproceedings{shun2015smaller,
   title={Smaller and faster: Parallel processing of compressed graphs with Ligra+},
   author={Shun, Julian and Dhulipala, Laxman and Blelloch, Guy E},
-  booktitle={IEEE Data Compression Conference (DCC)},
-  pages={403--412},
+  booktitle=dcc,
   year={2015}
 }
 
@@ -1271,7 +1282,6 @@ journal = {Advances in Intelligent Systems and Computing}
   title={A lock-free B+ tree},
   author={Braginsky, Anastasia and Petrank, Erez},
   booktitle=spaa,
-  pages={58--67},
   year={2012}
 }
 
@@ -1386,7 +1396,6 @@ journal = {Advances in Intelligent Systems and Computing}
   title={Persistent non-blocking binary search trees supporting wait-free range queries},
   author={Fatourou, Panagiota and Papavasileiou, Elias and Ruppert, Eric},
   booktitle=spaa,
-  pages={275--286},
   year={2019}
 }
 
@@ -1423,14 +1432,11 @@ journal = {Advances in Intelligent Systems and Computing}
   publisher={PhD Thesis, Carnegie Mellon University}
 }
 
-@article{frigo1998implementation,
+@inproceedings{frigo1998implementation,
   title={The implementation of the Cilk-5 multithreaded language},
   author={Frigo, Matteo and Leiserson, Charles E. and Randall, Keith H.},
-  journal={ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI)},
-  volume={33},
-  number={5},
-  pages={212--223},
-  year={1998},
+  journal=pldi,
+  year={1998}
 }
 
 @techreport{blelloch1992nesl,
@@ -2111,6 +2117,14 @@ journal = {Advances in Intelligent Systems and Computing}
   author={Sun, Yihan and Ferizovic, Daniel and Blelloch, Guy E},
   booktitle= ppopp,
   year={2018}
+}
+
+@inproceedings{SunB19,
+  author    = {Yihan Sun and
+               Guy E. Blelloch},
+  title     = {Parallel Range, Segment and Rectangle Queries with Augmented Maps},
+  booktitle = alenex,
+  year      = {2019},
 }
 
 @article{sun2018parallel,
@@ -2914,7 +2928,7 @@ journal = {Advances in Intelligent Systems and Computing}
 }
 
 @inproceedings{blelloch2010low,
-	title={Low depth cache-oblivious algorithms},
+	title={Low Depth Cache-Oblivious Algorithms},
 	author={Blelloch, Guy E. and Gibbons, Phillip B. and Simhadri, Harsha Vardhan},
 	booktitle=spaa,
 	pagesx2={189--199},
@@ -8058,7 +8072,6 @@ year = 2006}
   author={Macko, Peter and Marathe, Virendra J and Margo, Daniel W and Seltzer, Margo I},
   booktitle=icde,
   year={2015},
-  pages={363-374},
 }
 
 @inproceedings{cheng2012kineograph,
@@ -8067,4 +8080,166 @@ year = 2006}
   booktitle={European Conference on Computer Systems (EuroSys)},
   pages={85--98},
   year={2012},
+}
+
+@article{ZahariaXWDADMRV16,
+  author    = {Matei Zaharia and
+               Reynold S. Xin and
+               Patrick Wendell and
+               Tathagata Das and
+               Michael Armbrust and
+               Ankur Dave and
+               Xiangrui Meng and
+               Josh Rosen and
+               Shivaram Venkataraman and
+               Michael J. Franklin and
+               Ali Ghodsi and
+               Joseph Gonzalez and
+               Scott Shenker and
+               Ion Stoica},
+  title     = {Apache Spark: a unified engine for big data processing},
+  journal   = {Commun. {ACM}},
+  volume    = {59},
+  number    = {11},
+  pages     = {56--65},
+  year      = {2016},
+}
+
+@article{Kemper0FFLMMR13,
+  author    = {Alfons Kemper and
+               Thomas Neumann and
+               Jan Finis and
+               Florian Funke and
+               Viktor Leis and
+               Henrik M{\"{u}}he and
+               Tobias M{\"{u}}hlbauer and
+               Wolf R{\"{o}}diger},
+  title     = {Processing in the Hybrid {OLTP} {\&} {OLAP} Main-Memory Database
+               System HyPer},
+  journal   = {{IEEE} Data Eng. Bull.},
+  volume    = {36},
+  number    = {2},
+  pages     = {41--47},
+  year      = {2013},
+}
+
+@book{Compression,
+title = {Understanding Compression},
+author= {Colt McAnlis and Aleks Haekey},
+publisher = {O'Reilly Media, Inc.},
+isbn = {1491961538},
+year = 2016}
+
+@Article{Bayer1972,
+author="Bayer, R.
+and McCreight, E. M.",
+title="Organization and maintenance of large ordered indexes",
+journal="Acta Informatica",
+year="1972",
+month="Sep",
+day="01",
+volume="1",
+number="3",
+pages="173--189",
+}
+
+@inbook{Bayer88,
+author = {Bayer, R. and Schkolnick, M.},
+title = {Concurrency of Operations on B-Trees},
+year = {1988},
+isbn = {0934613656},
+publisher = {Morgan Kaufmann Publishers Inc.},
+address = {San Francisco, CA, USA},
+booktitle = {Readings in Database Systems},
+pages = {129–139},
+numpages = {11}
+}
+
+@inproceedings{bwtrees18,
+author = {Wang, Ziqi and Pavlo, Andrew and Lim, Hyeontaek and Leis, Viktor and Zhang, Huanchen and Kaminsky, Michael and Andersen, David},
+year = {2018},
+month = {05},
+pages = {473-488},
+title = {Building a Bw-Tree Takes More Than Just Buzz Words},
+isbn = {978-1-4503-4703-7},
+booktitle = sigmod,
+doi = {10.1145/3183713.3196895}
+}
+
+@article{KungL80,
+  author    = {H. T. Kung and
+               Philip L. Lehman},
+  title     = {Concurrent Manipulation of Binary Search Trees},
+  journal   = {{ACM} Trans. Database Syst.},
+  volume    = {5},
+  number    = {3},
+  year      = {1980}
+}
+
+@inproceedings{Natarajan14,
+author = {Natarajan, Aravind and Mittal, Neeraj},
+title = {Fast Concurrent Lock-Free Binary Search Trees},
+year = {2014},
+booktitle=ppopp,
+}
+
+@inproceedings{bronson10,
+author = {Bronson, Nathan G. and Casper, Jared and Chafi, Hassan and Olukotun, Kunle},
+title = {A Practical Concurrent Binary Search Tree},
+year = {2010},
+booktitle = ppopp,
+}
+
+@inproceedings{WeiBBFR021,
+  author    = {Yuanhao Wei and
+               Naama Ben{-}David and
+               Guy E. Blelloch and
+               Panagiota Fatourou and
+               Eric Ruppert and
+               Yihan Sun},
+  title     = {Constant-time snapshots with applications to concurrent data structures},
+  booktitle = ppopp,
+  year      = {2021}
+}
+
+
+@InProceedings{Acar14,
+author="Acar, Umut A.
+and Chargu{\'e}raud, Arthur
+and Rainey, Mike",
+title="Theory and Practice of Chunked Sequences",
+booktitle="European Symposium on Algorithms (ESA)",
+year="2014",
+}
+
+@misc{yi08,
+author = "Jean-Philippe Bernardy",
+title = "The Haskell {Yi} package",
+biburl    = {http://hackage.haskell.org/package/yi-0.6.2.3/docs/src/Data-Rope.html},
+year = 2008,
+}
+
+@article{Boehm95,
+ author = {Boehm, Hans-J. and Atkinson, Russ and Plass, Michael},
+ title = {Ropes: An Alternative to Strings},
+ journal = {Softw. Pract. Exper.},
+ volume = {25},
+ number = {12},
+ year = {1995},
+}
+
+@inproceedings{Fluet08,
+ author = {Fluet, Matthew and Rainey, Mike and Reppy, John and Shaw, Adam},
+ title = {Implicitly-threaded Parallelism in Manticore},
+ booktitle = {ACM SIGPLAN International Conference on Functional Programming (ICFP)},
+ year = {2008},
+}
+
+@inproceedings{Brown18,
+  author    = {Maya Arbel{-}Raviv and
+               Trevor Brown and
+               Adam Morrison},
+  title     = {Getting to the Root of Concurrent Binary Search Tree Performance},
+  booktitle = usenixatc,
+  year      = {2018}
 }
