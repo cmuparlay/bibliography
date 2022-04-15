@@ -1,5 +1,6 @@
 % Entries
 
+
 @article{tarjan1988triangulating,
   author    = {Robert Endre Tarjan and
                Christopher J. Van Wyk},
@@ -22,6 +23,33 @@
   pages     = {522--530},
   publisher = {{ACM/SIAM}},
   year      = {1995}
+}
+
+@inproceedings{bendavid2019multiversion,
+  title={Multiversion concurrency with bounded delay and precise garbage collection},
+  author={Ben-David, Naama and Blelloch, Guy E and Sun, Yihan and Wei, Yuanhao},
+  booktitle=spaa,
+  pages={241--252},
+  year={2019}
+}
+
+@inproceedings{wheatman2018packed,
+  title={Packed compressed sparse row: A dynamic graph representation},
+  author={Wheatman, Brian and Xu, Helen},
+  booktitle=hpec,
+  pages={1--7},
+  year={2018},
+  organization={IEEE}
+}
+
+@article{bender2007adaptive,
+  title={An adaptive packed-memory array},
+  author={Bender, Michael A and Hu, Haodong},
+  journal={ACM Trans. on Database Systems (TODS)},
+  volume={32},
+  number={4},
+  pages={26--es},
+  year={2007},
 }
 
 @article{jones1988application,
@@ -248,8 +276,7 @@ publisher = "Cambridge University Press"}
                Harsha Vardhan Simhadri and
                Kanat Tangwongsan},
   title     = {Brief announcement: the problem based benchmark suite},
-  booktitle = {24th {ACM} Symposium on Parallelism in Algorithms and Architectures,
-               {SPAA} '12, Pittsburgh, PA, USA, June 25-27, 2012},
+  booktitle = spaa,
   pagesx= {68--70},
   publisher = {{ACM}},
   year      = {2012}
@@ -2472,21 +2499,6 @@ journal = {Advances in Intelligent Systems and Computing}
   author={Sun, Yihan and Ferizovic, Daniel and Blelloch, Guy E},
   booktitle= ppopp,
   year={2018}
-}
-
-@inproceedings{SunB19,
-  author    = {Yihan Sun and
-               Guy E. Blelloch},
-  title     = {Parallel Range, Segment and Rectangle Queries with Augmented Maps},
-  booktitle = alenex,
-  year      = {2019},
-}
-
-@article{sun2018parallel,
-	title={Parallel Range and Segment Queries with Augmented Maps},
-	author={Sun, Yihan and Blelloch, Guy E},
-	journal={arXiv preprint:1803.08621},
-	year={2018}
 }
 
 @article{blelloch1999pipelining,
@@ -9080,6 +9092,13 @@ journal = vldb,
 pages = {1598–1613},
 }
 
+@misc{kmett10,
+author = "Edward A. Kmett",
+title = "The Haskell {Rope} package",
+biburl = {https://hackage.haskell.org/package/rope-0.6.4/docs/Data-Rope.html},
+year = 2010,
+}
+
 @article{Boehm95,
  author = {Boehm, Hans-J. and Atkinson, Russ and Plass, Michael},
  title = {Ropes: An Alternative to Strings},
@@ -9144,13 +9163,13 @@ booktitle = iscashort,
 year = 1995}
 
 @inproceedings{JavaGrande01,
-author = "L. A. Smith and J. M. Bull and J. Obdrzalek", 
+author = "L. A. Smith and J. M. Bull and J. Obdrzalek",
 title = "A Parallel {Java Grande} Benchmark Suite",
 booktitle = "Proceedings of SC2001",
 year = 2001}
 
 @inproceedings{HPCC06,
-author = "P. Luszczek and D. Bailey and J. Dongarra and J. Kepner and R. Lucas 
+author = "P. Luszczek and D. Bailey and J. Dongarra and J. Kepner and R. Lucas
 and R. Rabenseifner and D. Takahashi",
 title = "The {HPC} Challenge {(HPCC)} Benchmark Suite",
 booktitle = "SC06 Conference Tutorial",
@@ -9163,7 +9182,7 @@ booktitle = "Proceedings of IEEE Symposium on Performance Analysis of Systems an
 year = 2009}
 
 @inproceedings{NAS91,
-author = "David H. Bailey and E. Barszcz and J. T. Barton and D. S. Browning and Robert L. Carter and Leonardo Dagum and Rod Fatoohi and Paul O. Frederickson and T. A. Lasinski and Robert Schreiber and Horst D. Simon and V. Venkatakrishnan and Sisira Weeratunga", 
+author = "David H. Bailey and E. Barszcz and J. T. Barton and D. S. Browning and Robert L. Carter and Leonardo Dagum and Rod Fatoohi and Paul O. Frederickson and T. A. Lasinski and Robert Schreiber and Horst D. Simon and V. Venkatakrishnan and Sisira Weeratunga",
 title = "The {NAS} parallel benchmarks---summary and preliminary results",
 booktitle = "Proceedings Supercomputing '91",
 year = 1991}
@@ -9196,4 +9215,3 @@ institution = {UIUC},
 year = 2012,
 number = {IMPACT-12-01}
 }
-
