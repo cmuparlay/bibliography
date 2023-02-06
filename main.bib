@@ -1614,7 +1614,7 @@ year = {2006}
 author = {Blelloch, Guy E. and Anderson, Daniel and Dhulipala, Laxman},
 title = {{ParlayLib} - A Toolkit for Parallel Algorithms on Shared-Memory Multicore Machines},
 year = {2020},
-url={\url{https://cmuparlay.github.io/parlaylib/}},
+url={https://cmuparlay.github.io/parlaylib/},
 booktitle = spaa,
 }
 
@@ -4010,6 +4010,7 @@ journal = {Advances in Intelligent Systems and Computing}
   booktitle = ppopp
 }
 
+%% !! use BBW22
 @inproceedings{WeiBB22,
   author    = {Yuanhao Wei and
                Naama Ben{-}David and
@@ -9859,3 +9860,1222 @@ institution = {UIUC},
 year = 2012,
 number = {IMPACT-12-01}
 }
+
+
+% concurrency
+
+@inproceedings{barnes1993method,
+  title={A method for implementing lock-free shared-data structures},
+  author={Barnes, Greg},
+  booktitle=spaa,
+  pages={261--270},
+  year={1993}
+}
+
+@inproceedings{turek1992locking,
+  title={Locking without blocking: making lock based concurrent data structure algorithms nonblocking},
+  author={Turek, John and Shasha, Dennis and Prakash, Sundeep},
+  booktitle=pods,
+  pages={212--222},
+  year={1992}
+}
+
+@inproceedings{brown2002idem,
+  author = {Brown, Jeremy and Grossman, J. P. and Knight, Tom},
+  title = {A Lightweight Idempotent Messaging Protocol for Faulty Networks},
+  pages = {248–257},
+  year = {2002},
+  booktitle = spaa
+}
+
+@inproceedings{kruijf2013idem,
+  author = {de Kruijf, Marc and Sankaralingam, Karthikeyan},
+  title = {Idempotent Code Generation: Implementation, Analysis, and Evaluation},
+  year = {2013},
+  booktitle = cgo
+}
+
+@inproceedings{censor2015help,
+  title={Help!},
+  author={Censor-Hillel, Keren and Petrank, Erez and Timnat, Shahar},
+  booktitle=podc,
+  pages={241--250},
+  year={2015}
+}
+
+@inproceedings{timnat2014practical,
+  title={A practical wait-free simulation for lock-free data structures},
+  author={Timnat, Shahar and Petrank, Erez},
+  booktitle=ppopp,
+  pages={357--368},
+  year={2014}
+}
+
+@inproceedings{ben2022fast,
+  title={Fast and Fair Randomized Wait-Free Locks},
+  author={Ben-David, Naama and Blelloch, Guy E},
+  booktitle=podc,
+  pages={187--197},
+  year={2022}
+}
+
+@inproceedings{michael1996simple,
+  title={Simple, fast, and practical non-blocking and blocking concurrent queue algorithms},
+  author={Michael, Maged M and Scott, Michael L},
+  booktitle=podc,
+  pages={267--275},
+  year={1996}
+}  d
+
+@inproceedings{harris2002practical,
+  title={A practical multi-word compare-and-swap operation},
+  author={Harris, Timothy L and Fraser, Keir and Pratt, Ian A},
+  booktitle=disc,
+  pages={265--279},
+  year={2002}
+}
+
+@inproceedings{RajwarG02,
+  author    = {Ravi Rajwar and
+               James R. Goodman},
+  title     = {Transactional lock-free execution of lock-based programs},
+  booktitle = asplos,
+  pages     = {5--17},
+  year      = {2002},
+}
+
+@inproceedings{GidenstamP07,
+  author    = {Anders Gidenstam and
+               Marina Papatriantafilou},
+  title     = {LFthreads: {A} Lock-Free Thread Library},
+  booktitle = opodis,
+  year      = {2007},
+}
+
+@techreport{fraser2004practical,
+  title={Practical lock-freedom},
+  author={Fraser, Keir},
+  year={2004},
+  institution={University of Cambridge, Computer Laboratory}
+}
+
+@ARTICLE{mckenney2008rcu,
+author={D. Guniguntala and P. E. McKenney and J. Triplett and J. Walpole},
+journal={IBM Systems Journal},
+title={The read-copy-update mechanism for supporting real-time applications on shared-memory multiprocessor systems with Linux},
+year={2008},
+volume={47},
+number={2},
+pages={221-236},
+ISSN={0018-8670}}
+
+@inproceedings{lazylist06,
+author="Heller, Steve
+and Herlihy, Maurice
+and Luchangco, Victor
+and Moir, Mark
+and Scherer, William N.
+and Shavit, Nir",
+title="A Lazy Concurrent List-Based Set Algorithm",
+booktitle=opodis,
+year="2006",
+}
+
+@inproceedings{harris2001pragmatic,
+  title={A pragmatic implementation of non-blocking linked-lists},
+  author={Harris, Timothy L},
+  booktitle=disc,
+  pages={300--314},
+  year={2001},
+  organization={Springer}
+}
+
+@inproceedings{srivastava2022elimination,
+  title={Elimination (a, b)-trees with fast, durable updates},
+  author={Srivastava, Anubhav and Brown, Trevor},
+  booktitle=ppopp,
+  pages={416--430},
+  year={2022}
+}
+
+@inproceedings{BrownER13,
+  author    = {Trevor Brown and
+  Faith Ellen and
+  Eric Ruppert},
+  title     = {Pragmatic primitives for non-blocking data structures},
+  booktitle = podc,
+  year      = {2013},
+  pages = {13–22},
+}
+
+@inproceedings{guerraoui2020efficient,
+  title={Efficient multi-word compare and swap},
+  author={Guerraoui, Rachid and Kogan, Alex and Marathe, Virendra J and Zablotchi, Igor},
+  journal=disc,
+  year={2020}
+}
+
+@article{feldman2015wait,
+  title={A wait-free multi-word compare-and-swap operation},
+  author={Feldman, Steven and LaBorde, Pierre and Dechev, Damian},
+  journal=ijpp,
+  volume={43},
+  number={4},
+  pages={572--596},
+  year={2015},
+  publisher={Springer}
+}
+
+@article{KOEFV06,
+  author = {Kim, Seon Wook and Ooi, Chong-Liang and Eigenmann, Rudolf and Falsafi, Babak and Vijaykumar, T. N.},
+  title = {Exploiting Reference Idempotency to Reduce Speculative Storage Overflow},
+  year = {2006},
+  volume = {28},
+  number = {5},
+  journal = toplas,
+  month = {sep},
+  pages = {942–965},
+}
+
+@inproceedings{ben2019delay,
+  title={Delay-free concurrency on faulty persistent memory},
+  author={Ben-David, Naama and Blelloch, Guy E and Friedman, Michal and Wei, Yuanhao},
+  booktitle=spaa,
+  pages={253--264},
+  year={2019}
+}
+
+
+@inproceedings{arttre16,
+author = {Leis, Viktor and Scheibner, Florian and Kemper, Alfons and Neumann, Thomas},
+title = {The ART of Practical Synchronization},
+year = {2016},
+booktitle = damon,
+}
+
+@inproceedings{DGT15,
+author = {David, Tudor and Guerraoui, Rachid and Trigonakis, Vasileios},
+title = {Asynchronized Concurrency: The Secret to Scaling Concurrent Search Data Structures},
+year = {2015},
+booktitle = asplos,
+}
+
+@inproceedings{drachsler14,
+author = {Drachsler, Dana and Vechev, Martin and Yahav, Eran},
+title = {Practical Concurrent Binary Search Trees via Logical Ordering},
+year = {2014},
+booktitle = ppopp,
+}
+
+@inproceedings{masstree12,
+author = {Mao, Yandong and Kohler, Eddie and Morris, Robert Tappan},
+title = {Cache Craftiness for Fast Multicore Key-Value Storage},
+year = {2012},
+booktitle = eurosys,
+}
+
+@inproceedings{wang2018easy,
+  title={Easy lock-free indexing in non-volatile memory},
+  author={Wang, Tianzheng and Levandoski, Justin and Larson, Per-Ake},
+  booktitle=icde,
+  pages={461--472},
+  year={2018},
+  organization={IEEE}
+}
+
+@article{shavit1997software,
+  title={Software transactional memory},
+  author={Shavit, Nir and Touitou, Dan},
+  journal={Distributed Computing},
+  volume={10},
+  number={2},
+  pages={99--116},
+  year={1997},
+  publisher={Springer}
+}
+
+@article{fraser2007concurrent,
+  title={Concurrent programming without locks},
+  author={Fraser, Keir and Harris, Tim},
+  journal=tocs,
+  volume={25},
+  number={2},
+  pages={5--es},
+  year={2007},
+}
+
+@inproceedings{ramalhete2019onefile,
+  title={OneFile: A wait-free persistent transactional memory},
+  author={Ramalhete, Pedro and Correia, Andreia and Felber, Pascal and Cohen, Nachshon},
+  booktitle={IEEE/IFIP International Conference on Dependable Systems and Networks (DSN)},
+  pages={151--163},
+  year={2019},
+}
+
+@article{winblad2021lock,
+  title={Lock-free contention adapting search trees},
+  author={Winblad, Kjell and Sagonas, Konstantinos and Jonsson, Bengt},
+  journal=topc,
+  volume={8},
+  number={2},
+  pages={1--38},
+  year={2021},
+}
+
+@inproceedings{shafiei2016non,
+  title={Non-Blocking Doubly-Linked Lists with Good Amortized Complexity},
+  author={Shafiei, Niloufar},
+  booktitle=opodis,
+  year={2016},
+}
+
+@inproceedings{dice2002mostly,
+  title={Mostly lock-free malloc},
+  author={Dice, Dave and Garthwaite, Alex},
+  booktitle=ismm,
+  pages={163--174},
+  year={2002}
+}
+
+@inproceedings{Gre02,
+author = {Michael Greenwald},
+title = {Two-handed emulation: how to build non-blocking implementations of complex data-structures using {DCAS}},
+booktitle = podc,
+pages = {260--269},
+year = 2002}
+
+@article{ST08,
+author = {H\r{a}kan Sundell and Philippas Tsigas},
+title = {Lock-free deques and doubly linked lists},
+journal = jpdc,
+volume = 68,
+number = 7,
+pages = {1008--1020},
+year = 2008
+}
+
+@article{AH13,
+author = {Hagit Attiya and Eshcar Hillel},
+title = {Built-in coloring for highly-concurrent doubly-linked lists},
+journal = tocs,
+volume = 52,
+number =4,
+pages ={729--762},
+year = 2013
+}
+
+@article{ingerman1961thunks,
+  title={Thunks: a way of compiling procedure statements with some comments on procedure declarations},
+  author={Ingerman, Peter Zilahy},
+  journal={Communications of the ACM},
+  volume={4},
+  number={1},
+  pages={55--58},
+  year={1961},
+  publisher={ACM New York, NY, USA}
+}
+
+@misc{ben2022flockfull,
+      title={Lock-Free Locks Revisited}, 
+      author={Naama Ben-David and Guy E. Blelloch and Yuanhao Wei},
+      year={2022},
+      eprint={2201.00813},
+      archivePrefix={arXiv},
+      primaryClass={cs.DC}
+}
+
+@inproceedings{cooper2010benchmarking,
+  title={Benchmarking cloud serving systems with YCSB},
+  author={Cooper, Brian F and Silberstein, Adam and Tam, Erwin and Ramakrishnan, Raghu and Sears, Russell},
+  booktitle={{ACM} Symposium on Cloud Computing (SoCC)},
+  pages={143--154},
+  year={2010}
+}
+
+@inproceedings{brown2014general,
+  title={A general technique for non-blocking trees},
+  author={Brown, Trevor and Ellen, Faith and Ruppert, Eric},
+  booktitle=ppopp,
+  pages={329--342},
+  year={2014}
+}
+
+@inproceedings{BA12,
+author = {Trevor Brown and Hillel Avni},
+title = {Range Queries in Non-blocking $k$-ary Search Trees},
+booktitle = opodis,
+volume = 7702,
+year = 2012,
+pages = {31--45},
+}
+
+@inproceedings{AB18,
+author = {Arbel-Raviv, Maya and Brown, Trevor},
+title = {Harnessing Epoch-Based Reclamation for Efficient Range Queries},
+year = {2018},
+booktitle = ppopp,
+pages = {14--27},
+}
+
+@article{BBBGHKS20,
+author = {Basin, Dmitry and Bortnikov, Edward and Braginsky, Anastasia and Golan-Gueta, Guy and Hillel, Eshcar and Keidar, Idit and Sulamy, Moshe},
+title = {KiWi: A Key-Value Map for Scalable Real-Time Analytics},
+year = {2020},
+volume = {7},
+number = {3},
+journal = topc,
+month = jun,
+articleno = {16},
+numpages = {28},
+}
+
+@misc{trevorimpl,
+author = {Trevor Brown},
+title = "Java Lock-Free Data Structure Library",
+howpublished = {Available from {\url{https://bitbucket.org/trbot86/implementations/src/master/java}}}
+}
+
+@misc{findif,
+  author = {Cplusplus.com},
+  title = {Documentation for std::find\_if},
+  howpublished = {\url{http://www.cplusplus.com/reference/algorithm/find_if/} accessed 31 December, 2020 }
+}
+
+@inproceedings{FernandesC11,
+author = {Fernandes, S\'{e}rgio Miguel and Cachopo, Jo{\~a}o},
+title = {Lock-Free and Scalable Multi-Version Software Transactional Memory},
+year = {2011},
+booktitle = ppopp,
+pages = {179–188},
+}
+
+
+@techreport{Reed78,
+author = "D. Reed",
+title = "Naming and synchronization in a decentralized computer system",
+institution = "EECS Dept., MIT",
+number = "LCS/TR-205",
+month = sep,
+year = 1978}
+
+@inproceedings{Perelman11,
+author={Perelman, Dmitri
+and Byshevsky, Anton
+and Litmanovich, Oleg
+and Keidar, Idit},
+title={SMV: Selective Multi-Versioning STM},
+booktitle=disc,
+pages = {125--140},
+year=2011}
+
+@article{DieguesR15,
+author = {Diegues, Nuno and Romano, Paolo},
+title = {Time-Warp: Efficient Abort Reduction in Transactional Memory},
+year = {2015},
+volume = {2},
+number = {2},
+journal = topc,
+month = jun,
+articleno = {12},
+numpages = {44},
+}
+
+@article{cachopo2006versioned,
+  title={Versioned Boxes as the Basis for Memory Transactions},
+  author={Cachopo, Jo{\~a}o and Rito-Silva, Ant{\'o}nio},
+  journal={Science of Computer Programming},
+  volume={63},
+  number={2},
+  pages={172--185},
+  year={2006},
+  publisher={Elsevier}
+}
+
+@inproceedings{Kumar14,
+ author = {Kumar, Priyanka and Peri, Sathya and Vidyasankar, K.},
+ title = {A TimeStamp Based Multi-version {STM} Algorithm},
+ booktitle = icdcn,
+ year = {2014},
+ pages = {212--226},
+}
+
+@inproceedings{perelman2010maintaining,
+  title={On Maintaining Multiple Versions in {STM}},
+  author={Perelman, Dmitri and Fan, Rui and Keidar, Idit},
+  booktitle= podc,
+  pages={16--25},
+  year={2010},
+}
+
+@article{papadimitriou1984concurrency,
+  title={On Concurrency Control by Multiple Versions},
+  author={Papadimitriou, Christos H and Kanellakis, Paris C},
+  journal=tods,
+  volume={9},
+  number={1},
+  pages={89--99},
+  year={1984},
+}
+
+@article{BG83,
+ author = {Bernstein, Philip A. and Goodman, Nathan},
+ title = {Multiversion Concurrency Control - Theory and Algorithms},
+ journal = tods,
+ volume = {8},
+ number = {4},
+ month = dec,
+ year = {1983},
+ pages = {465--483},
+}
+
+@inproceedings{Cha17,
+ author = {Chatterjee, Bapi},
+ title = {Lock-free Linearizable 1-Dimensional Range Queries},
+ booktitle = icdcn,
+ year = {2017},
+ pages = {9:1--9:10},
+}
+
+@article{ALRS17,
+  author    = {Archita Agarwal and
+               Zhiyu Liu and
+               Eli Rosenthal and
+               Vikram Saraph},
+  title     = {Linearizable Iterators for Concurrent Data Structures},
+  journal   = {CoRR},
+  volume    = {abs/1705.08885},
+  year      = {2017},
+  url       = {http://arxiv.org/abs/1705.08885},
+  archivePrefix = {arXiv},
+  eprint    = {1705.08885},
+  timestamp = {Wed, 07 Jun 2017 14:41:23 +0200},
+  biburl    = {http://dblp.org/rec/bib/journals/corr/AgarwalLRS17},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@inproceedings{PT13,
+ author = {Petrank, Erez and Timnat, Shahar},
+ title = {Lock-Free Data-Structure Iterators},
+ booktitle = disc,
+ year = {2013},
+ pages = {224--238},
+ doi = {10.1007/978-3-642-41527-2_16},
+}
+
+@article{imbs2012help,
+  title={Help When Needed, but No More: Efficient Read/Write Partial Snapshot},
+  author={Imbs, Damien and Raynal, Michel},
+  journal={Journal of Parallel and Distributed Computing},
+  volume={72},
+  number={1},
+  pages={1--12},
+  year={2012},
+  publisher={Elsevier}
+}
+
+@inproceedings{Jay02,
+author = {Jayanti, Prasad},
+title = {$f$-Arrays: Implementation and Applications},
+year = {2002},
+doi = {10.1145/571825.571875},
+booktitle = podc,
+pages = {270--279},
+}
+
+@inproceedings{PBBO12,
+ author = {Prokopec, Aleksandar and Bronson, Nathan Grasso and Bagwell, Phil and Odersky, Martin},
+ title = {Concurrent Tries with Efficient Non-blocking Snapshots},
+ booktitle = ppopp,
+ year = {2012},
+ pages = {151--160},
+ doi = {10.1145/2145816.2145836},
+ keywords = {concurrent data structure, hash trie, nonblocking, snapshot},
+}
+
+@incollection{NGPT15a,
+author = {Yiannis Nikolakopoulos and Anders Gidenstam and Marina Papatriantafilou and Philippas Tsigas},
+title = {Of Concurrent Data Structures and Iterations},
+booktitle = {Algorithms, Probability, Networks and Games:  Scientific Papers and Essays Dedicated to Paul G.\ Spirakis on the Occassion of his 60th Birthday},
+year = 2015,
+pages = {358--369},
+publisher = {Springer}
+}
+
+@inproceedings{NGPT15b,
+author = {Yiannis Nikolakopoulos and Anders Gidenstam and Marina Papatriantafilou and Philippas Tsigas},
+title = {A Consistency Framework for Iteration Operations in Concurrent Data Structures},
+booktitle = ipdps,
+pages = {239--248},
+year = 2015
+}
+
+@inproceedings{prokopec2015snapqueue,
+  title={Snapqueue: Lock-free Queue with Constant Time Snapshots},
+  author={Prokopec, Aleksandar},
+  booktitle={{ACM} SIGPLAN Symposium on Scala},
+  pages={1--12},
+  year={2015}
+}
+
+@article{FNP17,
+  Author = "Fatourou, Panagiota and Nikolakopoulos, Yiannis and Papatriantafilou, Marina",
+  Title = "Linearizable Wait-Free Iteration Operations in Shared Double-Ended Queues",
+  Journal = "Parallel Processing Letters",
+  Year = 2017,
+  volume = 27,
+  number = 2,
+  pages = "1--17",}
+
+@inproceedings{KK15,
+year = {2015},
+booktitle = opodis,
+title = {Wait-free Concurrent Graph Objects with Dynamic Traversals},
+author = {Kallimanis, Nikolaos D. and Kanellou, Eleni},
+}
+
+@inproceedings{ASS13,
+ author = {Avni, Hillel and Shavit, Nir and Suissa, Adi},
+ title = {Leaplist: Lessons Learned in Designing {TM}-Supported Range Queries},
+ booktitle = podc,
+ year = {2013},
+ pages = {299--308},
+}
+
+@inproceedings{riegel2006lazy,
+  title={A Lazy Snapshot Algorithm with Eager Validation},
+  author={Riegel, Torvald and Felber, Pascal and Fetzer, Christof},
+  booktitle=disc,
+  pages={284--298},
+  year={2006},
+  organization={Springer}
+}
+
+@misc{javaweak,
+    author = {Oracle},
+  title = "Java Weakly Consistent Iterators",
+  howpublished = {{\url{https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/package-summary.html##Weakly} accessed 31 December 2020}}
+}
+
+@article{AADGMS93,
+author = {Afek, Yehuda and Attiya, Hagit and Dolev, Danny and Gafni, Eli and Merritt, Michael and Shavit, Nir},
+title = {Atomic Snapshots of Shared Memory},
+year = {1993},
+volume = {40},
+number = {4},
+journal = jacm,
+month = sep,
+pages = {873--890},
+}
+
+@article{Anderson94,
+  author    = {James H. Anderson},
+  title     = {Multi-Writer Composite Registers},
+  journal   = {Distributed Comput.},
+  volume    = {7},
+  number    = {4},
+  pages     = {175--195},
+  year      = {1994},
+}
+
+@inproceedings{Fic05,
+author = {Faith Ellen Fich},
+title = {How Hard Is it to Take a Snapshot?},
+booktitle = {Proc.~31st Conference on Current Trends in Theory and Practice of Computer Science (SOFSEM)},
+series = {LNCS},
+volume = 3381,
+year = 2005,
+pages = {28--37},
+}
+
+@article{sarnak1986planar,
+  title={Planar Point Location Using Persistent Search Trees},
+  author={Sarnak, Neil and Tarjan, Robert E},
+  journal=cacm,
+  volume={29},
+  number={7},
+  pages={669--679},
+  year={1986},
+  publisher={ACM}
+}
+
+@article{driscoll1989making,
+  title={Making Data Structures Persistent},
+  author={Driscoll, James R. and Sarnak, Neil and Sleator, Daniel D. and Tarjan, Robert E.},
+  journal=jcss,
+  volume={38},
+  number={1},
+  pages={86--124},
+  year={1989},
+  publisher={Elsevier}
+}
+
+@article{DST94,
+author = {Driscoll, James R. and Sleator, Daniel D. K. and Tarjan, Robert E.},
+title = {Fully Persistent Lists with Catenation},
+year = {1994},
+publisher = {Association for Computing Machinery},
+volume = {41},
+number = {5},
+journal = {J. ACM},
+month = sep,
+pages = {943--959},
+numpages = {17},
+}
+
+@misc{dickerson2020adapting,
+    title={Adapting Persistent Data Structures for Concurrency and Speculation},
+    author={Thomas Dickerson},
+    year={2020},
+    eprint={2003.07395},
+    archivePrefix={arXiv},
+    primaryClass={cs.DC}
+}
+
+@inproceedings{FatourouK07,
+author = {Fatourou, Panagiota and Kallimanis, Nikolaos D.},
+title = {Time-Optimal, Space-Efficient Single-Scanner Snapshots \& Multi-Scanner Snapshots Using CAS},
+year = {2007},
+booktitle = podc,
+pages = {33–42},
+}
+
+@inproceedings{Jayanti05,
+author = {Jayanti, Prasad},
+title = {An Optimal Multi-Writer Snapshot Algorithm},
+year = {2005},
+booktitle = stoc,
+pages = {723–732},
+}
+
+@inproceedings{BrodskyF04,
+  author    = {Alex Brodsky and
+               Faith Ellen Fich},
+  title     = {Efficient Synchronous Snapshots},
+  booktitle = podc,
+  pages     = {70--79},
+  year      = {2004},
+}
+
+@inproceedings{AGR08,
+author = {Attiya, Hagit and Guerraoui, Rachid and Ruppert, Eric},
+title = {Partial Snapshot Objects},
+year = {2008},
+booktitle = spaa,
+pages = {336--343},
+}
+
+@inproceedings{brown2015reclaim,
+  author    = {Trevor Alexander Brown},
+  title     = {Reclaiming Memory for Lock-Free Data Structures: There has to be a
+               Better Way},
+  booktitle = podc,
+  pages     = {261--270},
+  year      = {2015}
+}
+
+@inproceedings{BBW22,
+title = {Lock-Free Locks Revisited},
+author = {Naama Ben-David and Guy Blelloch and Yuanhao Wei},
+booktitle = ppopp,
+year = 2022
+}
+
+@inproceedings{jiffy22,
+author = {Kobus, Tadeusz and Kokoci\'{n}ski, Maciej and Wojciechowski, Pawe\l{} T.},
+title = {Jiffy: A Lock-Free Skip List with Batch Updates and Snapshots},
+year = {2022},
+booktitle = ppopp,
+}
+
+@inproceedings{NHP22,
+author = {Nelson-Slivon, Jacob and Hassan, Ahmed and Palmieri, Roberto},
+title = {Bundling Linked Data Structures for Linearizable Range Queries},
+year = {2022},
+booktitle = ppopp,
+pages = {368–384},
+}
+
+@article{Ruan13,
+author = {Ruan, Wenjia and Liu, Yujie and Spear, Michael},
+title = {Boosting Timestamp-Based Transactional Memory by Exploiting Hardware Cycle Counters},
+year = {2013},
+volume = {10},
+number = {4},
+journal = {ACM Trans. Archit. Code Optim.},
+month = {dec},
+numpages = {21},
+}
+
+@misc{IntelRDTSC,
+title = "Intel® 64 and IA-32 Architectures Developer's Manual: Vol. 3B, Section 18.17, Time-Stamp Counter",
+author = "Intel Corp.",
+year = 2022,
+month = dec,
+}
+
+@inproceedings{TZKLM13,
+author = {Tu, Stephen and Zheng, Wenting and Kohler, Eddie and Liskov, Barbara and Madden, Samuel},
+title = {Speedy Transactions in Multicore In-Memory Databases},
+year = {2013},
+booktitle = sosp,
+pages = {18–32},
+}
+
+@inproceedings{LKA17,
+author = {Lim, Hyeontaek and Kaminsky, Michael and Andersen, David G.},
+title = {Cicada: Dependably Fast Multi-Core In-Memory Transactions},
+year = {2017},
+booktitle = sigmod,
+pages = {21–35}
+}
+
+@inproceedings{YPSD16,
+    author = {Yu, Xiangyao and Pavlo, Andrew and Sanchez, Daniel and Devadas, Srinivas},
+    title = {TicToc: Time Traveling Optimistic Concurrency Control},
+    year = {2016},
+    booktitle = sigmod,
+    pages = {1629–1642},
+ }
+
+@article{SRP22,
+  author    = {Gali Sheffi and
+               Pedro Ramalhete and
+               Erez Petrank},
+  title     = {{EEMARQ:} Efficient Lock-Free Range Queries with Memory Reclamation},
+  journal   = {CoRR},
+  volume    = {abs/2210.17086},
+  year      = {2022},
+  url       = {https://doi.org/10.48550/arXiv.2210.17086},
+  doi       = {10.48550/arXiv.2210.17086},
+  eprinttype = {arXiv},
+}
+
+@article{Lamport78,
+author = {Lamport, Leslie},
+title = {Time, Clocks, and the Ordering of Events in a Distributed System},
+year = {1978},
+volume = {21},
+number = {7},
+journal = cacm,
+month = {jul},
+pages = {558–565},
+}
+
+@misc{flock,
+title = {The flock library},
+author = {Naama Ben-David and Guy Blelloch and Yuanhao Wei},
+  howpublished =  {\url{https://github.com/cmuparlay/flock}},
+year = 2022
+}
+
+@misc{hpandrcu,
+  title={Proposed Wording for Concurrent Data Structures: Hazard Pointer and Read-Copy-Update ({RCU})},
+  author={Michael, Maged M. and Wong, Michael and McKenney, Paul and Romer, Geoffrey and Hunter, Andrew and O'Dwyer, Arthur and Hollman, David S. and Bastien, JF and Boehm, Hans and Goldblatt, David and Birbacher, Frank and Stearn, Mathias},
+  year = "2017",
+  note={{\url{http://open-std.org/JTC1/SC22/WG21/docs/papers/2017/p0566r3.pdf}}}
+}
+
+@manual{folly,
+      title  = {Facebook Open Source Library},
+      author = {Facebook},
+      note   = {{\url{https://github.com/facebook/folly}}},
+      year   = {2020 (accessed June 5, 2020)}
+    }
+
+@inproceedings{atomiccopy,
+  title={{LL/SC} and Atomic Copy: Constant Time, Space Efficient Implementations using only pointer-width {CAS}},
+  author={Blelloch, Guy E and Wei, Yuanhao},
+  booktitle=disc,
+  year={2020},
+}
+
+@book{JonesHM11,
+author = {Jones, Richard and Hosking, Antony and Moss, Eliot},
+title = {The Garbage Collection Handbook: The Art of Automatic Memory Management},
+year = {2011},
+isbn = {1420082795}, publisher = {Chapman \& Hall/CRC},
+edition = {1st}
+}
+ 
+@article{hart2007performance,
+  author    = {Thomas E. Hart and
+               Paul E. McKenney and
+               Angela Demke Brown and
+               Jonathan Walpole},
+  title     = {Performance of memory reclamation for lockless synchronization},
+  journal   = jpdc,
+  volume    = {67},
+  number    = {12},
+  pages     = {1270--1285},
+  year      = {2007},
+}
+
+@article{michael2004hazard,
+  title={Hazard pointers: Safe memory reclamation for lock-free objects},
+  author={Michael, Maged M},
+  journal=itpds,
+  volume={15},
+  number={6},
+  pages={491--504},
+  year={2004},
+}
+
+@article{Herlihy05,
+ author = {Herlihy, Maurice and Luchangco, Victor and Martin, Paul and Moir, Mark},
+ title = {Nonblocking Memory Management Support for Dynamic-sized Data Structures},
+ journal = {ACM Trans. Comput. Syst.},
+ issue_date = {May 2005},
+ volume = {23},
+ number = {2},
+ month = may,
+ doi={10.1145/1062247.1062249},
+ year = {2005}
+} 
+
+@article{wen2018interval,
+  title={Interval-based memory reclamation},
+  author={Wen, Haosen and Izraelevitz, Joseph and Cai, Wentao and Beadle, H Alan and Scott, Michael L},
+  journal={SIGPLAN Not.},
+  volume={53},
+  number={1},
+  pages={1--13},
+  year={2018},
+  organization={ACM}
+}
+
+@inproceedings{ramalhete2017brief,
+  title={Brief announcement: Hazard eras-non-blocking memory reclamation},
+  author={Ramalhete, Pedro and Correia, Andreia},
+  booktitle=spaa,
+  year={2017}
+}
+
+@inproceedings{Valois95,
+ author = {Valois, John D.},
+ title = {Lock-free Linked Lists Using Compare-and-swap},
+ booktitle = podc,
+ year = {1995}
+}
+
+@techreport{MS95,
+  title={Correction of a memory management method for lock-free data structures},
+  author={M. M. Michael and M. L. Scott},
+  year={1995},
+  institution={Computer Science Department, University of Rochester}
+}
+
+@article{DMMS02,
+  author    = {David Detlefs and
+               Paul Alan Martin and
+               Mark Moir and
+               Guy L. Steele Jr.},
+  title     = {Lock-free reference counting},
+  journal   = {Distributed Computing},
+  volume    = {15},
+  number    = {4},
+  pages     = {255--271},
+  year      = {2002},
+}
+
+@inproceedings{Sundell05,
+  author    = {H{\aa}kan Sundell},
+  title     = {Wait-Free Reference Counting and Memory Management},
+  booktitle = ipdps,
+  year      = {2005},
+}
+
+@inproceedings{lee2010fast,
+  title={Fast local-spin abortable mutual exclusion with bounded space},
+  author={Lee, Hyonho},
+  booktitle=opodis,
+  year={2010}
+}
+
+@misc{plyukhin2015,
+  title={Distributed Reference Counting for Asynchronous Shared Memory},
+  author={Plyukhin, Dan},
+  year = "2015 (accessed November 5, 2019)",
+  note={{\url{http://rucs.ca/theory-of-computation/distributed-reference-counting-for-asynchronous-shared-memory}}}
+}
+
+@manual{just19,
+      title  = {just::thread Concurrency Library},
+      author = {Anthony Williams},
+      note    = {{\url{https://www.stdthread.co.uk}}},
+      year   = {2019 (accessed November 5, 2019)}
+    }
+
+@book{williams2012book,
+  title={C++ concurrency in action: practical multithreading},
+  author={Williams, Anthony},
+  year={2012},
+  publisher={Manning Publ.}
+}
+
+@inproceedings{correia2021orcgc,
+  title={{OrcGC}: automatic lock-free memory reclamation},
+  author={Correia, Andreia and Ramalhete, Pedro and Felber, Pascal},
+  booktitle=ppopp,
+  year={2021}
+}
+
+@article{GPST09,
+  author    = {Anders Gidenstam and
+               Marina Papatriantafilou and
+               H{\aa}kan Sundell and
+               Philippas Tsigas},
+  title     = {Efficient and Reliable Lock-Free Memory Reclamation Based on Reference
+               Counting},
+  journal   = itpds,
+  volume    = {20},
+  number    = {8},
+   year      = {2009},
+ }
+
+@article{baker1994minimizing,
+  title={Minimizing reference count updating with deferred and anchored pointers for functional data structures},
+  author={Baker, Henry G},
+  journal={SIGPLAN Not.},
+  volume={29},
+  number={9},
+  pages={38--43},
+  year={1994},
+  publisher={ACM New York, NY, USA},
+}
+
+@article{deutsch1976efficient,
+  title={An efficient, incremental, automatic garbage collector},
+  author={Deutsch, L Peter and Bobrow, Daniel G},
+  journal={Commun. ACM},
+  volume={19},
+  number={9},
+  pages={522--526},
+  year={1976},
+  publisher={ACM New York, NY, USA}
+}
+
+@inproceedings{bacon2001java,
+  title={Java without the coffee breaks: A nonintrusive multiprocessor garbage collector},
+  author={Bacon, David F and Attanasio, Clement R and Lee, Han B and Rajan, VT and Smith, Stephen},
+  booktitle=pldi,
+  year={2001}
+}
+
+@inproceedings{levanoni2001fly,
+  title={An on-the-fly reference counting garbage collector for {J}ava},
+  author={Levanoni, Yossi and Petrank, Erez},
+  booktitle=oopsla,
+  year={2001}
+}
+
+@inproceedings{blackburn2003ulterior,
+  title={Ulterior reference counting: Fast garbage collection without a long wait},
+  author={Blackburn, Stephen M and McKinley, Kathryn S},
+  booktitle=oopsla,
+  year={2003}
+}
+
+@inproceedings{nikolaev2020universal,
+author = {Nikolaev, Ruslan and Ravindran, Binoy},
+title = {Universal Wait-Free Memory Reclamation},
+year = {2020},
+booktitle = ppopp
+}
+
+@misc{hpinterface,
+  title={Hazard Pointers: Proposed Interface and Wording for Concurrency {TS} 2},
+  author={Michael, Maged M. and Wong, Michael and McKenney, Paul and Romer, Geoffrey and Hunter, Andrew and O'Dwyer, Arthur and Hollman, David S. and Bastien, JF and Boehm, Hans and Goldblatt, David and Birbacher, Frank and Stearn, Mathias},
+  year = "2019",
+  note={{\url{http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1121r1.pdf}}}
+}
+
+@inproceedings{kang2020marriage,
+  title={A marriage of pointer-and epoch-based reclamation},
+  author={Kang, Jeehoon and Jung, Jaehwang},
+  booktitle=pldi,
+  year={2020}
+}
+
+@inproceedings{alistarh2017forkscan,
+  title={Forkscan: Conservative memory reclamation for modern operating systems},
+  author={Alistarh, Dan and Leiserson, William and Matveev, Alexander and Shavit, Nir},
+  booktitle=eurosys,
+  year={2017}
+}
+
+@article{alistarh2018threadscan,
+  title={Threadscan: Automatic and scalable memory reclamation},
+  author={Alistarh, Dan and Leiserson, William and Matveev, Alexander and Shavit, Nir},
+  journal=topc,
+  volume={4},
+  number={4},
+  pages={1--18},
+  year={2018},
+}
+
+@article{dice2016fast,
+author = {Dice, Dave and Herlihy, Maurice and Kogan, Alex},
+title = {Fast Non-Intrusive Memory Reclamation for Highly-Concurrent Data Structures},
+year = {2016},
+volume = {51},
+number = {11},
+journal = {SIGPLAN Not.},
+pages = {36–45}
+}
+
+@inproceedings{balmau2016fast,
+  title={Fast and robust memory reclamation for concurrent data structures},
+  author={Balmau, Oana and Guerraoui, Rachid and Herlihy, Maurice and Zablotchi, Igor},
+  booktitle=spaa,
+  year={2016}
+}
+
+@inproceedings{dragojevic2011power,
+  title={On the power of hardware transactional memory to simplify memory management},
+  author={Dragojevi{\'c}, Aleksandar and Herlihy, Maurice and Lev, Yossi and Moir, Mark},
+  booktitle=podc,
+  year={2011}
+}
+
+@inproceedings{alistarh2014stacktrack,
+  title={Stacktrack: An automated transactional approach to concurrent memory reclamation},
+  author={Alistarh, Dan and Eugster, Patrick and Herlihy, Maurice and Matveev, Alexander and Shavit, Nir},
+  booktitle=eurosys,
+  year={2014}
+}
+
+@article{cohen2018every,
+  title={Every data structure deserves lock-free memory reclamation},
+  author={Cohen, Nachshon},
+  journal=oopsla,
+  year={2018}
+}
+
+@inproceedings{braginsky2013drop,
+  title={Drop the anchor: lightweight memory management for non-blocking data structures},
+  author={Braginsky, Anastasia and Kogan, Alex and Petrank, Erez},
+  booktitle=spaa,
+  year={2013}
+}
+
+@misc{atomicsharedptr,
+  title={Revising {atomic\_shared\_ptr} for {C++20}},
+  author={Alisdair Meredith},
+  year={2017},
+  note={{\url{http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0718r2.html}}}
+}
+
+@misc{blelloch2020concurrent,
+    title={Concurrent Reference Counting and Resource Management in Wait-free Constant Time},
+    author={Guy E. Blelloch and Yuanhao Wei},
+    year={2020},
+    eprint={2002.07053},
+    archivePrefix={arXiv},
+    primaryClass={cs.DC}
+}
+
+@inproceedings{herlihy2002rop:seejournalversion,
+  author    = {Maurice Herlihy and
+               Victor Luchangco and
+               Mark Moir},
+  title     = {The Repeat Offender Problem: {A} Mechanism for Supporting Dynamic-Sized,
+               Lock-Free Data Structures},
+  booktitle = DISC,
+  doi={10.1007/3-540-36108-1_23},
+  year      = {2002}
+}
+
+@article{kogan2012methodology,
+  title={A methodology for creating fast wait-free data structures},
+  author={Kogan, Alex and Petrank, Erez},
+  journal={SIGPLAN Not.},
+  volume={47},
+  number={8},
+  pages={141--150},
+  year={2012},
+  doi={10.1145/2370036.2145835},
+  publisher={ACM New York, NY, USA}
+}
+
+@manual{jemalloc,
+      title  = {Scalable memory allocation using jemalloc},
+      author = {J. Evans},
+      note   = {{\url{https://www.facebook.com/notes/facebook-engineering/scalable-memory-allocation-using-jemalloc/480222803919}}},
+      year   = {2019 (accessed November 5, 2019)}
+    }
+
+@manual{gnulib,
+      title  = {The {GNU C++} Library},
+      author = {The {GNU C++} Library},
+      note   = {{\url{https://gcc.gnu.org/onlinedocs/libstdc++/}}},
+      year   = {2019 (accessed November 5, 2019)}
+    }
+
+@inproceedings{michael2002high,
+  title={High performance dynamic lock-free hash tables and list-based sets},
+  author={Michael, Maged M},
+  booktitle=spaa,
+  year={2002}
+}
+
+@inproceedings{friedman2020nvtraverse,
+  title={{NVTraverse}: in {NVRAM} data structures, the destination is more important than the journey},
+  author={Friedman, Michal and Ben-David, Naama and Wei, Yuanhao and Blelloch, Guy E and Petrank, Erez},
+  booktitle=pldi,
+  year={2020}
+}
+
+@misc{doublelink,
+  title={DoubleLink - A Low-Overhead Lock-Free Queue},
+  author={Pedro Ramalhete and Andreia Correia},
+  note={{\scriptsize{\url{http://concurrencyfreaks.blogspot.com/2017/01/doublelink-low-overhead-lock-free-queue.html}}}}
+}
+
+@inproceedings{nikolaev2021snapshot,
+  title={Snapshot-free, transparent, and robust memory reclamation for lock-free data structures},
+  author={Nikolaev, Ruslan and Ravindran, Binoy},
+  booktitle=pldi,
+  pages={987--1002},
+  year={2021}
+}
+
+@inproceedings{anderson2021concurrent,
+  title={Concurrent deferred reference counting with constant-time overhead},
+  author={Anderson, Daniel and Blelloch, Guy E and Wei, Yuanhao},
+  booktitle=pldi,
+  pages={526--541},
+  year={2021}
+}
+
+@article{tripp2018frc,
+  title={FRC: a high-performance concurrent parallel deferred reference counter for C++},
+  author={Tripp, Charles and Hyde, David and Grossman-Ponemon, Benjamin},
+  journal={Acm Sigplan Notices},
+  volume={53},
+  number={5},
+  pages={14--28},
+  year={2018},
+}
+
+@misc{microsoftSTL,
+  title = {Microsoft's C++ Standard Library},
+  author = {Microsoft},
+  note = {{\scriptsize{\url{https://github.com/microsoft/STL}}}},
+  year = {2021 (accessed November 17, 2021)}
+}
+
+@inproceedings{correia2018strong,
+  title={Strong trylocks for reader-writer locks},
+  author={Correia, Andreia and Ramalhete, Pedro},
+  booktitle=ppopp,
+  year={2018}
+}
+
+@inproceedings{nikolaev2021brief,
+  title={Brief Announcement: Crystalline: Fast and Memory Efficient Wait-Free Reclamation},
+  author={Nikolaev, Ruslan and Ravindran, Binoy},
+  booktitle=disc,
+  year={2021}
+}
+
+% old
