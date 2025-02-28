@@ -11887,12 +11887,23 @@ year = 2024}
 
 
 @article{FN20,
-author = {Manuela Fischer and Andreas Noever},
+author = {Fischer, Manuela and Noever, Andreas},
 title = {Tight Analysis of Parallel Randomized Greedy MIS},
 year = {2019},
-booktitle = talg,
+issue_date = {January 2020},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
 volume = {16},
-number = {1}
+number = {1},
+issn = {1549-6325},
+url = {https://doi.org/10.1145/3326165},
+doi = {10.1145/3326165},
+abstract = {We provide a tight analysis that settles the round complexity of the well-studied parallel randomized greedy MIS algorithm, thus answering the main open question of Blelloch, Fineman, and Shun [SPAA’12].The parallel/distributed randomized greedy Maximal Independent Set (MIS) algorithm works as follows. An order of the vertices is chosen uniformly at random. Then, in each round, all vertices that appear before their neighbors in the order are added to the independent set and removed from the graph along with their neighbors. The main question of interest is the number of rounds it takes until the graph is empty. This algorithm has been studied since 1987, initiated by Coppersmith, Raghavan, and Tompa [FOCS’87], and the previously best known bounds were O(log n) rounds in expectation for Erd\H{o}s-R\'{e}nyi random graphs by Calkin and Frieze [Random Struc. Alg.’90] and O(log2 n) rounds with high probability for general graphs by Blelloch, Fineman, and Shun [SPAA’12].We prove a high probability upper bound of O(log n) on the round complexity of this algorithm in general graphs and that this bound is tight. This also shows that parallel randomized greedy MIS is as fast as the celebrated algorithm of Luby [STOC’85, JALG’86].},
+journal = {ACM Trans. Algorithms},
+month = dec,
+articleno = {6},
+numpages = {13},
+keywords = {parallel algorithms, maximal independent set, greedy algorithm, PRAM}
 }
 
 
