@@ -11914,3 +11914,74 @@ year = 2010}
 	pages={174},
 }
 
+@article{BFH21,
+author = {Bernstein, Aaron and Forster, Sebastian and Henzinger, Monika},
+title = {A Deamortization Approach for Dynamic Spanner and Dynamic Maximal Matching},
+year = {2021},
+issue_date = {October 2021},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {17},
+number = {4},
+issn = {1549-6325},
+url = {https://doi.org/10.1145/3469833},
+doi = {10.1145/3469833},
+abstract = {Many dynamic graph algorithms have an amortized update time, rather than a stronger worst-case guarantee. But amortized data structures are not suitable for real-time systems, where each individual operation has to be executed quickly. For this reason, there exist many recent randomized results that aim to provide a guarantee stronger than amortized expected. The strongest possible guarantee for a randomized algorithm is that it is always correct (Las Vegas) and has high-probability worst-case update time, which gives a bound on the time for each individual operation that holds with high probability.In this article, we present the first polylogarithmic high-probability worst-case time bounds for the dynamic spanner and the dynamic maximal matching problem.
+(1)For dynamic spanner, the only known o(n) worst-case bounds were O(n3/4) high-probability worst-case update time for maintaining a 3-spanner and O(n5/9) for maintaining a 5-spanner. We give a O(1)k log3 (n) high-probability worst-case time bound for maintaining a (2k-1)-spanner, which yields the first worst-case polylog update time for all constant k. (All the results above maintain the optimal tradeoff of stretch 2k-1 and \~{O}(n1+1/k) edges.)(2)For dynamic maximal matching, or dynamic 2-approximate maximum matching, no algorithm with o(n) worst-case time bound was known and we present an algorithm with O(log 5 (n)) high-probability worst-case time; similar worst-case bounds existed only for maintaining a matching that was (2+ϵ)-approximate, and hence not maximal.Our results are achieved using a new approach for converting amortized guarantees to worst-case ones for randomized data structures by going through a third type of guarantee, which is a middle ground between the two above: An algorithm is said to have worst-case expected update time ɑ if for every update σ, the expected time to process σ is at most ɑ. Although stronger than amortized expected, the worst-case expected guarantee does not resolve the fundamental problem of amortization: A worst-case expected update time of O(1) still allows for the possibility that every 1/f(n) updates requires ϴ (f(n)) time to process, for arbitrarily high f(n). In this article, we present a black-box reduction that converts any data structure with worst-case expected update time into one with a high-probability worst-case update time: The query time remains the same, while the update time increases by a factor of O(log 2(n)).Thus, we achieve our results in two steps: (1) First, we show how to convert existing dynamic graph algorithms with amortized expected polylogarithmic running times into algorithms with worst-case expected polylogarithmic running times. (2) Then, we use our black-box reduction to achieve the polylogarithmic high-probability worst-case time bound. All our algorithms are Las-Vegas-type algorithms.},
+journal = {ACM Trans. Algorithms},
+month = oct,
+articleno = {29},
+numpages = {51},
+keywords = {Spanners, maximal matching}
+}
+
+@article{BKSW24,
+author = {Bhattacharya, Sayan and Kiss, Peter and Saranurak, Thatchaphol and Wajc, David},
+title = {Dynamic Matching with Better-than-2 Approximation in Polylogarithmic Update Time},
+year = {2024},
+issue_date = {October 2024},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {71},
+number = {5},
+issn = {0004-5411},
+url = {https://doi.org/10.1145/3679009},
+doi = {10.1145/3679009},
+abstract = {We present dynamic algorithms with polylogarithmic update time for estimating the size of the maximum matching of a graph undergoing edge insertions and deletions with approximation ratio strictly better than 2. Specifically, we obtain a  (1+tfrac{1}{sqrt {2}}+epsilon approx 1.707+epsilon)  approximation in bipartite graphs and a  (1.973+epsilon)  approximation in general graphs. We thus answer in the affirmative the value version of the major open question repeatedly asked in the dynamic graph algorithms literature. Our randomized algorithms’ approximation and worst-case update time bounds both hold w.h.p.&nbsp;against adaptive adversaries.Our algorithms are based on simulating new two-pass streaming matching algorithms in the dynamic setting. Our key new idea is to invoke the recent sublinear-time matching algorithm of Behnezhad (FOCS’21) in a white-box manner to efficiently simulate the second pass of our streaming algorithms, while bypassing the well-known vertex-update barrier.},
+journal = {J. ACM},
+month = oct,
+articleno = {33},
+numpages = {32},
+keywords = {Dynamic algorithms, approximate matching}
+}
+
+@inproceedings{Wajc20,
+author = {Wajc, David},
+title = {Rounding dynamic matchings against an adaptive adversary},
+year = {2020},
+isbn = {9781450369794},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3357713.3384258},
+doi = {10.1145/3357713.3384258},
+abstract = {We present a new dynamic matching sparsification scheme. From this scheme we derive a framework for dynamically rounding fractional matchings against adaptive adversaries. Plugging in known dynamic fractional matching algorithms into our framework, we obtain numerous randomized dynamic matching algorithms which work against adaptive adversaries. In contrast, all previous randomized algorithms for this problem assumed a weaker, oblivious, adversary. Our dynamic algorithms against adaptive adversaries include, for any constant є >0, a (2+є)-approximate algorithm with constant update time or polylog worst-case update time, as well as (2−δ)-approximate algorithms in bipartite graphs with arbitrarily-small polynomial update time. All these results achieve polynomially better update time to approximation trade-offs than previously known to be achievable against adaptive adversaries.},
+booktitle = {Proceedings of the 52nd Annual ACM SIGACT Symposium on Theory of Computing},
+pages = {194–207},
+numpages = {14},
+keywords = {Matching Sparsifier, Dynamic Matching, Dynamic Algorithms, Adaptive Adversary},
+location = {Chicago, IL, USA},
+series = {STOC 2020}
+}
+
+@inproceedings{RSW22,
+author={Roghani, Mohammad and Saberi, Amin and Wajc, David},
+title={Beating the folklore algorithm for dynamic matching},
+editor={Mark Braverman},
+booktitle={13th Innovations in Theoretical Computer Science Conference},
+year={2022},
+location={Berkeley, CA, USA},
+series={ITCS 2022},
+}
+
+
+
