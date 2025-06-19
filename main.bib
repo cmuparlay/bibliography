@@ -12082,3 +12082,59 @@ series={ITCS 2022},
   biburl       = {https://dblp.org/rec/conf/europar/BirnOSSS13.bib},
   bibsource    = {dblp computer science bibliography, https://dblp.org}
 }
+
+@inproceedings{ABV05,
+  author       = {Umut A. Acar and
+                  Guy E. Blelloch and
+                  Jorge L. Vittes},
+  editor       = {Camil Demetrescu and
+                  Robert Sedgewick and
+                  Roberto Tamassia},
+  title        = {An Experimental Analysis of Change Propagation in Dynamic Trees},
+  booktitle    = {Proceedings of the Seventh Workshop on Algorithm Engineering and Experiments
+                  and the Second Workshop on Analytic Algorithmics and Combinatorics,
+                  {ALENEX} /ANALCO 2005, Vancouver, BC, Canada, 22 January 2005},
+  pages        = {41--54},
+  publisher    = {{SIAM}},
+  year         = {2005},
+  url          = {http://www.siam.org/meetings/alenex05/papers/04uacar.pdf},
+  timestamp    = {Tue, 30 Jan 2007 13:47:28 +0100},
+  biburl       = {https://dblp.org/rec/conf/alenex/AcarBV05.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{TW10,
+author = {Tarjan, Robert E. and Werneck, Renato F.},
+title = {Dynamic trees in practice},
+year = {2010},
+issue_date = {2009},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {14},
+issn = {1084-6654},
+url = {https://doi.org/10.1145/1498698.1594231},
+doi = {10.1145/1498698.1594231},
+abstract = {Dynamic tree data structures maintain forests that change over time through edge insertions and deletions. Besides maintaining connectivity information in logarithmic time, they can support aggregation of information over paths, trees, or both. We perform an experimental comparison of several versions of dynamic trees: ST-trees, ET-trees, RC-trees, and two variants of top trees (self-adjusting and worst-case). We quantify their strengths and weaknesses through tests with various workloads, most stemming from practical applications. We observe that a simple, linear-time implementation is remarkably fast for graphs of small diameter, and that worst-case and randomized data structures are best when queries are very frequent. The best overall performance, however, is achieved by self-adjusting ST-trees.},
+journal = {ACM J. Exp. Algorithmics},
+month = jan,
+articleno = {5},
+numpages = {21},
+keywords = {Dynamic trees, experimental evaluation, link-cut trees, top trees}
+}
+
+
+@article{BV94,
+title = {Finding level-ancestors in trees},
+journal = {Journal of Computer and System Sciences},
+volume = {48},
+number = {2},
+pages = {214-230},
+year = {1994},
+issn = {0022-0000},
+doi = {https://doi.org/10.1016/S0022-0000(05)80002-9},
+url = {https://www.sciencedirect.com/science/article/pii/S0022000005800029},
+author = {Omer Berkman and Uzi Vishkin},
+abstract = {The level-ancestor problem is considered. Suppose a rooted tree T is given for preprocessing. Answer quickly queries of the following form. Given a vertex v and an integer i > 0, find the ith vertex on the path from v to the root. Given any m, 1 ≤ m ≤ log*n, we achieve the following results: (1) O(log(m) n)1 time using an optimal number of processors for preprocessing and constant time using a single processor for processing a query if m is constant. (2) O(log* n) time using an optimal number of processors for preprocessing and O(log* n) time using a single processor for processing a query. These results assume that the Euler tour of the tree and the level (distance from the root) of each vertex are given. Without these assumptions, the only change in result (1) above is that preprocessing time increases to O(log n). An immediate corollary is a serial linear-time bound for preprocessing and a constant-time bound for processing a query.1log(i) denotes the ith iterate of the log function (i.e., log(1) (n) = log n and log(i) (n) = log(log(i−1)(n)) for i ≥ 2). log* n = minimum {i|log(i)(n) ≤ 1}.}
+}
+
+
