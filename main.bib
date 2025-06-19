@@ -4638,8 +4638,7 @@ journal = {Advances in Intelligent Systems and Computing}
                Work and Low Depth},
   booktitle = spaa,
   year      = {2021},
-  doi       = {10.1145/3409964.3461797}
-}
+} % doi       = {10.1145/3409964.3461797}
 
 @inproceedings{WeiBFBP22,
   author    = {Yuanhao Wei and
@@ -11962,7 +11961,7 @@ volume = {16},
 number = {1},
 issn = {1549-6325},
 abstract = {We provide a tight analysis that settles the round complexity of the well-studied parallel randomized greedy MIS algorithm, thus answering the main open question of Blelloch, Fineman, and Shun [SPAA’12].The parallel/distributed randomized greedy Maximal Independent Set (MIS) algorithm works as follows. An order of the vertices is chosen uniformly at random. Then, in each round, all vertices that appear before their neighbors in the order are added to the independent set and removed from the graph along with their neighbors. The main question of interest is the number of rounds it takes until the graph is empty. This algorithm has been studied since 1987, initiated by Coppersmith, Raghavan, and Tompa [FOCS’87], and the previously best known bounds were O(log n) rounds in expectation for Erd\H{o}s-R\'{e}nyi random graphs by Calkin and Frieze [Random Struc. Alg.’90] and O(log2 n) rounds with high probability for general graphs by Blelloch, Fineman, and Shun [SPAA’12].We prove a high probability upper bound of O(log n) on the round complexity of this algorithm in general graphs and that this bound is tight. This also shows that parallel randomized greedy MIS is as fast as the celebrated algorithm of Luby [STOC’85, JALG’86].},
-journal = {talg},
+journal = talg,
 month = dec,
 articleno = {6}, 
 keywords = {parallel algorithms, maximal independent set, greedy algorithm, PRAM}
@@ -11999,10 +11998,9 @@ number = {4},
 issn = {1549-6325}, 
 abstract = {Many dynamic graph algorithms have an amortized update time, rather than a stronger worst-case guarantee. But amortized data structures are not suitable for real-time systems, where each individual operation has to be executed quickly. For this reason, there exist many recent randomized results that aim to provide a guarantee stronger than amortized expected. The strongest possible guarantee for a randomized algorithm is that it is always correct (Las Vegas) and has high-probability worst-case update time, which gives a bound on the time for each individual operation that holds with high probability.In this article, we present the first polylogarithmic high-probability worst-case time bounds for the dynamic spanner and the dynamic maximal matching problem.
 (1)For dynamic spanner, the only known o(n) worst-case bounds were O(n3/4) high-probability worst-case update time for maintaining a 3-spanner and O(n5/9) for maintaining a 5-spanner. We give a O(1)k log3 (n) high-probability worst-case time bound for maintaining a (2k-1)-spanner, which yields the first worst-case polylog update time for all constant k. (All the results above maintain the optimal tradeoff of stretch 2k-1 and \~{O}(n1+1/k) edges.)(2)For dynamic maximal matching, or dynamic 2-approximate maximum matching, no algorithm with o(n) worst-case time bound was known and we present an algorithm with O(log 5 (n)) high-probability worst-case time; similar worst-case bounds existed only for maintaining a matching that was (2+ϵ)-approximate, and hence not maximal.Our results are achieved using a new approach for converting amortized guarantees to worst-case ones for randomized data structures by going through a third type of guarantee, which is a middle ground between the two above: An algorithm is said to have worst-case expected update time ɑ if for every update σ, the expected time to process σ is at most ɑ. Although stronger than amortized expected, the worst-case expected guarantee does not resolve the fundamental problem of amortization: A worst-case expected update time of O(1) still allows for the possibility that every 1/f(n) updates requires ϴ (f(n)) time to process, for arbitrarily high f(n). In this article, we present a black-box reduction that converts any data structure with worst-case expected update time into one with a high-probability worst-case update time: The query time remains the same, while the update time increases by a factor of O(log 2(n)).Thus, we achieve our results in two steps: (1) First, we show how to convert existing dynamic graph algorithms with amortized expected polylogarithmic running times into algorithms with worst-case expected polylogarithmic running times. (2) Then, we use our black-box reduction to achieve the polylogarithmic high-probability worst-case time bound. All our algorithms are Las-Vegas-type algorithms.},
-journal = {talg},
+journal = talg,
 month = oct,
 articleno = {29},
-numpages = {51},
 keywords = {Spanners, maximal matching}
 }
 
@@ -12017,10 +12015,9 @@ volume = {71},
 number = {5},
 issn = {0004-5411}, 
 abstract = {We present dynamic algorithms with polylogarithmic update time for estimating the size of the maximum matching of a graph undergoing edge insertions and deletions with approximation ratio strictly better than 2. Specifically, we obtain a  (1+tfrac{1}{sqrt {2}}+epsilon approx 1.707+epsilon)  approximation in bipartite graphs and a  (1.973+epsilon)  approximation in general graphs. We thus answer in the affirmative the value version of the major open question repeatedly asked in the dynamic graph algorithms literature. Our randomized algorithms’ approximation and worst-case update time bounds both hold w.h.p.&nbsp;against adaptive adversaries.Our algorithms are based on simulating new two-pass streaming matching algorithms in the dynamic setting. Our key new idea is to invoke the recent sublinear-time matching algorithm of Behnezhad (FOCS’21) in a white-box manner to efficiently simulate the second pass of our streaming algorithms, while bypassing the well-known vertex-update barrier.},
-journal = {J. ACM},
+journal = jacm,
 month = oct,
 articleno = {33},
-numpages = {32},
 keywords = {Dynamic algorithms, approximate matching}
 }
 %url = {https://doi.org/10.1145/3679009}, %doi = {10.1145/3679009},
@@ -12032,10 +12029,8 @@ year = {2020},
 isbn = {9781450369794},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
-url = {https://doi.org/10.1145/3357713.3384258},
-doi = {10.1145/3357713.3384258},
 abstract = {We present a new dynamic matching sparsification scheme. From this scheme we derive a framework for dynamically rounding fractional matchings against adaptive adversaries. Plugging in known dynamic fractional matching algorithms into our framework, we obtain numerous randomized dynamic matching algorithms which work against adaptive adversaries. In contrast, all previous randomized algorithms for this problem assumed a weaker, oblivious, adversary. Our dynamic algorithms against adaptive adversaries include, for any constant є >0, a (2+є)-approximate algorithm with constant update time or polylog worst-case update time, as well as (2−δ)-approximate algorithms in bipartite graphs with arbitrarily-small polynomial update time. All these results achieve polynomially better update time to approximation trade-offs than previously known to be achievable against adaptive adversaries.},
-booktitle = {stoc},
+booktitle = stoc,
 pages = {194–207},
 keywords = {Matching Sparsifier, Dynamic Matching, Dynamic Algorithms, Adaptive Adversary},
 location = {Chicago, IL, USA},
@@ -12044,7 +12039,7 @@ location = {Chicago, IL, USA},
 @inproceedings{RSW22,
 author={Roghani, Mohammad and Saberi, Amin and Wajc, David},
 title={Beating the folklore algorithm for dynamic matching},
-booktitle={itcs},
+booktitle=itcs,
 year={2022},
 location={Berkeley, CA, USA},
 }
@@ -12089,13 +12084,10 @@ publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
 volume = {14},
 issn = {1084-6654},
-url = {https://doi.org/10.1145/1498698.1594231},
-doi = {10.1145/1498698.1594231},
 abstract = {Dynamic tree data structures maintain forests that change over time through edge insertions and deletions. Besides maintaining connectivity information in logarithmic time, they can support aggregation of information over paths, trees, or both. We perform an experimental comparison of several versions of dynamic trees: ST-trees, ET-trees, RC-trees, and two variants of top trees (self-adjusting and worst-case). We quantify their strengths and weaknesses through tests with various workloads, most stemming from practical applications. We observe that a simple, linear-time implementation is remarkably fast for graphs of small diameter, and that worst-case and randomized data structures are best when queries are very frequent. The best overall performance, however, is achieved by self-adjusting ST-trees.},
-journal = {ACM J. Exp. Algorithmics},
+journal = jea,
 month = jan,
 articleno = {5},
-numpages = {21},
 keywords = {Dynamic trees, experimental evaluation, link-cut trees, top trees}
 }
 
