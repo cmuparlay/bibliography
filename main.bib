@@ -447,7 +447,7 @@
 @inproceedings{GuerraouiT16,
   author       = {Rachid Guerraoui and
                   Vasileios Trigonakis},
-  editor       = {Rafael Asenjo and
+  editorx       = {Rafael Asenjo and
                   Tim Harris},
   title        = {Optimistic concurrency with {OPTIK}},
   booktitle    = ppopp,
@@ -535,7 +535,7 @@ year = { 2023 }
 @inproceedings{liu2022parallel,
   title={Parallel batch-dynamic algorithms for k-core decomposition and related graph problems},
   author={Liu, Quanquan C and Shi, Jessica and Yu, Shangdi and Dhulipala, Laxman and Shun, Julian},
-  booktitle={Proceedings of the 34th ACM Symposium on Parallelism in Algorithms and Architectures},
+  booktitle=spaa,
   pages={191--204},
   year={2022}
 }
@@ -605,8 +605,7 @@ year = { 2023 }
                   Julian Shun},
   title        = {Fast Parallel Algorithms for Euclidean Minimum Spanning Tree and Hierarchical
                   Spatial Clustering},
-  booktitle    = {{SIGMOD} '21: International Conference on Management of Data, Virtual
-                  Event, China, June 20-25, 2021},
+  booktitle    = sigmod,
   pages        = {1982--1995},
   publisher    = {{ACM}},
   year         = {2021},
@@ -619,12 +618,10 @@ year = { 2023 }
                   Ron Alterovitz},
   title        = {Concurrent Nearest-Neighbor Searching for Parallel Sampling-Based
                   Motion Planning in SO(3), SE(3), and Euclidean Spaces},
-  booktitle    = {Algorithmic Foundations of Robotics XIII, Proceedings of the 13th
-                  Workshop on the Algorithmic Foundations of Robotics, {WAFR} 2018,
-                  M{\'{e}}rida, Mexico, December 9-11, 2018},
-  series       = {Springer Proceedings in Advanced Robotics},
+  booktitle    = {Workshop on the Algorithmic Foundations of Robotics, ({WAFR})},
+  seriesx       = {Springer Proceedings in Advanced Robotics},
   volume       = {14},
-  pages        = {69--85},
+  pagesx        = {69--85},
   publisher    = {Springer},
   year         = {2018},
   url          = {https://doi.org/10.1007/978-3-030-44051-0\_5},
@@ -636,8 +633,7 @@ year = { 2023 }
                   Ivan Walulya and
                   Philippas Tsigas},
   title        = {Concurrent Linearizable Nearest Neighbour Search in LockFree-kD-tree},
-  booktitle    = {Proceedings of the 19th International Conference on Distributed Computing
-                  and Networking, {ICDCN} 2018, Varanasi, India, January 4-7, 2018},
+  booktitle    = icdcn,
   pages        = {11:1--11:10},
   publisher    = {{ACM}},
   year         = {2018},
@@ -2114,8 +2110,7 @@ howpublished = {\url{http://www.lmdb.tech/doc/}}
                Majid Ahmadi},
   title     = {Massively parallel KD-tree construction and nearest neighbor search
                algorithms},
-  booktitle = {2015 {IEEE} International Symposium on Circuits and Systems, {ISCAS}
-               2015, Lisbon, Portugal, May 24-27, 2015},
+  booktitle = {{IEEE} International Symposium on Circuits and Systems, ({ISCAS})},
   pagesx= {2752--2755},
   publisher = {{IEEE}},
   year      = {2015}
@@ -2243,8 +2238,7 @@ year = {2006}
                Ruth Silverman and
                Angela Y. Wu},
   title     = {An Optimal Algorithm for Approximate Nearest Neighbor Searching},
-  booktitle = {Proceedings of the Fifth Annual {ACM-SIAM} Symposium on Discrete Algorithms.
-               23-25 January 1994, Arlington, Virginia, {USA}},
+  booktitle = soda,
   pagesx= {573--582},
   publisher = {{ACM/SIAM}},
   year      = {1994}
@@ -12160,3 +12154,30 @@ author={Blelloch, Guy and Brady, Andrew},
 year={2025},
 archivePrefix = {arXiv},
 eprint = {2503.09908}}
+
+@article{MSGS25,
+author = {Men, Ziyang and Shen, Zheqi and Gu, Yan and Sun, Yihan},
+title = {Parallel kd-tree with Batch Updates},
+year = {2025},
+issue_date = {February 2025},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {3},
+number = {1},
+url = {https://doi.org/10.1145/3709712},
+doi = {10.1145/3709712},
+journal = sigmod,
+month = feb,
+articleno = {62},
+xnumpages = {26},
+keywords = {kd-tree, parallel algorithms, parallel trees, spatial partition trees}
+}
+
+@inproceedings{ZKG+25,
+author = {Zhao, Yiwei and Kang, Hongbo and Gu, Yan and Blelloch, Guy E and Dhulipala, Laxman and McGuffey, Charles and Gibbons, Phillip B},
+title = {Optimal Batch-Dynamic kd-trees for Processing-in-Memory with Applications},
+booktitle = spaa,
+year = 2025
+}
+
+
