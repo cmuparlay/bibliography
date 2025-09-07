@@ -10092,17 +10092,6 @@ booktitle = {Algorithms and Theory of Computation Handbook: Special Topics and T
 pagesx={25},
 }
 
-
-@inproceedings{BlellochF0020,
-  author    = {Guy E. Blelloch and
-               Jeremy T. Fineman and
-               Yan Gu and
-               Yihan Sun},
-  title     = {Optimal Parallel Algorithms in the Binary-Forking Model},
-  year      = {2020},
-  booktitle = spaa,
-}
-
 @inproceedings{AndersonBT20,
   author    = {Daniel Anderson and
                Guy E. Blelloch and
@@ -10123,16 +10112,6 @@ pagesx={25},
   title     = {Randomized Incremental Convex Hull is Highly Parallel},
   booktitle = spaa,
   year      = {2020},
-}
-
-@article{Kung81,
-author = {Kung, H. T. and Robinson, John T.},
-title = {On Optimistic Methods for Concurrency Control},
-year = {1981},
-volume = {6},
-number = {2},
-journal = {ACM Trans. Database Syst.},
-month = jun,
 }
 
 @inproceedings{MillerPVX15,
@@ -10361,7 +10340,7 @@ doi = {10.1145/3183713.3196895}
   author    = {H. T. Kung and
                Philip L. Lehman},
   title     = {Concurrent Manipulation of Binary Search Trees},
-  journal   = {{ACM} Trans. Database Syst.},
+  journal   = tods,
   volume    = {5},
   number    = {3},
   year      = {1980}
@@ -10838,7 +10817,7 @@ booktitle = eurosys,
 @inproceedings{ramalhete2019onefile,
   title={OneFile: A wait-free persistent transactional memory},
   author={Ramalhete, Pedro and Correia, Andreia and Felber, Pascal and Cohen, Nachshon},
-  booktitle={IEEE/IFIP International Conference on Dependable Systems and Networks (DSN)},
+  booktitle=icdsn,
   pages={151--163},
   year={2019},
 }
@@ -11151,7 +11130,7 @@ year = 2015
 @article{FNP17,
   Author = "Fatourou, Panagiota and Nikolakopoulos, Yiannis and Papatriantafilou, Marina",
   Title = "Linearizable Wait-Free Iteration Operations in Shared Double-Ended Queues",
-  Journal = "Parallel Processing Letters",
+  Journal = ppl,
   Year = 2017,
   volume = 27,
   number = 2,
@@ -11201,7 +11180,7 @@ pages = {873--890},
 @article{Anderson94,
   author    = {James H. Anderson},
   title     = {Multi-Writer Composite Registers},
-  journal   = {Distributed Comput.},
+  journal   = discomp,
   volume    = {7},
   number    = {4},
   pages     = {175--195},
@@ -11247,7 +11226,7 @@ year = {1994},
 publisher = {Association for Computing Machinery},
 volume = {41},
 number = {5},
-journal = {J. ACM},
+journal = jacm,
 month = sep,
 pages = {943--959},
 numpages = {17},
@@ -11454,7 +11433,7 @@ edition = {1st}
 @article{Herlihy05,
  author = {Herlihy, Maurice and Luchangco, Victor and Martin, Paul and Moir, Mark},
  title = {Nonblocking Memory Management Support for Dynamic-sized Data Structures},
- journal = {ACM Trans. Comput. Syst.},
+ journal = tocs,
  issue_date = {May 2005},
  volume = {23},
  number = {2},
@@ -11501,7 +11480,7 @@ edition = {1st}
                Mark Moir and
                Guy L. Steele Jr.},
   title     = {Lock-free reference counting},
-  journal   = {Distributed Computing},
+  journal   = discomp,
   volume    = {15},
   number    = {4},
   pages     = {255--271},
@@ -11650,7 +11629,7 @@ title = {Fast Non-Intrusive Memory Reclamation for Highly-Concurrent Data Struct
 year = {2016},
 volume = {51},
 number = {11},
-journal = {SIGPLAN Not.},
+journal = sigplanismm,
 pages = {36–45}
 }
 
@@ -11867,7 +11846,7 @@ publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
 volume = {27},
 number = {5},
-journal = {ACM Trans. Graph.},
+journal = tog,
 }
 
 @article{Flajolet85,
@@ -12088,13 +12067,12 @@ keywords = {Dynamic trees, experimental evaluation, link-cut trees, top trees}
 
 @article{BV94,
 title = {Finding level-ancestors in trees},
-journal = {Journal of Computer and System Sciences},
+journal = jcss,
 volume = {48},
 number = {2},
 pages = {214-230},
 year = {1994},
 issn = {0022-0000},
-
 author = {Omer Berkman and Uzi Vishkin},
 abstract = {The level-ancestor problem is considered. Suppose a rooted tree T is given for preprocessing. Answer quickly queries of the following form. Given a vertex v and an integer i > 0, find the ith vertex on the path from v to the root. Given any m, 1 ≤ m ≤ log*n, we achieve the following results: (1) O(log(m) n)1 time using an optimal number of processors for preprocessing and constant time using a single processor for processing a query if m is constant. (2) O(log* n) time using an optimal number of processors for preprocessing and O(log* n) time using a single processor for processing a query. These results assume that the Euler tour of the tree and the level (distance from the root) of each vertex are given. Without these assumptions, the only change in result (1) above is that preprocessing time increases to O(log n). An immediate corollary is a serial linear-time bound for preprocessing and a constant-time bound for processing a query.1log(i) denotes the ith iterate of the log function (i.e., log(1) (n) = log n and log(i) (n) = log(log(i−1)(n)) for i ≥ 2). log* n = minimum {i|log(i)(n) ≤ 1}.}
 }
@@ -12212,7 +12190,7 @@ volume = {7},
 number = {OOPSLA2},
 url = {https://doi.org/10.1145/3622827},
 doi = {10.1145/3622827},
-journal = {Proc. ACM Program. Lang.},
+journal = acmpl,
 month = oct,
 articleno = {251},
 numpages = {29},
@@ -12287,7 +12265,6 @@ address = {Berlin, Heidelberg},
 booktitle = concur,
 pages = {346–360},
 numpages = {15},
-series = {CONCUR '91}
 }
 
 @inproceedings{JB89,
@@ -12342,17 +12319,17 @@ author = {Vindum, Simon Friis and Frumin, Dan and Birkedal, Lars},
 title = {Mechanized verification of a fine-grained concurrent queue from meta’s folly library},
 year = {2022},
 isbn = {9781450391825},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
+xpublisher = {Association for Computing Machinery},
+xaddress = {New York, NY, USA},
 url = {https://doi.org/10.1145/3497775.3503689},
 doi = {10.1145/3497775.3503689},
 abstract = {We present the first formal specification and verification of the fine-grained concurrent multi-producer-multi-consumer queue algorithm from Meta’s C++ library Folly of core infrastructure components. The queue is highly optimized, practical, and used by Meta in production where it scales to thousands of consumer and producer threads. We present an implementation of the algorithm in an ML-like language and formally prove that it is a contextual refinement of a simple coarse-grained queue (a property that implies that the MPMC queue is linearizable). We use the ReLoC relational logic and the Iris program logic to carry out the proof and to mechanize it in the Coq proof assistant. The MPMC queue is implemented using three modules, and our proof is similarly modular. By using ReLoC and Iris’s support for modular reasoning we verify each module in isolation and compose these together. A key challenge of the MPMC queue is that it has a so-called external linearization point, which ReLoC has no support for reasoning about. Thus we extend ReLoC, both on paper and in Coq, with novel support for reasoning about external linearization points.},
-booktitle = {Proceedings of the 11th ACM SIGPLAN International Conference on Certified Programs and Proofs},
-pages = {100–115},
-numpages = {16},
+booktitle = cpp,
+xpages = {100–115},
+xnumpages = {16},
 keywords = {Coq, concurrent data structures, separation logic},
-location = {Philadelphia, PA, USA},
-series = {CPP 2022}
+xlocation = {Philadelphia, PA, USA},
+xseries = {CPP 2022}
 }
 
 @inproceedings{VFB21,
@@ -12360,23 +12337,22 @@ author = {Vindum, Simon Friis and Birkedal, Lars},
 title = {Contextual refinement of the Michael-Scott queue (proof pearl)},
 year = {2021},
 isbn = {9781450382991},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
+xpublisher = {Association for Computing Machinery},
+xaddress = {New York, NY, USA},
 url = {https://doi.org/10.1145/3437992.3439930},
 doi = {10.1145/3437992.3439930},
 abstract = {The Michael-Scott queue (MS-queue) is a concurrent non-blocking queue. In an earlier pen-and-paper proof it was shown that a simplified variant of the MS-queue contextually refines a coarse-grained queue. Here we use the Iris and ReLoC logics to show, for the first time, that the original MS-queue contextually refines a coarse-grained queue. We make crucial use of the recently introduced prophecy variables of Iris and ReLoC. Our proof uses a fairly simple invariant that relies on encoding which nodes in the MS-queue can reach other nodes. To further simplify the proof, we extend separation logic with a generally applicable persistent points-to predicate for representing immutable pointers. This relies on a generalization of the well-known algebra of fractional permissions into one of discardable fractional permissions. We define the persistent points-to predicate entirely inside the base logic of Iris (thus getting soundness “for free”). We use the same approach to prove refinement for a variant of the MS-queue resembling the one used in the java.util.concurrent library. We have mechanized our proofs in Coq using the formalizations of ReLoC and Iris in Coq.},
-booktitle = {Proceedings of the 10th ACM SIGPLAN International Conference on Certified Programs and Proofs},
-pages = {76–90},
-numpages = {15},
+booktitle = ccpp,
+xpages = {76–90},
+xnumpages = {15},
 keywords = {Coq, Iris, concurrency, separation logic},
-location = {Virtual, Denmark},
-series = {CPP 2021}
+xlocation = {Virtual, Denmark},
 }
 
 @inproceedings{mvcc,
   author    = {Yun-Sheng Chang and Ralf Jung and Upamanyu Sharma and Joseph Tassarotti and M. Frans Kaashoek and Nickolai Zeldovich},
   title     = {Verifying {vMVCC}, a high-performance transaction library using multi-version concurrency control},
-  booktitle = {17th USENIX Symposium on Operating Systems Design and Implementation (OSDI ’23)},
+  booktitle = osdi,
   year      = {2023},
   isbn      = {978-1-939133-34-2},
   address   = {Boston, MA},
@@ -12386,14 +12362,12 @@ series = {CPP 2021}
   month     = jul
 }
 
-
 @inproceedings{ABH18,
 author = {Attiya, Hagit and Ben-Baruch, Ohad and Hendler, Danny},
 title = {Nesting-Safe Recoverable Linearizability: Modular Constructions for Non-Volatile Memory},
 year = {2018},
 booktitle = podc
 }
-
 
 @inproceedings{AGW14,
 author = {Aghazadeh, Zahra and Golab, Wojciech and Woelfel, Philipp},
@@ -12405,7 +12379,7 @@ booktitle = podc
 @inproceedings{lu2013generic,
 	title={Generic multiversion {STM}},
 	author={Lu, Li and Scott, Michael L},
-	booktitle={Proc.\ International Symposium on Distributed Computing},
+	booktitle=disc,
 	year={2013},
 	organization={Springer}
 }
@@ -12421,7 +12395,7 @@ booktitle = podc
 @article{bottcher2019scalable,
 	title={Scalable garbage collection for in-memory {MVCC} systems},
 	author={B{\"o}ttcher, Jan and Leis, Viktor and Neumann, Thomas and Kemper, Alfons},
-	journal={Proceedings of the VLDB Endowment},
+	journal=vldb,
 	volume={13},
 	number={2},
 	year={2019},
@@ -12545,7 +12519,7 @@ keywords = {range queries, lock-freedom, adaptivity, linearizability, concurrent
 @article{AH13,
 author = {Hagit Attiya and Eshcar Hillel},
 title = {Built-in coloring for highly-concurrent doubly-linked lists},
-journal = {Theory of Computing Systems},
+journal = tocs,
 volume = 52,
 number =4,
 year = 2013
@@ -12554,7 +12528,7 @@ year = 2013
 @article{ST08,
 author = {H\r{a}kan Sundell and Philippas Tsigas},
 title = {Lock-free deques and doubly linked lists},
-journal = {J.~Parallel and Distributed Computing},
+journal = jpdc,
 volume = 68,
 number = 7,
 year = 2008
@@ -12691,7 +12665,7 @@ year = 2008
 @inproceedings{ramalhete2019onefile,
   title={OneFile: A wait-free persistent transactional memory},
   author={Ramalhete, Pedro and Correia, Andreia and Felber, Pascal and Cohen, Nachshon},
-  booktitle={IEEE/IFIP International Conference on Dependable Systems and Networks (DSN)},
+  booktitle=icdsn,
   year={2019},
 }
 
@@ -12902,7 +12876,7 @@ year="2006",
   author    = {H. T. Kung and
                John T. Robinson},
   title     = {On Optimistic Methods for Concurrency Control},
-  journal   = {{ACM} Trans. Database Syst.},
+  journal   = tods,
   volume    = {6},
   number    = {2},
   year      = {1981},
@@ -12912,7 +12886,7 @@ year="2006",
   author    = {H. T. Kung and
                Philip L. Lehman},
   title     = {Concurrent Manipulation of Binary Search Trees},
-  journal   = {{ACM} Trans. Database Syst.},
+  journal   = tods,
   volume    = {5},
   number    = {3},
   year      = {1980},
@@ -13083,31 +13057,11 @@ year = 2022
   publisher={Elsevier}
 }
 
-@inproceedings{Perelman11,
-author={Perelman, Dmitri
-and Byshevsky, Anton
-and Litmanovich, Oleg
-and Keidar, Idit},
-title={SMV: Selective Multi-Versioning STM},
-booktitle={Proc.~International Symposium on Distributed Computing},
-year=2011}
-
 @inproceedings{perelman2010maintaining,
 	title={On Maintaining Multiple Versions in {STM}},
 	author={Perelman, Dmitri and Fan, Rui and Keidar, Idit},
 	booktitle= {ACM Symp.~on Principles of Dist.~Computing},
 	year={2010},
-}
-
-@article{Wu17,
- author = {Wu, Yingjun and Arulraj, Joy and Lin, Jiexi and Xian, Ran and Pavlo, Andrew},
- title = {An Empirical Evaluation of In-memory Multi-version Concurrency Control},
- journal = vldb,
- issue_date = {March 2017},
- volume = {10},
- number = {7},
- month = mar,
- year = {2017},
 }
 
 @inproceedings{FernandesC11,
@@ -13119,32 +13073,6 @@ url = {https://doi.org/10.1145/1941553.1941579},
 doi = {10.1145/1941553.1941579},
 booktitle = ppopp,
 keywords = {garbage collection, lock-free synchronization, transactional memory, multi-version concurrency control},
-}
-
-@techreport{Reed78,
-author = "D. Reed",
-title = "Naming and synchronization in a decentralized computer system",
-institution = "EECS Dept., MIT",
-number = "LCS/TR-205",
-month = sep,
-year = 1978}
-
-@article{BG83,
- author = {Bernstein, Philip A. and Goodman, Nathan},
- title = {Multiversion Concurrency Control - Theory and Algorithms},
- journal = acmtods,
- issue_date = {Dec. 1983},
- volume = {8},
- number = {4},
- month = dec,
- year = {1983},
- issn = {0362-5915},
- url = {http://doi.acm.org/10.1145/319996.319998},
- doi = {10.1145/319996.319998},
- acmid = {319998},
- publisher = {ACM},
- address = {New York, NY, USA},
- keywords = {transaction processing},
 }
 
 @inproceedings{Kumar14,
@@ -13164,7 +13092,7 @@ number = {2},
 issn = {2329-4949},
 doi = {10.1145/2775435},
 abstract = {The multicore revolution that took place one decade ago has turned parallel programming into a major concern for the mainstream software development industry. In this context, Transactional Memory (TM) has emerged as a simpler and attractive alternative to that of lock-based synchronization, whose complexity and error-proneness are widely recognized.The notion of permissiveness in TM translates to only aborting a transaction when it cannot be accepted in any history that guarantees a target correctness criterion. This theoretically powerful property is often neglected by state-of-the-art TMs because it imposes considerable algorithmic costs. Instead, these TMs opt to maximize their implementation?s efficiency by aborting transactions under overly conservative conditions. As a result, they risk rejecting a significant number of safe executions.In this article, we seek to identify a sweet spot between permissiveness and efficiency by introducing the Time-Warp Multiversion (TWM) algorithm. TWM is based on the key idea of allowing an update transaction that has performed stale reads (i.e., missed the writes of concurrently committed transactions) to be serialized by ?committing it in the past,? which we call a time-warp commit. At its core, TWM uses a novel, lightweight validation mechanism with little computational overhead. TWM also guarantees that read-only transactions can never be aborted. Further, TWM guarantees Virtual World Consistency, a safety property that is deemed as particularly relevant in the context of TM.We demonstrate the practicality of this approach through an extensive experimental study: we compare TWM with five other TMs, representative of typical alternative design choices, and on a wide variety of benchmarks. This study shows an average performance improvement across all considered workloads and TMs of 65% in high concurrency scenarios, with gains extending up to 9 \texttimes{} with the most favorable benchmarks. These results are a consequence of TWM?s ability to achieve drastic reduction of aborts in scenarios of nonminimal contention, while introducing little overhead (approximately 10%) in worst-case, synthetically designed scenarios (i.e., no contention or contention patterns that cannot be optimized using TWM).},
-journal = {ACM Trans. Parallel Comput.},
+journal = topc,
 month = jun,
 articleno = {12},
 keywords = {Multiversion concurrency control, spurious abort, permissiveness, software transactional memory}
@@ -13234,7 +13162,7 @@ year = 2015
 @article{FNP17,
   Author = "Fatourou, Panagiota and Nikolakopoulos,  Yiannis and Papatriantafilou, Marina",
   Title = "Linearizable Wait-Free Iteration Operations in Shared Double-Ended Queues",
-  Journal = "Parallel Processing Letters",
+  Journal = ppl,
   Year = 2017,
   volume = 27,
   number = 2,
@@ -13285,7 +13213,7 @@ issn = {2329-4949},
 url = {https://doi.org/10.1145/3399718},
 doi = {10.1145/3399718},
 abstract = {We present KiWi, the first atomic KV-map to efficiently support simultaneous large scans and real-time access. The key to achieving this is treating scans as first class citizens and organizing the data structure around them. KiWi provides wait-free scans, whereas its put operations are lightweight and lock-free. It optimizes memory management jointly with data structure access. We implement KiWi and compare it to state-of-the-art solutions. Compared to other KV-maps providing atomic scans, KiWi performs either long scans or concurrent puts an order of magnitude faster. Its scans are twice as fast as non-atomic ones implemented via iterators in the Java skiplist.},
-journal = {ACM Trans. Parallel Comput.},
+journal = topc,
 month = jun,
 articleno = {16},
 keywords = {Concurrent data structures, key-value maps}
@@ -13375,7 +13303,7 @@ booktitle = sigmod,
 @article{Postgres12,
  author = {Ports, Dan R. K. and Grittner, Kevin},
  title = {Serializable Snapshot Isolation in {PostgreSQL}},
- journal = {Proc.~of the VLDB Endowment},
+ journal = vldb,
  issue_date = {August 2012},
  volume = {5},
  number = {12},
@@ -13403,14 +13331,6 @@ booktitle = sigmod,
   year={2006},
   organization={Springer}
 }
-
-@inproceedings{YPSD16,
-    author = {Yu, Xiangyao and Pavlo, Andrew and Sanchez, Daniel and Devadas, Srinivas},
-    title = {TicToc: Time Traveling Optimistic Concurrency Control},
-    year = {2016},
-    doi = {10.1145/2882903.2882935},
-    booktitle = sigmod,
- }
 
 @inproceedings{TZKLM13,
 author = {Tu, Stephen and Zheng, Wenting and Kohler, Eddie and Liskov, Barbara and Madden, Samuel},
@@ -13453,13 +13373,13 @@ author = {Spear, Michael F. and Dalessandro, Luke and Marathe, Virendra J. and S
 title = {A comprehensive strategy for contention management in software transactional memory},
 year = {2009},
 booktitle = ppopp,
-publisher = {Association for Computing Machinery},
-volume = {44},
-number = {4},
+xpublisher = {Association for Computing Machinery},
+xvolume = {44},
+xnumber = {4},
 issn = {0362-1340},
 url = {https://doi.org/10.1145/1594835.1504199},
 doi = {10.1145/1594835.1504199},
-month = feb,
+xmonth = feb,
 }
 
  @inbook{HLR10,
@@ -13485,3 +13405,362 @@ journal = "Proc. USSR Academy of Sciences (in Russian)",
 volume = 146
 }
 
+@inproceedings{pac22,
+author = {Dhulipala, Laxman and Blelloch, Guy E. and Gu, Yan and Sun, Yihan},
+title = {PaC-trees: supporting parallel and compressed purely-functional collections},
+year = {2022},
+booktitle = pldi}
+
+@inproceedings{opacity08,
+author = {Guerraoui, Rachid and Kapalka, Michal},
+title = {On the correctness of transactional memory},
+year = {2008},
+url = {https://doi.org/10.1145/1345206.1345233},
+doi = {10.1145/1345206.1345233},
+booktitle = ppopp}
+
+@inproceedings{RC24,
+  author       = {Pedro Ramalhete and
+                  Andreia Correia},
+  title        = {Scaling Up Transactions with Slower Clocks},
+  booktitle    = ppopp,
+  year         = {2024}
+}
+
+@article{carey86,
+notes = {stamp at start and end},
+author = {Carey, Michael J. and Muhanna, Waleed A.},
+title = {The Performance of Multiversion Concurrency Control Algorithms},
+year = {1986},
+issue_date = {Nov. 1986},
+xpublisher = {Association for Computing Machinery},
+xaddress = {New York, NY, USA},
+volume = {4},
+number = {4},
+issn = {0734-2071},
+url = {https://doi.org/10.1145/6513.6517},
+doi = {10.1145/6513.6517},
+journal = acmtocs,
+month = {sep},
+}
+@inproceedings{opennesting07,
+author = {Ni, Yang and Menon, Vijay S. and Adl-Tabatabai, Ali-Reza and Hosking, Antony L. and Hudson, Richard L. and Moss, J. Eliot B. and Saha, Bratin and Shpeisman, Tatiana},
+title = {Open Nesting in Software Transactional Memory},
+year = {2007},
+isbn = {9781595936028},
+xpublisher = {Association for Computing Machinery},
+xaddress = {New York, NY, USA},
+url = {https://doi.org/10.1145/1229428.1229442},
+doi = {10.1145/1229428.1229442},
+abstract = {Transactional memory (TM) promises to simplify concurrent programming while providing scalability competitive to fine-grained locking. Language-based constructs allow programmers to denote atomic regions declaratively and to rely on the underlying system to provide transactional guarantees along with concurrency. In contrast with fine-grained locking, TM allows programmers to write simpler programs that are composable and deadlock-free.TM implementations operate by tracking loads and stores to memory and by detecting concurrent conflicting accesses by different transactions. By automating this process, they greatly reduce the programmer's burden, but they also are forced to be conservative. Incertain cases, conflicting memory accesses may not actually violate the higher-level semantics of a program, and a programmer may wish to allow seemingly conflicting transactions to execute concurrently.Open nested transactions enable expert programmers to differentiate between physical conflicts, at the level of memory, and logical conflicts that actually violate application semantics. A TMsystem with open nesting can permit physical conflicts that are not logical conflicts, and thus increase concurrency among application threads.Here we present an implementation of open nested transactions in a Java-based software transactional memory (STM)system. We describe new language constructs to support open nesting in Java, and we discuss new abstract locking mechanisms that a programmer can use to prevent logical conflicts. We demonstrate how these constructs can be mapped efficiently to existing STM data structures. Finally, we evaluate our system on a set of Java applications and data structures, demonstrating how open nesting can enhance application scalability.},
+booktitle = ppopp,
+}
+
+@inproceedings{Keidar16,
+author = {Spiegelman, Alexander and Golan-Gueta, Guy and Keidar, Idit},
+title = {Transactional Data Structure Libraries},
+year = {2016},
+isbn = {9781450342612},
+xpublisher = {Association for Computing Machinery},
+xaddress = {New York, NY, USA},
+url = {https://doi.org/10.1145/2908080.2908112},
+doi = {10.1145/2908080.2908112},
+abstract = {We introduce transactions into libraries of concurrent data structures; such transactions can be used to ensure atomicity of sequences of data structure operations. By focusing on transactional access to a well-defined set of data structure operations, we strike a balance between the ease-of-programming of transactions and the efficiency of custom-tailored data structures. We exemplify this concept by designing and implementing a library supporting transactions on any number of maps, sets (implemented as skiplists), and queues. Our library offers efficient and scalable transactions, which are an order of magnitude faster than state-of-the-art transactional memory toolkits. Moreover, our approach treats stand-alone data structure operations (like put and enqueue) as first class citizens, and allows them to execute with virtually no overhead, at the speed of the original data structure library.},
+booktitle = pldi,
+}
+
+@inproceedings{liskov16,
+author = {Herman, Nathaniel and Inala, Jeevana Priya and Huang, Yihe and Tsai, Lillian and Kohler, Eddie and Liskov, Barbara and Shrira, Liuba},
+title = {Type-Aware Transactions for Faster Concurrent Code},
+year = {2016},
+isbn = {9781450342407},
+xpublisher = {Association for Computing Machinery},
+xaddress = {New York, NY, USA},
+url = {https://doi.org/10.1145/2901318.2901348},
+doi = {10.1145/2901318.2901348},
+abstract = {It is often possible to improve a concurrent system's performance by leveraging the semantics of its datatypes. We build a new software transactional memory (STM) around this observation. A conventional STM tracks read- and write-sets of memory words; even simple operations can generate large sets. Our STM, which we call STO, tracks abstract operations on transactional datatypes instead. Parts of the transactional commit protocol are delegated to these datatypes' implementations, which can use datatype semantics, and new commit protocol features, to reduce bookkeeping, limit false conflicts, and implement efficient concurrency control. We test these ideas on the STAMP benchmark suite for STM applications and on our own prior work, the Silo high-performance in-memory database, observing large performance improvements in both systems.},
+booktitle = eurosys,
+xarticleno = {31},
+xlocation = {London, United Kingdom},
+xseries = {EuroSys '16}
+}
+
+@inproceedings{otb14,
+author="Hassan, Ahmed
+and Palmieri, Roberto
+and Ravindran, Binoy",
+title="On Developing Optimistic Transactional Lazy Set",
+booktitle=opodis,
+year="2014",
+xpublisher="Springer International Publishing",
+xaddress="Cham",
+abstract="Transactional data structures with the same performance of highly concurrent data structures enable performance-competitive transactional applications. Although Software Transactional Memory (STM) is a promising technology for designing and implementing transactional applications, STM-based transactional data structures still perform inferior to their optimized, concurrent (i.e. non-transactional) counterparts. In this paper, we present OTB-Set, an efficient optimistic transactional lazy set based on both linked-list and skip-list implementations. We first provide general guidelines to show how to design a transactional (non-optimized) version of the highly concurrent lazy set with a minimal reengineering effort. Subsequently, we show how to make specific optimizations to the implementations of the OTB-Set for further enhancing its performance. We also prove that our OTB-Set provides linearizable individual operations and opaque transactions. Our experimental study on a 64-core machine reveals that OTB-Set outperforms competitors in most workloads.",
+}
+
+@ARTICLE{otb17,
+  author={Hassan, Ahmed and Palmieri, Roberto and Peluso, Sebastiano and Ravindran, Binoy},
+  journal=itpds,
+  title={Optimistic Transactional Boosting}, 
+  year={2017},
+  volume={28},
+  number={12},
+  doi={10.1109/TPDS.2017.2725837}}
+
+
+@inproceedings{predication10,
+author = {Bronson, Nathan G. and Casper, Jared and Chafi, Hassan and Olukotun, Kunle},
+title = {Transactional Predication: High-Performance Concurrent Sets and Maps for STM},
+year = {2010},
+isbn = {9781605588889},
+xpublisher = {Association for Computing Machinery},
+xaddress = {New York, NY, USA},
+url = {https://doi.org/10.1145/1835698.1835703},
+doi = {10.1145/1835698.1835703},
+abstract = {Concurrent collection classes are widely used in multi-threaded programming, but they provide atomicity only for a fixed set of operations. Software transactional memory (STM) provides a convenient and powerful programming model for composing atomic operations, but concurrent collection algorithms that allow their operations to be composed using STM are significantly slower than their non-composable alternatives.We introduce transactional predication, a method for building transactional maps and sets on top of an underlying non-composable concurrent map. We factor the work of most collection operations into two parts: a portion that does not need atomicity or isolation, and a single transactional memory access. The result approximates semantic conflict detection using the STM's structural conflict detection mechanism. The separation also allows extra optimizations when the collection is used outside a transaction. We perform an experimental evaluation that shows that predication has better performance than existing transactional collection algorithms across a range of workloads.},
+booktitle = podc,
+}
+
+@inproceedings{boosting08,
+author = {Herlihy, Maurice and Koskinen, Eric},
+title = {Transactional Boosting: A Methodology for Highly-Concurrent Transactional Objects},
+year = {2008},
+booktitle=ppopp}
+
+@ARTICLE{weihl88,
+  author={Weihl, W.E.},
+  journal=ieeetc,
+  title={Commutativity-based concurrency control for abstract data types}, 
+  year={1988},
+  volume={37},
+  number={12},
+  doi={10.1109/12.9728}}
+
+@article{boosting84,
+author = {Schwarz, Peter M. and Spector, Alfred Z.},
+title = {Synchronizing Shared Abstract Types},
+year = {1984},
+issue_date = {Aug. 1984},
+xpublisher = {Association for Computing Machinery},
+volume = {2},
+number = {3},
+journal = acmtocs,
+month = {aug},
+}
+
+Automatically adds semantic locks.  Pesimistic.   Claims that it does not have to undo.  Presumably has a way to see its own updates?
+@article{golan17,
+author = {Golan-Gueta, Guy and Ramalingam, G. and Sagiv, Mooly and Yahav, Eran},
+title = {Automatic Scalable Atomicity via Semantic Locking},
+year = {2017},
+issue_date = {March 2017},
+xpublisher = {Association for Computing Machinery},
+xaddress = {New York, NY, USA},
+volume = {3},
+number = {4},
+issn = {2329-4949},
+url = {https://doi.org/10.1145/3040223},
+doi = {10.1145/3040223},
+abstract = {In this article, we consider concurrent programs in which the shared state consists of instances of linearizable abstract data types (ADTs). We present an automated approach to concurrency control that addresses a common need: the need to atomically execute a code fragment, which may contain multiple ADT operations on multiple ADT instances. We present a synthesis algorithm that automatically enforces atomicity of given code fragments (in a client program) by inserting pessimistic synchronization that guarantees atomicity and deadlock-freedom (without using any rollback mechanism). Our algorithm takes a commutativity specification as an extra input. This specification indicates for every pair of ADT operations the conditions under which the operations commute. Our algorithm enables greater parallelism by permitting commuting operations to execute concurrently. We have implemented the synthesis algorithm in a Java compiler and applied it to several Java programs. Our results show that our approach produces efficient and scalable synchronization.},
+journal = topc,
+month = {mar},
+articleno = {21},
+keywords = {Abstract data types, semantics, automatic locking, transactions, concurrency}
+}
+
+  
+@article{bernstein87,
+note = {Perhaps first place opacity is defined.},
+author = {Divyakant Agrawal and Arthur J. Bernstein and Pankaj Gupta and Soumitra Sengupta},
+title = {Distributed optimistic concurrency control with reduced rollback},
+journal = discomp,
+volume = 2,
+year = 1987}
+
+@inproceedings{tdsl21,
+author = {Assa, Gal and Meir, Hagar and Golan-Gueta, Guy and Keidar, Idit and Spiegelman, Alexander},
+year = {2021},
+title = {Using Nesting to Push the Limits of Transactional Data Structure Libraries},
+booktitle=disc,
+}
+
+@inproceedings{scott23,
+author = {Cai, Wentao and Wen, Haosen and Scott, Michael L.},
+title = {Transactional Composition of Nonblocking Data Structures},
+year = {2023},
+isbn = {9781450395458},
+xpublisher = {Association for Computing Machinery},
+xaddress = {New York, NY, USA},
+url = {https://doi.org/10.1145/3558481.3591079},
+doi = {10.1145/3558481.3591079},
+abstract = {This paper introduces nonblocking transaction composition (NBTC), a new methodology for atomic composition of nonblocking operations on concurrent data structures. Unlike previous software transactional memory (STM) approaches, NBTC leverages the linearizability of existing nonblocking structures, reducing the number of memory accesses that must be executed together, atomically, to only one per operation in most cases (these are typically the linearizing instructions of the constituent operations).Our obstruction-free implementation of NBTC, which we call Medley, makes it easy to transform most nonblocking data structures into transactional counterparts while preserving their liveness and high concurrency. In our experiments, Medley outperforms Lock-Free Transactional Transform (LFTT), the fastest prior competing methodology, by 40--170\%. The marginal overhead of Medley's transactional composition, relative to separate operations performed in succession, is roughly 2.2x.For persistent data structures, we observe that failure atomicity for transactions can be achieved "almost for free'' with epoch-based periodic persistence. Toward that end, we integrate Medley with nbMontage, a general system for periodically persistent data structures. The resulting txMontage provides ACID transactions and achieves throughput up to two orders of magnitude higher than that of the OneFile persistent STM system.},
+booktitle = spaa
+}
+
+similar to tdsl
+@article{dechev18,
+author = {Zhang, Deli and Laborde, Pierre and Lebanoff, Lance and Dechev, Damian},
+title = {Lock-Free Transactional Transformation for Linked Data Structures},
+year = {2018},
+issue_date = {March 2018},
+xpublisher = {Association for Computing Machinery},
+xaddress = {New York, NY, USA},
+volume = {5},
+number = {1},
+issn = {2329-4949},
+url = {https://doi.org/10.1145/3209690},
+doi = {10.1145/3209690},
+abstract = {Nonblocking data structures allow scalable and thread-safe access to shared data. They provide individual operations that appear to execute atomically. However, it is often desirable to execute multiple operations atomically in a transactional manner. Previous solutions, such as Software Transactional Memory (STM) and transactional boosting, manage transaction synchronization separately from the underlying data structure’s thread synchronization. Although this reduces programming effort, it leads to overhead associated with additional synchronization and the need to rollback aborted transactions. In this work, we present a new methodology for transforming high-performance lock-free linked data structures into high-performance lock-free transactional linked data structures without revamping the data structures’ original synchronization design. Our approach leverages the semantic knowledge of the data structure to eliminate the overhead of false conflicts and rollbacks. We encapsulate all operations, operands, and transaction status in a transaction descriptor, which is shared among the nodes accessed by the same transaction. We coordinate threads to help finish the remaining operations of delayed transactions based on their transaction descriptors. When a transaction fails, we recover the correct abstract state by reversely interpreting the logical status of a node. We also present an obstruction-free version of our algorithm that can be applied to dynamic execution scenarios and an example of our approach applied to a hash map. In our experimental evaluation using transactions with randomly generated operations, our lock-free transactional data structures outperform the transactional boosted ones by 70\% on average. They also outperform the alternative STM-based approaches by a factor of 2 to 13 across all scenarios. More importantly, we achieve 4,700 to 915,000 times fewer spurious aborts than the alternatives.},
+journal = topc,
+month = Jun,
+articleno = {6},
+keywords = {transactional boosting, transactional memory, lock-free, Transactional data structure}
+}
+
+@article{Papadimitriou79b,
+  author       = {Christos H. Papadimitriou},
+  title        = {The serializability of concurrent database updates},
+  journal      = jacm,
+  volume       = {26},
+  number       = {4},
+  year         = {1979},
+  url          = {https://doi.org/10.1145/322154.322158},
+  doi          = {10.1145/322154.322158},
+  timestamp    = {Tue, 06 Nov 2018 12:51:44 +0100},
+  biburl       = {https://dblp.org/rec/journals/jacm/Papadimitriou79b.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{liskov22,
+  author       = {Yihe Huang and
+                  William Qian and
+                  Eddie Kohler and
+                  Barbara Liskov and
+                  Liuba Shrira},
+  title        = {Opportunities for optimism in contended main-memory multicore transactions},
+  journal      = vldbj,
+  volume       = {31},
+  number       = {6},
+  year         = {2022},
+  url          = {https://doi.org/10.1007/s00778-021-00719-9},
+  doi          = {10.1007/S00778-021-00719-9},
+  timestamp    = {Sun, 13 Nov 2022 17:53:18 +0100},
+  biburl       = {https://dblp.org/rec/journals/vldb/HuangQKLS22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{Attiya11,
+author = "Attiya, H. and Hillel, E. and Milani, A.",
+title = "Inherent limitations on disjoint-access parallel implementations of transactional memory",
+journal = TOCS,
+volume = 49,
+number = 4,
+year = 2011}
+
+@inproceedings{Israeli04,
+author = "Israeli, A. and Rappoport, L.",
+title = "Disjoint-access-parallel implementations of strong shared memory primitives",
+booktitle = podc,
+year = 2004}
+
+@misc{tpcc,
+author = "The Transaction Processing Council",
+year = 2010,
+title = "TPC-C Benchmark (Revision 5.11.0)",
+url = "http://www.tpc.org/tpcc/"}
+
+@inproceedings{RamalheteCFC19,
+  author       = {Pedro Ramalhete and
+                  Andreia Correia and
+                  Pascal Felber and
+                  Nachshon Cohen},
+  title        = {OneFile: {A} Wait-Free Persistent Transactional Memory},
+  booktitle    = icdsn,
+  publisher    = {{IEEE}},
+  year         = {2019},
+  url          = {https://doi.org/10.1109/DSN.2019.00028},
+  doi          = {10.1109/DSN.2019.00028},
+  timestamp    = {Mon, 15 Jun 2020 17:06:46 +0200},
+  biburl       = {https://dblp.org/rec/conf/dsn/RamalheteCFC19.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{CBMCWCC08,
+author = {Cascaval, Calin and Blundell, Colin and Michael, Maged and Cain, Harold W. and Wu, Peng and Chiras, Stefanie and Chatterjee, Siddhartha},
+title = {Software Transactional Memory: Why Is It Only a Research Toy? The promise of STM may likely be undermined by its overheads and workload applicabilities.},
+year = {2008},
+issue_date = {September 2008},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {6},
+number = {5},
+journal = {Queue}}
+
+
+@inproceedings{Verlib24,
+author = {Blelloch, Guy E. and Wei, Yuanhao},
+title = {VERLIB: Concurrent Versioned Pointers},
+year = {2024},
+booktitle = ppopp}
+
+
+@inproceedings{2plsf,
+author = {Ramalhete, Pedro and Correia, Andreia and Felber, Pascal},
+title = {2PLSF: Two-Phase Locking with Starvation-Freedom},
+year = {2023},
+isbn = {9798400700156},
+booktitle = ppopp}
+
+@inproceedings{10.1145/223784.223785,
+author = {Berenson, Hal and Bernstein, Phil and Gray, Jim and Melton, Jim and O'Neil, Elizabeth and O'Neil, Patrick},
+title = {A critique of ANSI SQL isolation levels},
+year = {1995},
+isbn = {0897917316},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/223784.223785},
+doi = {10.1145/223784.223785},
+abstract = {ANSI SQL-92 [MS, ANSI] defines Isolation Levels in terms of phenomena: Dirty Reads, Non-Repeatable Reads, and Phantoms. This paper shows that these phenomena and the ANSI SQL definitions fail to properly characterize several popular isolation levels, including the standard locking implementations of the levels covered. Ambiguity in the statement of the phenomena is investigated and a more formal statement is arrived at; in addition new phenomena that better characterize isolation types are introduced. Finally, an important multiversion isolation type, called Snapshot Isolation, is defined.},
+booktitle = {Proceedings of the 1995 ACM SIGMOD International Conference on Management of Data},
+location = {San Jose, California, USA},
+series = {SIGMOD '95}
+}
+
+  
+
+@article{ansi95,
+author = {Berenson, Hal and Bernstein, Phil and Gray, Jim and Melton, Jim and O'Neil, Elizabeth and O'Neil, Patrick},
+title = {A critique of ANSI SQL isolation levels},
+year = {1995},
+volume = {24},
+number = {2},
+issn = {0163-5808},
+url = {https://doi.org/10.1145/568271.223785},
+doi = {10.1145/568271.223785},
+journal = sigmod,
+}
+
+@book{BernsteinHG87,
+  author    = {Philip A. Bernstein and
+               Vassos Hadzilacos and
+               Nathan Goodman},
+  title     = {Concurrency Control and Recovery in Database Systems},
+  publisher = {Addison-Wesley},
+  year      = {1987},
+  isbn      = {0-201-10715-5},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@article{ColeH05,
+  author       = {Christopher Cole and
+                  Maurice Herlihy},
+  title        = {Snapshots and software transactional memory},
+  journal      = {Sci. Comput. Program.},
+  volume       = {58},
+  number       = {3},
+  year         = {2005},
+  url          = {https://doi.org/10.1016/j.scico.2005.03.006},
+  doi          = {10.1016/J.SCICO.2005.03.006},
+  timestamp    = {Wed, 17 Feb 2021 21:56:21 +0100},
+  biburl       = {https://dblp.org/rec/journals/scp/ColeH05.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
