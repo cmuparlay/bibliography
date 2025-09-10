@@ -10,6 +10,55 @@
 	lastaccessed  = {April 29, 2025},  
 }
 
+@misc{VerlibGit24,
+  author = {Guy Blelloch and Yuanhao Wei},
+  title = {Verlib: Concurrent Versioned Pointers},
+  year = {2024},
+  publisher = {GitHub},
+  howpublished = {\url{https://github.com/cmuparlay/verlib}},
+}
+
+@misc{FuseGit24,
+  author = {Guy Blelloch and Zak Kent and Yuanhao Wei},
+  title = {Fuse: A library for fusing lock based code into transactions},
+  year = {2025},
+  publisher = {GitHub},
+  howpublished = {\url{https://github.com/cmuparlay/fuse}},
+}
+
+@misc{ParlayhashGit24,
+  author = {Guy Blelloch and Siddhartha Jayanti},
+  title = {Parlayhash: A fast concurrent hash table},
+  year = {2024},
+  publisher = {GitHub},
+  howpublished = {\url{https://github.com/cmuparlay/parlayhash}},
+}
+
+@misc{RcGit24,
+  author = {Daniel Anderson and Guy Blelloch and Yuanhao Wei},
+  title = {Concurrent Deferred Reference Counting},
+  year = {2022},
+  publisher = {GitHub},
+  howpublished = {\url{https://github.com/cmuparlay/concurrent_deferred_rc}},
+}
+
+@misc{FlockGit22,
+author = {Naama Ben-David and Guy Blelloch and Yuanhao Wei},
+title = {The flock library for lock-free locks},
+  year = {2022},
+  publisher = {GitHub},
+  howpublished = {\url{https://github.com/cmuparlay/flock}},
+}
+
+@misc{flock,
+title = {The flock library},
+author = {Naama Ben-David and Guy Blelloch and Yuanhao Wei},
+  howpublished =  {\url{https://github.com/cmuparlay/flock}},
+year = 2022
+}
+
+
+
 @misc{FAISS_General,
 	author        = {Matthijs Douze},
 	year          = {2024},
@@ -87,16 +136,14 @@
 	Yan Gu and
 	Harsha Vardhan Simhadri and
 	Yihan Sun},
-	editor       = {Michel Steuwer and
+	xeditor       = {Michel Steuwer and
 	I{-}Ting Angelina Lee and
 	Milind Chabbi},
 	title        = {ParlayANN: Scalable and Deterministic Parallel Graph-Based Approximate
 	Nearest Neighbor Search Algorithms},
-	booktitle    = {Proceedings of the 29th {ACM} {SIGPLAN} Annual Symposium on Principles
-	and Practice of Parallel Programming, PPoPP 2024, Edinburgh, United
-	Kingdom, March 2-6, 2024},
-	pages        = {270--285},
-	publisher    = {{ACM}},
+	booktitle    = ppopp,
+	xpages        = {270--285},
+	xpublisher    = {{ACM}},
 	year         = {2024},
 	url          = {https://doi.org/10.1145/3627535.3638475},
 	doi          = {10.1145/3627535.3638475},
@@ -470,6 +517,25 @@ title = { Efficient Parallel Output-Sensitive Edit Distance},
 author = {Ding, Xiangyun and Dong, Xiaojun and Gu, Yan and Liu, Youzhe and Sun, Yihan},
 booktitle = {European Symposium on Algorithms (ESA)},
 year = { 2023 }
+}
+
+@article{metaconfig,
+author = {Jayanti, Prasad and Jayanti, Siddhartha and Yavuz, Ugur Y. and Hernandez, Lizzie},
+title = {A Universal, Sound, and Complete Forward Reasoning Technique for Machine-Verified Proofs of Linearizability},
+year = {2024},
+issue_date = {January 2024},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {8},
+number = {POPL},
+url = {https://doi.org/10.1145/3632924},
+doi = {10.1145/3632924},
+abstract = {We introduce simple, universal, sound, and complete proof methods for producing machine-verifiable proofs of linearizability and strong linearizability. Universality means that our method works for any object type; soundness means that an algorithm can be proved correct by our method only if it is linearizable (resp. strong linearizable); and completeness means that any linearizable (resp. strong linearizable) implementation can be proved so using our method. We demonstrate the simplicity and power of our method by producing proofs of linearizability for the Herlihy-Wing queue and Jayanti's single-scanner snapshot, as well as a proof of strong linearizability of the Jayanti-Tarjan union-find object. All three of these proofs are machine-verified by TLAPS (the TLA+ Proof System).},
+journal = popl,
+month = jan,
+articleno = {82},
+numpages = {29},
+keywords = {Linearizability, Verification, Universal, Complete, Forward Reasoning}
 }
 
 @misc{anderson2025bigatomics,
@@ -1307,6 +1373,8 @@ howpublished={\url{https://www.upmem.com/}}
 }
 
 @article{parlay,
+  author={Daniel Anderson and Guy Blelloch and Others},
+  year = 2024,
   title={{ParlayLib}: A Toolkit for Programming Parallel Algorithms on Shared-Memory Multicore Machines},
   journal={\url{https://cmuparlay.github.io/parlaylib/}}
 }
@@ -1499,6 +1567,13 @@ year = {1992},
 isbn = {0201548569},
 publisher = {Addison Wesley Longman Publishing Co., Inc.},
 address = {USA}
+}
+
+@misc{paralgnotes24,
+title = {Course Notes : Introduction to Parallel Algorithms},
+author = {Guy Blelloch and Laxman Dhulipala and Yihan Sun},
+  howpublished = {\url{https://www.cs.cmu.edu/~guyb/paralg/paralg/parallel.pdf}},
+year = 2024
 }
 
 @inproceedings{Vaidya86,
@@ -11380,13 +11455,6 @@ month = {jul},
 pages = {558–565},
 }
 
-@misc{flock,
-title = {The flock library},
-author = {Naama Ben-David and Guy Blelloch and Yuanhao Wei},
-  howpublished =  {\url{https://github.com/cmuparlay/flock}},
-year = 2022
-}
-
 @misc{hpandrcu,
   title={Proposed Wording for Concurrent Data Structures: Hazard Pointer and Read-Copy-Update ({RCU})},
   author={Michael, Maged M. and Wong, Michael and McKenney, Paul and Romer, Geoffrey and Hunter, Andrew and O'Dwyer, Arthur and Hollman, David S. and Bastien, JF and Boehm, Hans and Goldblatt, David and Birbacher, Frank and Stearn, Mathias},
@@ -12153,6 +12221,21 @@ keywords = {Online Algorithms, Online Stochastic Optimization, Budget Optimizati
   annote =	{Keywords: approximate maximum matching, set cover, hypergraph matching, PRAM, massively parallel computation}
 }
 
+@inproceedings{BB25,
+  author       = {Guy E. Blelloch and
+                  Andrew C. Brady},
+  title        = {Parallel Batch-Dynamic Maximal Matching with Constant Work per Update},
+  booktitle    = spaa,
+  xpages        = {429--442},
+  xpublisher    = {{ACM}},
+  year         = {2025},
+  url          = {https://doi.org/10.1145/3694906.3743313},
+  doi          = {10.1145/3694906.3743313},
+  timestamp    = {Tue, 05 Aug 2025 22:42:00 +0200},
+  biburl       = {https://dblp.org/rec/conf/spaa/BlellochB25.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
 @article{BB25a,
 title={Parallel Batch-Dynamic Maximal Matching with Constant Work
 per Update},
@@ -12355,6 +12438,7 @@ keywords = {Iris, Prophecy variables, linearizability, logical atomicity, separa
 @inproceedings{mpmc,
 author = {Vindum, Simon Friis and Frumin, Dan and Birkedal, Lars},
 title = {Mechanized verification of a fine-grained concurrent queue from meta’s folly library},
+booktitle = ccpp,
 year = {2022},
 isbn = {9781450391825},
 xpublisher = {Association for Computing Machinery},
@@ -12362,7 +12446,6 @@ xaddress = {New York, NY, USA},
 url = {https://doi.org/10.1145/3497775.3503689},
 doi = {10.1145/3497775.3503689},
 abstract = {We present the first formal specification and verification of the fine-grained concurrent multi-producer-multi-consumer queue algorithm from Meta’s C++ library Folly of core infrastructure components. The queue is highly optimized, practical, and used by Meta in production where it scales to thousands of consumer and producer threads. We present an implementation of the algorithm in an ML-like language and formally prove that it is a contextual refinement of a simple coarse-grained queue (a property that implies that the MPMC queue is linearizable). We use the ReLoC relational logic and the Iris program logic to carry out the proof and to mechanize it in the Coq proof assistant. The MPMC queue is implemented using three modules, and our proof is similarly modular. By using ReLoC and Iris’s support for modular reasoning we verify each module in isolation and compose these together. A key challenge of the MPMC queue is that it has a so-called external linearization point, which ReLoC has no support for reasoning about. Thus we extend ReLoC, both on paper and in Coq, with novel support for reasoning about external linearization points.},
-booktitle = cpp,
 xpages = {100–115},
 xnumpages = {16},
 keywords = {Coq, concurrent data structures, separation logic},
@@ -13810,4 +13893,99 @@ keywords = {Concurrent data structures, Multiversioning, Optimistic Locking},
   timestamp    = {Tue, 05 Aug 2025 22:42:00 +0200},
   biburl       = {https://dblp.org/rec/conf/spaa/ManoharWB25.bib},
   bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{HerlihyM93,
+author = {Herlihy, Maurice and Moss, J. Eliot B.},
+title = {Transactional memory: architectural support for lock-free data structures},
+year = {1993},
+isbn = {0818638109},
+xpublisher = {Association for Computing Machinery},
+xaddress = {New York, NY, USA},
+url = {https://doi.org/10.1145/165123.165164},
+doi = {10.1145/165123.165164},
+booktitle = isca,
+xpages = {289–300},
+numpages = {12},
+xlocation = {San Diego, California, USA},
+xseries = {ISCA '93}
+}
+
+@inproceedings{Anderson24,
+  author       = {Daniel Anderson and
+                  Guy E. Blelloch},
+  title        = {Deterministic and Low-Span Work-Efficient Parallel Batch-Dynamic Trees},
+  booktitle    = spaa,
+  pages        = {247--258},
+  publisher    = {{ACM}},
+  year         = {2024},
+  url          = {https://doi.org/10.1145/3626183.3659976},
+  doi          = {10.1145/3626183.3659976},
+}
+
+
+@article{Anderson23,
+  author       = {Daniel Anderson and
+                  Guy E. Blelloch},
+  title        = {Parallel Minimum Cuts in \emph{O}(\emph{m} log\({}^{\mbox{2}}\) \emph{n})
+                  Work and Low Depth},
+  journal      = topc,
+  volume       = {10},
+  number       = {4},
+  pages        = {18:1--18:28},
+  year         = {2023},
+  url          = {https://doi.org/10.1145/3565557},
+  doi          = {10.1145/3565557},
+}
+
+@inproceedings{Blelloch23,
+  author       = {Guy E. Blelloch and
+                  Magdalen Dobson},
+  title        = {The Geometry of Tree-Based Sorting},
+  booktitle    = icalp,
+  xseries       = {LIPIcs},
+  xvolume       = {261},
+  xpages        = {26:1--26:19},
+  xpublisher    = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},
+  year         = {2023},
+  url          = {https://doi.org/10.4230/LIPIcs.ICALP.2023.26},
+  doi          = {10.4230/LIPICS.ICALP.2023.26},
+}
+
+@inproceedings{BeckmannGHM20,
+  author = {Nathan Beckmann and Phillip B. Gibbons and Bernhard Haeupler and Charles McGuffey},
+  title = {Writeback-Aware Caching},
+  booktitle = apocs,
+  year = 2020,
+  note = {Best paper winner.}
+}
+
+@inproceedings{IkramBAB25,
+  author       = {Humza Ikram and
+                  Andrew C. Brady and
+                  Daniel Anderson and
+                  Guy E. Blelloch},
+  title        = {Parallel Batch Queries on Dynamic Trees: Algorithms and Experiments},
+  booktitle    = spaa,
+  xpages        = {525--539},
+  xpublisher    = {{ACM}},
+  year         = {2025},
+  url          = {https://doi.org/10.1145/3694906.3743305},
+  doi          = {10.1145/3694906.3743305},
+  timestamp    = {Sat, 09 Aug 2025 12:14:16 +0200},
+  biburl       = {https://dblp.org/rec/conf/spaa/IkramBAB25.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{WangBGS25,
+author = {Letong Wang and Guy Blelloch and Yan Gu and Yihan Sun},
+title = {Parallel Cluster-BFS and Applications to Shortest Paths},
+booktitle = alenex,
+xchapter = {},
+xpages = {42-55},
+year = 2025,
+doi = {10.1137/1.9781611978339.4},
+URL = {https://epubs.siam.org/doi/abs/10.1137/1.9781611978339.4},
+eprint = {https://epubs.siam.org/doi/pdf/10.1137/1.9781611978339.4},
+    abstract = { Breadth-first Search (BFS) is one of the most important graph processing subroutines, especially for computing the unweighted distance. Many applications may require running BFS from multiple sources. Sequentially, when running BFS on a cluster of nearby vertices, a known optimization is using bit-parallelism. Given a subset of vertices of size \(k\) and the distance between any pair of them is no more than \(d\), BFS can be applied to all of them in a total work of \(O(dm(k/w+1))\), where \(w\) is the length of a word in bits and \(m\) is the number of edges. We will refer to this approach as cluster-BFS (C-BFS). Such an approach has been studied and shown effective both in theory and in practice in the sequential setting. However, it remains unknown how this can be combined with thread-level parallelism. In this paper, we focus on designing efficient parallel C-BFS based on BFS to answer unweighted distance queries. Our solution combines the strengths of bit-level parallelism and thread-level parallelism, and achieves significant speedup over the plain sequential solution. We also apply our algorithm to real-world applications. In particular, we identified another application (landmark-labeling for the approximate distance oracle) that can take advantage of parallel C-BFS. Under the same memory budget, our new solution improves accuracy and/or time on all the 18 tested graphs. This paper has been awarded the “Code and Data Available” and “Results Reproduced” badges as recognition that the author(s) have followed reproducibility principles. Code and data that allow readers to reproduce the results in this paper are available at https://zenodo.org/records/13905461 and https://zenodo.org/records/13909778. Participation in the ALENEX artifact evaluation phase was optional and performed at the request of the author(s). }
 }
