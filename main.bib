@@ -10699,7 +10699,7 @@ number = {IMPACT-12-01}
   title={Fast and Fair Randomized Wait-Free Locks},
   author={Ben-David, Naama and Blelloch, Guy E},
   booktitle=podc,
-  pages={187--197},
+  xpages={187--197},
   year={2022}
 }
 
@@ -10769,7 +10769,7 @@ year="2006",
   title={A pragmatic implementation of non-blocking linked-lists},
   author={Harris, Timothy L},
   booktitle=disc,
-  pages={300--314},
+  xpages={300--314},
   year={2001},
   organization={Springer}
 }
@@ -13795,7 +13795,7 @@ keywords = {Concurrent data structures, Multiversioning, Optimistic Locking},
   journal      = discomp,
   volume       = {38},
   number       = {1},
-  pages        = {51--72},
+  xpages        = {51--72},
   year         = {2025},
   url          = {https://doi.org/10.1007/s00446-024-00474-4},
   doi          = {10.1007/S00446-024-00474-4},
@@ -14057,29 +14057,11 @@ eprint = {https://epubs.siam.org/doi/pdf/10.1137/1.9781611978339.4},
   bibsource    = {dblp computer science bibliography, https://dblp.org}
 }
 
-@inproceedings{10.1145/582419.582440,
-author = {Boyapati, Chandrasekhar and Lee, Robert and Rinard, Martin},
-title = {Ownership types for safe programming: preventing data races and deadlocks},
-year = {2002},
-isbn = {1581134711},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-url = {https://doi.org/10.1145/582419.582440},
-doi = {10.1145/582419.582440},
-abstract = {This paper presents a new static type system for multithreaded programs; well-typed programs in our system are guaranteed to be free of data races and deadlocks. Our type system allows programmers to partition the locks into a fixed number of equivalence classes and specify a partial order among the equivalence classes. The type checker then statically verifies that whenever a thread holds more than one lock, the thread acquires the locks in the descending order.Our system also allows programmers to use recursive tree-based data structures to describe the partial order. For example, programmers can specify that nodes in a tree must be locked in the tree order. Our system allows mutations to the data structure that change the partial order at runtime. The type checker statically verifies that the mutations do not introduce cycles in the partial order, and that the changing of the partial order does not lead to deadlocks. We do not know of any other sound static system for preventing deadlocks that allows changes to the partial order at runtime.Our system uses a variant of ownership types to prevent data races and deadlocks. Ownership types provide a statically enforceable way of specifying object encapsulation. Ownership types are useful for preventing data races and deadlocks because the lock that protects an object can also protect its encapsulated objects. This paper describes how to use our type system to statically enforce object encapsulation as well as prevent data races and deadlocks. The paper also contains a detailed discussion of different ownership type systems and the encapsulation guarantees they provide.},
-booktitle = {Proceedings of the 17th ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications},
-pages = {211–230},
-numpages = {20},
-keywords = {ownership types, encapsulation, deadlocks, data races},
-location = {Seattle, Washington, USA},
-series = {OOPSLA '02}
-}
-
 @inproceedings{BoyapatiLR02,
   author       = {Chandrasekhar Boyapati and
                   Robert Lee and
                   Martin C. Rinard},
-  editor       = {Mamdouh Ibrahim and
+  xeditor       = {Mamdouh Ibrahim and
                   Satoshi Matsuoka},
   title        = {Ownership types for safe programming: preventing data races and deadlocks},
   booktitle    = oopsla,
@@ -14107,7 +14089,7 @@ xpages = {83–94},
 xnumpages = {12},
 keywords = {atomicity, data races, type inference, type system},
 location = {Chicago, IL, USA},
-series = {PPoPP '05}
+xseries = {PPoPP '05}
 }
 
 
@@ -14156,7 +14138,7 @@ series = {PPoPP '05}
                   Patrick Simmons and
                   Hyojin Sung and
                   Mohsen Vakilian},
-  editor       = {Shail Arora and
+  xeditor       = {Shail Arora and
                   Gary T. Leavens},
   title        = {A type and effect system for deterministic parallel Java},
   booktitle    = oopsla,
@@ -14249,7 +14231,7 @@ keywords = {Concurrency, Iris, OCaml, Rocq, data races, separation logic, type s
   journal      = tocs,
   volume       = {32},
   number       = {3},
-  pages        = {301--326},
+  xpages        = {301--326},
   year         = {1999},
   url          = {https://doi.org/10.1007/s002240000120},
   doi          = {10.1007/S002240000120},
@@ -14268,7 +14250,7 @@ keywords = {Concurrency, Iris, OCaml, Rocq, data races, separation logic, type s
   title        = {Efficient race detection with futures},
   booktitle    = ppopp,
   xpages        = {340--354},
-  publisher    = {{ACM}},
+  xpublisher    = {{ACM}},
   year         = {2019},
   url          = {https://doi.org/10.1145/3293883.3295732},
   doi          = {10.1145/3293883.3295732},
@@ -14337,8 +14319,8 @@ keywords = {Concurrency, Iris, OCaml, Rocq, data races, separation logic, type s
                   Martin C. Rinard},
   title        = {A Parameterized Type System for Race-Free Java Programs},
   booktitle    = oopsla,
-  pages        = {56--69},
-  publisher    = {{ACM}},
+  xpages        = {56--69},
+  xpublisher    = {{ACM}},
   year         = {2001},
   url          = {https://doi.org/10.1145/504282.504287},
   doi          = {10.1145/504282.504287},
@@ -14373,7 +14355,7 @@ keywords = {Concurrency, Iris, OCaml, Rocq, data races, separation logic, type s
   title     = {Manifest Sharing with Session Types},
   year      = {2017},
   number    = {{ICFP}},
-  pages     = {37:1--37:29},
+  xpages     = {37:1--37:29},
   volume    = {1},
   bibsource = {dblp computer science bibliography, https://dblp.org},
   biburl    = {https://dblp.org/rec/journals/pacmpl/BalzerP17.bib},
@@ -14394,4 +14376,39 @@ keywords = {Concurrency, Iris, OCaml, Rocq, data races, separation logic, type s
   year         = {2022},
   url          = {https://doi.org/10.1145/3519939.3523443},
   doi          = {10.1145/3519939.3523443},
+}
+
+@article{MoineWB24,
+  author       = {Alexandre Moine and
+                  Sam Westrick and
+                  Stephanie Balzer},
+  title        = {DisLog: {A} Separation Logic for Disentanglement},
+  journal      = {Proc. {ACM} Program. Lang.},
+  volume       = {8},
+  number       = {{POPL}},
+  xpages        = {302--331},
+  year         = {2024},
+  url          = {https://doi.org/10.1145/3632853},
+  doi          = {10.1145/3632853},
+  timestamp    = {Sun, 19 Jan 2025 14:47:42 +0100},
+  biburl       = {https://dblp.org/rec/journals/pacmpl/MoineWB24.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{BalzerDHY23,
+  author       = {Stephanie Balzer and
+                  Farzaneh Derakhshan and
+                  Robert Harper and
+                  Yue Yao},
+  title        = {Logical Relations for Session-Typed Concurrency},
+  journal      = {CoRR},
+  volume       = {abs/2309.00192},
+  year         = {2023},
+  url          = {https://doi.org/10.48550/arXiv.2309.00192},
+  doi          = {10.48550/ARXIV.2309.00192},
+  eprinttype    = {arXiv},
+  eprint       = {2309.00192},
+  timestamp    = {Mon, 11 Sep 2023 16:01:35 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2309-00192.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
 }
