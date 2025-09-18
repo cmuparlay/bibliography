@@ -2688,6 +2688,8 @@ journal = {Advances in Intelligent Systems and Computing}
   year={2021},
 }
 
+
+
 @inproceedings{sun2019parallel,
   title={Parallel Range, Segment and Rectangle Queries with Augmented Maps},
   author={Sun, Yihan and Blelloch, Guy E},
@@ -13354,7 +13356,7 @@ doi = {10.1145/1594835.1504199},
 xmonth = feb,
 }
 
- @inbook{HLR10,
+ @book{HLR10,
  author = {Tim Harris and James Larus and Ravi Rajwar},
  title = {Transactional Memory, 2nd Edition},
  year = 2010,
@@ -14053,4 +14055,343 @@ eprint = {https://epubs.siam.org/doi/pdf/10.1137/1.9781611978339.4},
   timestamp    = {Mon, 28 Aug 2023 21:30:21 +0200},
   biburl       = {https://dblp.org/rec/journals/pacmpl/WestrickAA22.bib},
   bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{10.1145/582419.582440,
+author = {Boyapati, Chandrasekhar and Lee, Robert and Rinard, Martin},
+title = {Ownership types for safe programming: preventing data races and deadlocks},
+year = {2002},
+isbn = {1581134711},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/582419.582440},
+doi = {10.1145/582419.582440},
+abstract = {This paper presents a new static type system for multithreaded programs; well-typed programs in our system are guaranteed to be free of data races and deadlocks. Our type system allows programmers to partition the locks into a fixed number of equivalence classes and specify a partial order among the equivalence classes. The type checker then statically verifies that whenever a thread holds more than one lock, the thread acquires the locks in the descending order.Our system also allows programmers to use recursive tree-based data structures to describe the partial order. For example, programmers can specify that nodes in a tree must be locked in the tree order. Our system allows mutations to the data structure that change the partial order at runtime. The type checker statically verifies that the mutations do not introduce cycles in the partial order, and that the changing of the partial order does not lead to deadlocks. We do not know of any other sound static system for preventing deadlocks that allows changes to the partial order at runtime.Our system uses a variant of ownership types to prevent data races and deadlocks. Ownership types provide a statically enforceable way of specifying object encapsulation. Ownership types are useful for preventing data races and deadlocks because the lock that protects an object can also protect its encapsulated objects. This paper describes how to use our type system to statically enforce object encapsulation as well as prevent data races and deadlocks. The paper also contains a detailed discussion of different ownership type systems and the encapsulation guarantees they provide.},
+booktitle = {Proceedings of the 17th ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications},
+pages = {211–230},
+numpages = {20},
+keywords = {ownership types, encapsulation, deadlocks, data races},
+location = {Seattle, Washington, USA},
+series = {OOPSLA '02}
+}
+
+@inproceedings{BoyapatiLR02,
+  author       = {Chandrasekhar Boyapati and
+                  Robert Lee and
+                  Martin C. Rinard},
+  editor       = {Mamdouh Ibrahim and
+                  Satoshi Matsuoka},
+  title        = {Ownership types for safe programming: preventing data races and deadlocks},
+  booktitle    = oopsla,
+  xpages        = {211--230},
+  xpublisher    = {{ACM}},
+  year         = {2002},
+  url          = {https://doi.org/10.1145/582419.582440},
+  doi          = {10.1145/582419.582440},
+  timestamp    = {Wed, 07 Jul 2021 13:23:08 +0200},
+  biburl       = {https://dblp.org/rec/conf/oopsla/BoyapatiLR02.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{Sasturkar05,
+author = {Sasturkar, Amit and Agarwal, Rahul and Wang, Liqiang and Stoller, Scott D.},
+title = {Automated type-based analysis of data races and atomicity},
+year = {2005},
+isbn = {1595930809},
+xpublisher = {Association for Computing Machinery},
+xaddress = {New York, NY, USA},
+url = {https://doi.org/10.1145/1065944.1065956},
+doi = {10.1145/1065944.1065956},
+booktitle = ppopp,
+xpages = {83–94},
+xnumpages = {12},
+keywords = {atomicity, data races, type inference, type system},
+location = {Chicago, IL, USA},
+series = {PPoPP '05}
+}
+
+
+
+@inproceedings{Grossman03,
+  author       = {Dan Grossman},
+  editor       = {Zhong Shao and
+                  Peter Lee},
+  title        = {Type-safe multithreading in cyclone},
+  booktitle    = {{ACM} {SIGPLAN} International Workshop
+                  on Types in Languages Design and Implementation (TLDI)},
+  xpages        = {13--25},
+  xpublisher    = {{ACM}},
+  year         = {2003},
+  url          = {https://doi.org/10.1145/604174.604177},
+  doi          = {10.1145/604174.604177},
+  timestamp    = {Mon, 10 Mar 2025 09:29:43 +0100},
+  biburl       = {https://dblp.org/rec/conf/tldi/Grossman03.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{FlanaganF00,
+  author       = {Cormac Flanagan and
+                  Stephen N. Freund},
+  xeditor       = {Monica S. Lam},
+  title        = {Type-based race detection for Java},
+  booktitle    = pldi,
+  xpages        = {219--232},
+  xpublisher    = {{ACM}},
+  year         = {2000},
+  url          = {https://doi.org/10.1145/349299.349328},
+  doi          = {10.1145/349299.349328},
+  timestamp    = {Mon, 03 Mar 2025 21:20:03 +0100},
+  biburl       = {https://dblp.org/rec/conf/pldi/FlanaganF00.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{BocchinoADAHKOSSV09,
+  author       = {Robert L. Bocchino Jr. and
+                  Vikram S. Adve and
+                  Danny Dig and
+                  Sarita V. Adve and
+                  Stephen Heumann and
+                  Rakesh Komuravelli and
+                  Jeffrey Overbey and
+                  Patrick Simmons and
+                  Hyojin Sung and
+                  Mohsen Vakilian},
+  editor       = {Shail Arora and
+                  Gary T. Leavens},
+  title        = {A type and effect system for deterministic parallel Java},
+  booktitle    = oopsla,
+  xpages        = {97--116},
+  year         = {2009},
+  url          = {https://doi.org/10.1145/1640089.1640097},
+  doi          = {10.1145/1640089.1640097},
+  timestamp    = {Fri, 25 Jun 2021 14:48:54 +0200},
+  biburl       = {https://dblp.org/rec/conf/oopsla/BocchinoADAHKOSSV09.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{MarlowNJ11,
+  author       = {Simon Marlow and
+                  Ryan Newton and
+                  Simon L. Peyton Jones},
+  editor       = {Koen Claessen},
+  title        = {A monad for deterministic parallelism},
+  booktitle    = {{ACM} {SIGPLAN} Symposium on Haskell},
+  xpages        = {71--82},
+  xpublisher    = {{ACM}},
+  year         = {2011},
+  url          = {https://doi.org/10.1145/2034675.2034685},
+  doi          = {10.1145/2034675.2034685},
+  timestamp    = {Thu, 24 Jun 2021 16:19:30 +0200},
+  biburl       = {https://dblp.org/rec/conf/haskell/MarlowNJ11.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{ChakravartyLJKM07,
+  author       = {Manuel M. T. Chakravarty and
+                  Roman Leshchinskiy and
+                  Simon L. Peyton Jones and
+                  Gabriele Keller and
+                  Simon Marlow},
+  xeditor       = {Neal Glew and
+                  Guy E. Blelloch},
+  title        = {Data parallel Haskell: a status report},
+  booktitle    = {Workshop on Declarative Aspects of
+                  Multicore Programming (DAMP)},
+  xpages        = {10--18},
+  xpublisher    = {{ACM}},
+  year         = {2007},
+  url          = {https://doi.org/10.1145/1248648.1248652},
+  doi          = {10.1145/1248648.1248652},
+  timestamp    = {Fri, 09 Apr 2021 18:38:04 +0200},
+  biburl       = {https://dblp.org/rec/conf/popl/ChakravartyLJKM07.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@article{alamode25,
+author = {Georges, A\"{\i}na Linn and Peters, Benjamin and Elbeheiry, Laila and White, Leo and Dolan, Stephen and Eisenberg, Richard A. and Casinghino, Chris and Pottier, Fran\c{c}ois and Dreyer, Derek},
+title = {Data Race Freedom \`{a} la Mode},
+year = {2025},
+issue_date = {January 2025},
+xpublisher = {Association for Computing Machinery},
+xaddress = {New York, NY, USA},
+volume = {9},
+number = {POPL},
+url = {https://doi.org/10.1145/3704859},
+doi = {10.1145/3704859},
+journal = {Proc. ACM Program. Lang.},
+month = jan,
+articleno = {23},
+numpages = {31},
+keywords = {Concurrency, Iris, OCaml, Rocq, data races, separation logic, type systems}
+}
+
+@incollection{FinemanL11,
+  author       = {Jeremy T. Fineman and
+                  Charles E. Leiserson},
+  editor       = {David A. Padua},
+  title        = {Race Detectors for Cilk and Cilk++ Programs},
+  booktitle    = {Encyclopedia of Parallel Computing},
+  xpages        = {1706--1719},
+  publisher    = {Springer},
+  year         = {2011},
+  url          = {https://doi.org/10.1007/978-0-387-09766-4\_494},
+  doi          = {10.1007/978-0-387-09766-4\_494},
+  timestamp    = {Wed, 12 Jul 2017 09:11:54 +0200},
+  biburl       = {https://dblp.org/rec/reference/parallel/FinemanL11.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{FengL99,
+  author       = {Mingdong Feng and
+                  Charles E. Leiserson},
+  title        = {Efficient Detection of Determinacy Races in Cilk Programs},
+  journal      = tocs,
+  volume       = {32},
+  number       = {3},
+  pages        = {301--326},
+  year         = {1999},
+  url          = {https://doi.org/10.1007/s002240000120},
+  doi          = {10.1007/S002240000120},
+  timestamp    = {Sun, 28 May 2017 13:18:24 +0200},
+  biburl       = {https://dblp.org/rec/journals/mst/FengL99.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{UtterbackAFL19,
+  author       = {Robert Utterback and
+                  Kunal Agrawal and
+                  Jeremy T. Fineman and
+                  I{-}Ting Angelina Lee},
+  xeditor       = {Jeffrey K. Hollingsworth and
+                  Idit Keidar},
+  title        = {Efficient race detection with futures},
+  booktitle    = ppopp,
+  xpages        = {340--354},
+  publisher    = {{ACM}},
+  year         = {2019},
+  url          = {https://doi.org/10.1145/3293883.3295732},
+  doi          = {10.1145/3293883.3295732},
+  timestamp    = {Fri, 04 Apr 2025 18:15:05 +0200},
+  biburl       = {https://dblp.org/rec/conf/ppopp/UtterbackAFL19.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+
+@article{ZhangLTMV25,
+  author       = {Minjian Zhang and
+                  Daniel Wee Soong Lim and
+                  Mosaad Al Thokair and
+                  Umang Mathur and
+                  Mahesh Viswanathan},
+  title        = {Efficient Timestamping for Sampling-Based Race Detection},
+  journal      = {Proc. {ACM} Program. Lang.},
+  volume       = {9},
+  number       = {{PLDI}},
+  xpages        = {150--175},
+  year         = {2025},
+  url          = {https://doi.org/10.1145/3729252},
+  doi          = {10.1145/3729252},
+  timestamp    = {Thu, 11 Sep 2025 20:24:03 +0200},
+  biburl       = {https://dblp.org/rec/journals/pacmpl/ZhangLTMV25.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{FlanaganF09,
+  author       = {Cormac Flanagan and
+                  Stephen N. Freund},
+  editor       = {Michael Hind and
+                  Amer Diwan},
+  title        = {FastTrack: efficient and precise dynamic race detection},
+  booktitle    = pldi,
+  xpages        = {121--133},
+  xpublisher    = {{ACM}},
+  year         = {2009},
+  url          = {https://doi.org/10.1145/1542476.1542490},
+  doi          = {10.1145/1542476.1542490},
+  timestamp    = {Mon, 03 Mar 2025 21:20:03 +0100},
+  biburl       = {https://dblp.org/rec/conf/pldi/FlanaganF09.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{PerkovicK96,
+  author       = {Dejan Perkovic and
+                  Peter J. Keleher},
+  editor       = {Karin Petersen and
+                  Willy Zwaenepoel},
+  title        = {Online Data-Race Detection via Coherency Guarantees},
+  booktitle    = osdi,
+  xpages        = {47--57},
+  xpublisher    = {{ACM}},
+  year         = {1996},
+  url          = {https://doi.org/10.1145/238721.238760},
+  doi          = {10.1145/238721.238760},
+  timestamp    = {Tue, 06 Nov 2018 16:58:01 +0100},
+  biburl       = {https://dblp.org/rec/conf/osdi/PerkovicK96.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{BoyapatiRinardOOPSLA2001,
+  author       = {Chandrasekhar Boyapati and
+                  Martin C. Rinard},
+  title        = {A Parameterized Type System for Race-Free Java Programs},
+  booktitle    = oopsla,
+  pages        = {56--69},
+  publisher    = {{ACM}},
+  year         = {2001},
+  url          = {https://doi.org/10.1145/504282.504287},
+  doi          = {10.1145/504282.504287},
+}
+
+@article{JacobsBalzerPOPL2023,
+  author = {Jules Jacobs and Stephanie Balzer},
+  title = {Higher-Order Leak and Deadlock Free Locks},
+  journal      = {Proceedings of the ACM on Programming Languages},
+  volume       = {7},
+  number       = {{POPL}},
+  xpages        = {1027--1057},
+  year         = {2023}}
+
+@inproceedings{EnglerSOSP,
+  author       = {Dawson R. Engler and
+                  Ken Ashcraft},
+  editor       = {Michael L. Scott and
+                  Larry L. Peterson},
+  title        = {RacerX: effective, static detection of race conditions and deadlocks},
+  booktitle    = sosp,
+  xpages        = {237--252},
+  xpublisher    = {{ACM}},
+  year         = {2003},
+  url          = {https://doi.org/10.1145/945445.945468},
+  doi          = {10.1145/945445.945468},
+}
+
+@Article{BalzerICFP2017,
+  author    = {Stephanie Balzer and Frank Pfenning},
+  journal   = {Proceedings of the ACM on Programming Languages},
+  title     = {Manifest Sharing with Session Types},
+  year      = {2017},
+  number    = {{ICFP}},
+  pages     = {37:1--37:29},
+  volume    = {1},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  biburl    = {https://dblp.org/rec/journals/pacmpl/BalzerP17.bib},
+  doi       = {10.1145/3110281},
+  url       = {https://doi.org/10.1145/3110281},
+}
+
+@inproceedings{MilanoPLDI2022,
+  author       = {Mae Milano and
+                  Joshua Turcotti and
+                  Andrew C. Myers},
+  editor       = {Ranjit Jhala and
+                  Isil Dillig},
+  title        = {A flexible type system for fearless concurrency},
+  booktitle    = pldi,
+  xpages        = {458--473},
+  xpublisher    = {{ACM}},
+  year         = {2022},
+  url          = {https://doi.org/10.1145/3519939.3523443},
+  doi          = {10.1145/3519939.3523443},
 }
