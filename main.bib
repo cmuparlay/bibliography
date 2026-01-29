@@ -14078,6 +14078,21 @@ xseries = {ISCA '93}
   doi          = {10.1145/3565557},
 }
 
+
+@article{AB23,
+  author       = {Daniel Anderson and
+                  Guy E. Blelloch},
+  title        = {Parallel Minimum Cuts in \emph{O}(\emph{m} log\({}^{\mbox{2}}\) \emph{n})
+                  Work and Low Depth},
+  journal      = topc,
+  volume       = {10},
+  number       = {4},
+  pages        = {18:1--18:28},
+  year         = {2023},
+  url          = {https://doi.org/10.1145/3565557},
+  doi          = {10.1145/3565557},
+}
+
 @inproceedings{Blelloch23,
   author       = {Guy E. Blelloch and
                   Magdalen Dobson},
@@ -14805,4 +14820,192 @@ year = {2025},
 booktitle = focs,
 url = {https://arxiv.org/abs/2504.02790},
 
+}
+
+
+@InProceedings{Kopelowitz2013Orientation,
+author="Kopelowitz, Tsvi
+and Krauthgamer, Robert
+and Porat, Ely
+and Solomon, Shay",
+editor="Esparza, Javier
+and Fraigniaud, Pierre
+and Husfeldt, Thore
+and Koutsoupias, Elias",
+title="Orienting Fully Dynamic Graphs with Worst-Case Time Bounds",
+booktitle="Automata, Languages, and Programming",
+year="2014",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="532--543",
+abstract="In edge orientations, the goal is usually to orient (direct) the edges of an undirected network (modeled by a graph) such that all out-degrees are bounded. When the network is fully dynamic, i.e., admits edge insertions and deletions, we wish to maintain such an orientation while keeping a tab on the update time. Low out-degree orientations turned out to be a surprisingly useful tool for managing networks.",
+isbn="978-3-662-43951-7"
+}
+
+@inproceedings{SW20,
+author = {Sawlani, Saurabh and Wang, Junxing},
+title = {Near-optimal fully dynamic densest subgraph},
+year = {2020},
+isbn = {9781450369794},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3357713.3384327},
+doi = {10.1145/3357713.3384327},
+abstract = {We give the first fully dynamic algorithm which maintains a (1−є)-approximate densest subgraph in worst-case time poly(logn, є−1) per update. Dense subgraph discovery is an important primitive for many real-world applications such as community detection, link spam detection, distance query indexing, and computational biology. We approach the densest subgraph problem by framing its dual as a graph orientation problem, which we solve using an augmenting path-like adjustment technique. Our result improves upon the previous best approximation factor of (1/4 − є) for fully dynamic densest subgraph [Bhattacharya et. al., STOC ‘15]. We also extend our techniques to solving the problem on vertex-weighted graphs with similar runtimes. Additionally, we reduce the (1−є)-approximate densest subgraph problem on directed graphs to O(logn/є) instances of (1−є)-approximate densest subgraph on vertex-weighted graphs. This reduction, together with our algorithm for vertex-weighted graphs, gives the first fully-dynamic algorithm for directed densest subgraph in worst-case time poly(logn, є−1) per update. Moreover, combined with a near-linear time algorithm for densest subgraph [Bahmani et. al., WAW ‘14], this gives the first near-linear time algorithm for directed densest subgraph.},
+booktitle = {Proceedings of the 52nd Annual ACM SIGACT Symposium on Theory of Computing},
+pages = {181–193},
+numpages = {13},
+keywords = {data structures, dense subgraph discovery, fully dynamic algorithm, graph orientation, linear programming dual},
+location = {Chicago, IL, USA},
+series = {STOC 2020}
+}
+
+
+
+
+
+
+
+@inbook{GJS21,
+author = {Michael T. Goodrich and Riko Jacob and Nodari Sitchinava},
+title = {Atomic Power in Forks: A Super-Logarithmic Lower Bound for Implementing Butterfly Networks in the Nonatomic Binary Fork-Join Model},
+booktitle = {Proceedings of the 2021 ACM-SIAM Symposium on Discrete Algorithms (SODA)},
+chapter = {},
+pages = {2141-2153},
+doi = {10.1137/1.9781611976465.128},
+URL = {https://epubs.siam.org/doi/abs/10.1137/1.9781611976465.128},
+eprint = {https://epubs.siam.org/doi/pdf/10.1137/1.9781611976465.128},
+    abstract = { We prove an Ω (log n log log n) lower bound for the span of implementing the n input, log n-depth FFT circuit (also known as butterfly network) in the nonatomic binary fork-join model. In this model, memory-access synchronizations occur only through fork operations, which spawn two child threads, and join operations, which resume a parent thread when its child threads terminate. Our bound is asymptotically tight for the nonatomic binary fork-join model, which has been of interest of late, due to its conceptual elegance and ability to capture asynchrony. Our bound implies super-logarithmic lower bound in the nonatomic binary fork-join model for implementing the butterfly merging networks used, e.g., in Batcher's bitonic and odd-even mergesort networks. This lower bound also implies an asymptotic separation result for the atomic and nonatomic versions of the fork-join model, since, as we point out, FFT circuits can be implemented in the atomic binary fork-join model with span equal to their circuit depth. }
+}
+
+@article{BURTON82,
+title = {An efficient functional implementation of FIFO queues},
+journal = {Information Processing Letters},
+volume = {14},
+number = {5},
+pages = {205-206},
+year = {1982},
+issn = {0020-0190},
+doi = {https://doi.org/10.1016/0020-0190(82)90015-1},
+url = {https://www.sciencedirect.com/science/article/pii/0020019082900151},
+author = {F.Warren Burton},
+keywords = {Data structures, functional programming, queue}
+}
+
+
+@article{MYERS83,
+title = {An applicative random-access stack},
+journal = {Information Processing Letters},
+volume = {17},
+number = {5},
+pages = {241-248},
+year = {1983},
+issn = {0020-0190},
+doi = {https://doi.org/10.1016/0020-0190(83)90106-0},
+url = {https://www.sciencedirect.com/science/article/pii/0020019083901060},
+author = {Eugene W. Myers},
+keywords = {Applicative programming, linked list, number system, random-access stack}
+}
+
+
+@article{BFH21,
+author = {Bernstein, Aaron and Forster, Sebastian and Henzinger, Monika},
+title = {A Deamortization Approach for Dynamic Spanner and Dynamic Maximal Matching},
+year = {2021},
+issue_date = {October 2021},
+publisher = {ACM},
+address = {New York, NY, USA},
+volume = {17},
+number = {4},
+issn = {1549-6325}, 
+abstract = {Many dynamic graph algorithms have an amortized update time, rather than a stronger worst-case guarantee. But amortized data structures are not suitable for real-time systems, where each individual operation has to be executed quickly. For this reason, there exist many recent randomized results that aim to provide a guarantee stronger than amortized expected. The strongest possible guarantee for a randomized algorithm is that it is always correct (Las Vegas) and has high-probability worst-case update time, which gives a bound on the time for each individual operation that holds with high probability.In this article, we present the first polylogarithmic high-probability worst-case time bounds for the dynamic spanner and the dynamic maximal matching problem.
+(1)For dynamic spanner, the only known o(n) worst-case bounds were O(n3/4) high-probability worst-case update time for maintaining a 3-spanner and O(n5/9) for maintaining a 5-spanner. We give a O(1)k log3 (n) high-probability worst-case time bound for maintaining a (2k-1)-spanner, which yields the first worst-case polylog update time for all constant k. (All the results above maintain the optimal tradeoff of stretch 2k-1 and \~{O}(n1+1/k) edges.)(2)For dynamic maximal matching, or dynamic 2-approximate maximum matching, no algorithm with o(n) worst-case time bound was known and we present an algorithm with O(log 5 (n)) high-probability worst-case time; similar worst-case bounds existed only for maintaining a matching that was (2+ϵ)-approximate, and hence not maximal.Our results are achieved using a new approach for converting amortized guarantees to worst-case ones for randomized data structures by going through a third type of guarantee, which is a middle ground between the two above: An algorithm is said to have worst-case expected update time ɑ if for every update σ, the expected time to process σ is at most ɑ. Although stronger than amortized expected, the worst-case expected guarantee does not resolve the fundamental problem of amortization: A worst-case expected update time of O(1) still allows for the possibility that every 1/f(n) updates requires ϴ (f(n)) time to process, for arbitrarily high f(n). In this article, we present a black-box reduction that converts any data structure with worst-case expected update time into one with a high-probability worst-case update time: The query time remains the same, while the update time increases by a factor of O(log 2(n)).Thus, we achieve our results in two steps: (1) First, we show how to convert existing dynamic graph algorithms with amortized expected polylogarithmic running times into algorithms with worst-case expected polylogarithmic running times. (2) Then, we use our black-box reduction to achieve the polylogarithmic high-probability worst-case time bound. All our algorithms are Las-Vegas-type algorithms.},
+journal = talg,
+month = oct,
+articleno = {29},
+keywords = {Spanners, maximal matching}
+}
+
+@inproceedings{he2014orienting,
+  title={Orienting dynamic graphs, with applications to maximal matchings and adjacency queries},
+  author={He, Meng and Tang, Ganggui and Zeh, Norbert},
+  booktitle={International Symposium on Algorithms and Computation},
+  pages={128--140},
+  year={2014},
+  organization={Springer}
+}
+
+@inproceedings{bernstein2016faster,
+  title={Faster fully dynamic matchings with small approximation ratios},
+  author={Bernstein, Aaron and Stein, Cliff},
+  booktitle=soda,
+  pages={692--711},
+  year={2016},
+  organization={SIAM}
+}
+
+@inproceedings{bernstein2015fully,
+  title={Fully dynamic matching in bipartite graphs},
+  author={Bernstein, Aaron and Stein, Cliff},
+  booktitle={International Colloquium on Automata, Languages, and Programming},
+  pages={167--179},
+  year={2015},
+  organization={Springer}
+}
+
+@article{onak2020fully,
+  title={Fully dynamic MIS in uniformly sparse graphs},
+  author={Onak, Krzysztof and Schieber, Baruch and Solomon, Shay and Wein, Nicole},
+  journal={ACM Transactions on Algorithms (TALG)},
+  volume={16},
+  number={2},
+  pages={1--19},
+  year={2020},
+  publisher={ACM New York, NY, USA}
+}
+
+@article{henzinger2020explicit,
+  title={Explicit and implicit dynamic coloring of graphs with bounded arboricity},
+  author={Henzinger, Monika and Neumann, Stefan and Wiese, Andreas},
+  journal={arXiv preprint arXiv:2002.10142},
+  year={2020}
+}
+
+@inproceedings{ghaffari2025,
+  title={Parallel Batch-Dynamic Coreness Decomposition with Worst-Case Guarantees},
+  author={Ghaffari, Mohsen and Koo, Jaehyun},
+  booktitle=spaa,
+  year={2025}
+}
+
+
+
+@inproceedings{bhattacharya2015space,
+  title={Space-and time-efficient algorithm for maintaining dense subgraphs on one-pass dynamic streams},
+  author={Bhattacharya, Sayan and Henzinger, Monika and Nanongkai, Danupon and Tsourakakis, Charalampos},
+  booktitle=stoc,
+  pages={173--182},
+  year={2015}
+}
+
+
+
+@inproceedings{christiansen2022fully,
+  title={Fully-Dynamic $\alpha$+ 2 Arboricity Decompositions and Implicit Colouring},
+  author={Christiansen, Aleksander BG and Rotenberg, Eva},
+  booktitle=icalp,
+  pages={42--1},
+  year={2022},
+  organization={Schloss Dagstuhl--Leibniz-Zentrum f{\"u}r Informatik}
+}
+
+@article{kowalik2007adjacency,
+  title={Adjacency queries in dynamic sparse graphs},
+  author={Kowalik, {\L}ukasz},
+  journal={Information Processing Letters},
+  volume={102},
+  number={5},
+  pages={191--195},
+  year={2007},
+  publisher={Elsevier}
 }
