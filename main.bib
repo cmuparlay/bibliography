@@ -2500,6 +2500,18 @@ journal = {Journal of Software Engineering for Robotics (JOSER)}
   year      = {2019}
 }
 
+@inproceedings{AABD19,
+  author    = {Umut A. Acar and
+               Daniel Anderson and
+               Guy E. Blelloch and
+               Laxman Dhulipala},
+  title     = {Parallel Batch-Dynamic Graph Connectivity},
+  booktitle = spaa,
+  pagesx= {381--392},
+  publisher = {ACM},
+  year      = {2019}
+}
+
 @MISC{eppsteinzorder,
     author = {David Eppstein and based on a image by Hesperian},
     title = {Four Level Z-Ordering},
@@ -9247,7 +9259,29 @@ BibTeX | EndNote | ACM Ref
   year      = {2020},
 }
 
+
+@inproceedings{AABDW20,
+  author    = {Umut A. Acar and
+               Daniel Anderson and
+               Guy E. Blelloch and
+               Laxman Dhulipala and
+               Sam Westrick},
+  title     = {Parallel Batch-Dynamic Trees via Change Propagation},
+  booktitle = esa,
+  pagesx= {2:1--2:23},
+  year      = {2020},
+}
+
 @inproceedings{dhulipala2021parallel,
+  title={Parallel batch-dynamic k-clique counting},
+  author={Dhulipala, Laxman and Liu, Quanquan C and Shun, Julian and Yu, Shangdi},
+  booktitle=apocs,
+  pagesx={129--143},
+  year={2021},
+}
+
+
+@inproceedings{DLSY21,
   title={Parallel batch-dynamic k-clique counting},
   author={Dhulipala, Laxman and Liu, Quanquan C and Shun, Julian and Yu, Shangdi},
   booktitle=apocs,
@@ -10381,6 +10415,17 @@ pagesx={25},
 }
 
 @inproceedings{AndersonBT20,
+  author    = {Daniel Anderson and
+               Guy E. Blelloch and
+               Kanat Tangwongsan},
+  title     = {Work-Efficient Batch-Incremental Minimum Spanning Trees with Applications
+               to the Sliding-Window Model},
+  booktitle = spaa,
+  year = {2020}
+}
+
+
+@inproceedings{ABT20,
   author    = {Daniel Anderson and
                Guy E. Blelloch and
                Kanat Tangwongsan},
@@ -14064,6 +14109,19 @@ xseries = {ISCA '93}
 }
 
 
+@inproceedings{AB24,
+  author       = {Daniel Anderson and
+                  Guy E. Blelloch},
+  title        = {Deterministic and Low-Span Work-Efficient Parallel Batch-Dynamic Trees},
+  booktitle    = spaa,
+  pages        = {247--258},
+  publisher    = {{ACM}},
+  year         = {2024},
+  url          = {https://doi.org/10.1145/3626183.3659976},
+  doi          = {10.1145/3626183.3659976},
+}
+
+
 @article{Anderson23,
   author       = {Daniel Anderson and
                   Guy E. Blelloch},
@@ -14978,6 +15036,42 @@ keywords = {Spanners, maximal matching}
   year={2025}
 }
 
+@inproceedings{GK25coreness,
+author = {Ghaffari, Mohsen and Koo, Jaehyun},
+title = {Parallel Batch-Dynamic Coreness Decomposition with Worst-Case Guarantees},
+year = {2025},
+isbn = {9798400712586},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3694906.3743328},
+doi = {10.1145/3694906.3743328},
+abstract = {We present the first parallel batch-dynamic algorithm for approximating coreness decomposition with worst-case update times. Given any batch of edge insertions and deletions, our algorithm processes all these updates in poly(log n) depth, using a worst-case work bound of b. poly(log n) where b denotes the batch size. This means the batch gets processed in \~{O}(b/p) time, given p processors, which is optimal up to logarithmic factors. Previously, an algorithm with similar guarantees was known by the celebrated work of Liu, Shi, Yu, Dhulipala, and Shun [SPAA'22], but with the caveat of the work bound, and thus the runtime, being only amortized.},
+booktitle = {Proceedings of the 37th ACM Symposium on Parallelism in Algorithms and Architectures},
+pages = {225–239},
+numpages = {15},
+keywords = {Parallel algorithms, arboricity, batch-dynamic parallel algorithms, coreness decomposition, dynamic algorithms, orientation},
+location = {Portland, OR, USA},
+series = {SPAA '25}
+}
+
+@inproceedings{GK25sparsifiers,
+author = {Ghaffari, Mohsen and Koo, Jaehyun},
+title = {Parallel Batch-Dynamic Algorithms for Spanners, and Extensions},
+year = {2025},
+isbn = {9798400712586},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3694906.3743322},
+doi = {10.1145/3694906.3743322},
+abstract = {This paper presents the first parallel batch-dynamic algorithms for computing spanners and sparsifiers. Our algorithms process any batch of edge insertions and deletions in an n-node undirected graph, in poly(log n) depth and using amortized work near-linear in the batch size. Our concrete results are as follows:• Our base algorithm maintains a spanner with (2k -1) stretch and \~{O}(n1+1/k) edges, for any k ≥ 1.• Our first extension maintains a sparse spanner with only O(n) edges, and \~{O}(log n) stretch.• Our second extension maintains a t-bundle of spanners --- i.e., t spanners, each of which is the spanner of the graph remaining after removing the previous ones---and allows us to maintain cut/spectral sparsifiers with \~{O}(n) edges.},
+booktitle = {Proceedings of the 37th ACM Symposium on Parallelism in Algorithms and Architectures},
+pages = {299–313},
+numpages = {15},
+keywords = {Parallel algorithms, batch-dynamic parallel algorithms, dynamic algorithms, spanners, sparsifiers},
+location = {Portland, OR, USA},
+series = {SPAA '25}
+}
+
 
 
 @inproceedings{bhattacharya2015space,
@@ -15008,4 +15102,72 @@ keywords = {Spanners, maximal matching}
   pages={191--195},
   year={2007},
   publisher={Elsevier}
+}
+
+@article{HM25,
+title={Parallel Batch-Dynamic Vertex Coloring in $O(\log \Delta)$ Amortized Update Time},
+author = {Chase Hutton and Adam Melrod},
+url={https://arxiv.org/abs/2512.08742},
+eprinttype={arXiv},
+}
+
+@article{GK25coloring,
+title={Dynamic Graph Coloring: Sequential, Parallel, and Distributed},
+author = {Mohsen Ghaffari and Jaehyun Koo},
+url={https://arxiv.org/abs/2512.09218},
+eprinttype={arXiv},}
+
+@inproceedings{BGJV25,
+author = {van den Brand, Jan and Gholizadeh, Hossein and Jiang, Yonggang and de Vos, Tjin},
+title = {Parallel Minimum Cost Flow in Near-Linear Work and Square Root Depth for Dense Instances},
+year = {2025},
+isbn = {9798400712586},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3694906.3743356},
+doi = {10.1145/3694906.3743356},
+abstract = {For n-vertex m-edge graphs with integer polynomially-bounded costs and capacities, we provide a randomized parallel algorithm for the minimum cost flow problem with \~{O}(m + n1.5) work and \~{O}(√n) depth1. On moderately dense graphs (m > n1.5), our algorithm is the first one to achieve both near-linear work and sub-linear depth. Previous algorithms are either achieving almost optimal work but are highly sequential [CKL+22], or achieving sub-linear depth but use super-linear work [LS14, OS93]. Our result also leads to improvements for the special cases of max flow, bipartite maximum matching, shortest paths, and reachability. Notably, the previous algorithms achieving near-linear work for shortest paths and reachability all have depth no(1). √n [JLS19, FHL+25].Our algorithm consists of a parallel implementation of [BLL+21]. One important building block is a parallel batch-dynamic expander decomposition, which we show how to obtain from the recent parallel expander decomposition of [CMGS25].},
+booktitle = {Proceedings of the 37th ACM Symposium on Parallelism in Algorithms and Architectures},
+pages = {1–16},
+numpages = {16},
+keywords = {Bipartite Matching, Expander Decomposition, Maximum Flow, Parallel Algorithm},
+location = {Portland, OR, USA},
+series = {SPAA '25}
+}
+
+
+@inproceedings{GGQ23,
+author = {Ghaffari, Mohsen and Grunau, Christoph and Qu, Jiahao},
+title = {Nearly Work-Efficient Parallel DFS in Undirected Graphs},
+year = {2023},
+isbn = {9781450395458},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3558481.3591094},
+doi = {10.1145/3558481.3591094},
+abstract = {We present the first parallel depth-first search algorithm for undirected graphs that has near-linear work and sublinear depth. Concretely, in any n-node m-edge undirected graph, our algorithm computes a DFS in \~{O}(√n) depth and using \~{O} (m + n) work. All prior work either required Ω(n) depth, and thus were essentially sequential, or needed a high poly(n) work and thus were far from being work-efficient.},
+booktitle = {Proceedings of the 35th ACM Symposium on Parallelism in Algorithms and Architectures},
+pages = {273–283},
+numpages = {11},
+keywords = {depth-first search, parallel algorithms, work-efficient},
+location = {Orlando, FL, USA},
+series = {SPAA '23}
+}
+
+@inproceedings{TDS22,
+author = {Tseng, Tom and Dhulipala, Laxman and Shun, Julian},
+title = {Parallel Batch-Dynamic Minimum Spanning Forest and the Efficiency of Dynamic Agglomerative Graph Clustering},
+year = {2022},
+isbn = {9781450391467},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3490148.3538584},
+doi = {10.1145/3490148.3538584},
+abstract = {Hierarchical agglomerative clustering (HAC) is a popular algorithm for clustering data, but despite its importance, no dynamic algorithms for HAC with good theoretical guarantees exist. In this paper, we study dynamic HAC on edge-weighted graphs. As single-linkage HAC reduces to computing a minimum spanning forest (MSF), our first result is a parallel batch-dynamic algorithm for maintaining MSFs. On a batch of k edge insertions or deletions, our batch-dynamic MSF algorithm runs in O(k log6 n) expected amortized work and O(log4 n) span with high probability. It is the first fully dynamic MSF algorithm handling batches of edge updates with polylogarithmic work per update and polylogarithmic span. Using our MSF algorithm, we obtain a parallel batch-dynamic algorithm that can answer queries about single-linkage graph HAC clusters.Our second result is that dynamic graph HAC is significantly harder for other common linkage functions. For example, assuming the strong exponential time hypothesis, dynamic graph HAC requires Ω(n1-o(1)) work per update or query on a graph with n vertices for complete linkage, weighted average linkage, and average linkage. For complete linkage and weighted average linkage, the bound still holds even for incremental or decremental algorithms and even if we allow poly(n)-approximation. For average linkage, the bound weakens to Ω(n1/2-o(1)) for incremental and decremental algorithms, and the bounds still hold when allowing no(1) -approximation.},
+booktitle = {Proceedings of the 34th ACM Symposium on Parallelism in Algorithms and Architectures},
+pages = {233–245},
+numpages = {13},
+keywords = {parallel algorithms, graph clustering, dynamic algorithms},
+location = {Philadelphia, PA, USA},
+series = {SPAA '22}
 }
