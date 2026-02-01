@@ -15538,8 +15538,8 @@ eprint = {https://epubs.siam.org/doi/pdf/10.1137/1.9781611978971.202},
   publisher={Elsevier}
 }
 @article{pawagi1986log,
-  title={An O (log n) algorithm for parallel update of minimum spanning trees},
-  author={Pawagi, Shaunak and Ramakrishnan, IV},
+  title={An $O(\log n)$ algorithm for parallel update of minimum spanning trees},
+  author={Pawagi, Shaunak and Ramakrishnan, I.V.},
   journal={Information Processing Letters},
   volume={22},
   number={5},
@@ -15578,13 +15578,23 @@ eprint = {https://epubs.siam.org/doi/pdf/10.1137/1.9781611978971.202},
 }
 
 @inproceedings{johnson1992optimal,
-  title={Optimal Algorithms for the Vertex Updating Problem of a Minimum Spanning Tree.},
+  title={Optimal Algorithms for the Vertex Updating Problem of a Minimum Spanning Tree},
   author={Johnson, Donald B and Metaxas, Panagiotis Takis},
   booktitle={IPPS},
   pages={306--314},
   year={1992}
 }
 
+@article{johnson1996optimal,
+  title={Optimal algorithms for the single and multiple vertex updating problems of a minimum spanning tree},
+  author={Johnson, Donald B. and Metaxas, P},
+  journal={Algorithmica},
+  volume={16},
+  number={6},
+  pages={633--648},
+  year={1996},
+  publisher={Springer}
+}
 
 @article{pawagi1993optimal,
   title={Optimal parallel algorithms for multiple updates of minimum spanning trees},
@@ -15596,3 +15606,79 @@ eprint = {https://epubs.siam.org/doi/pdf/10.1137/1.9781611978971.202},
   year={1993},
   publisher={Springer}
 }
+
+@InProceedings{varman86parallel,
+author="Varman, Peter
+and Doshi, Kshitij",
+editor="Kott, Laurent",
+title="A parallel vertex insertion algorithm for minimum spanning trees",
+booktitle="Automata, Languages and Programming",
+year="1986",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="424--433",
+abstract="A new parallel algorithm for updating the minimum spanning tree of an n-vertex graph following the addition of a new vertex is presented. The algorithm runs in O(log n) time, using O(n) processors on a concurrent-read-exclusive-write parallel random access machine. The algorithm uses a divide-and-conquer strategy, and is superior to known results on this model, that either obtain O(log n) time performance using O(n2) processors, or employ O(n) processors but have a time complexity of O (log2 n).",
+isbn="978-3-540-39859-2"
+}
+
+@article{ferragina1995technique,
+title = {A Technique to Speed Up Parallel Fully Dynamic Algorithms for MST},
+journal = {Journal of Parallel and Distributed Computing},
+volume = {31},
+number = {2},
+pages = {181-189},
+year = {1995},
+issn = {0743-7315},
+doi = {https://doi.org/10.1006/jpdc.1995.1157},
+url = {https://www.sciencedirect.com/science/article/pii/S0743731585711574},
+author = {P. Ferragina},
+abstract = {We provide a new EREW PRAM algorithm to maintain the minimum spanning tree (MST) of an undirected weighted graph. Our approach combines the sparsification data structure with a novel parallel technique which efficiently treats single edge deletions. The proposed parallel algorithm requires O(log n) time and O(n2/3 log(m/n)) work, where n and m are respectively the number of nodes and edges of the given graph.}
+}
+
+@article{sun20fully,
+author = {Sun, Bintao and Chan, T.-H. Hubert and Sozio, Mauro},
+title = {Fully Dynamic Approximate k-Core Decomposition in Hypergraphs},
+year = {2020},
+issue_date = {August 2020},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {14},
+number = {4},
+issn = {1556-4681},
+url = {https://doi.org/10.1145/3385416},
+doi = {10.1145/3385416},
+abstract = {In this article, we design algorithms to maintain approximate core values in dynamic hypergraphs. This notion has been well studied for normal graphs in both static and dynamic setting. We generalize the problem to hypergraphs when edges can be inserted or deleted by an adversary.We consider two dynamic scenarios. In the first case, there are only insertions; and in the second case, there can be both insertions and deletions. In either case, the update time is poly-logarithmic in the number of nodes, with the insertion-only case boasting a better approximation ratio. We also perform extensive experiments on large real-world datasets, which demonstrate the accuracy and efficiency of our algorithms.},
+journal = {ACM Trans. Knowl. Discov. Data},
+month = may,
+articleno = {39},
+numpages = {21},
+keywords = {hypergraphs, dynamic network, Core values}
+}
+
+@InProceedings{holm15faster,
+author="Holm, Jacob
+and Rotenberg, Eva
+and Wulff-Nilsen, Christian",
+editor="Bansal, Nikhil
+and Finocchi, Irene",
+title="Faster Fully-Dynamic Minimum Spanning Forest",
+booktitle="Algorithms - ESA 2015",
+year="2015",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="742--753",
+abstract="We give a new data structure for the fully-dynamic minimum spanning forest problem in simple graphs. Edge updates are supported in O(log4				n/loglogn) expected amortized time per operation, improving the O(log4				n) amortized bound of Holm et al. (STOC '98, JACM '01). We also provide a deterministic data structure with amortized update time O(log4				n logloglogn/loglogn). We assume the Word-RAM model with standard instructions.",
+isbn="978-3-662-48350-3"
+}
+
+
+@INPROCEEDINGS{abraham16fully,
+  author={Abraham, Ittai and Durfee, David and Koutis, Ioannis and Krinninger, Sebastian and Peng, Richard},
+  booktitle={2016 IEEE 57th Annual Symposium on Foundations of Computer Science (FOCS)}, 
+  title={On Fully Dynamic Graph Sparsifiers}, 
+  year={2016},
+  volume={},
+  number={},
+  pages={335-344},
+  keywords={Heuristic algorithms;Approximation algorithms;Data structures;Laplace equations;Bipartite graph;Clustering algorithms;Algorithm design and analysis;Dynamic Graph Algorithms;Sparsification},
+  doi={10.1109/FOCS.2016.44}}
