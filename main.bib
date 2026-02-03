@@ -949,6 +949,7 @@ year = { 2023 }
   series       = {LIPIcs},
   volume       = {244},
   pages        = {88:1--88:19},
+  year={2022),
 }
 
 
@@ -15133,13 +15134,15 @@ title={Parallel Batch-Dynamic Vertex Coloring in $O(\log \Delta)$ Amortized Upda
 author = {Chase Hutton and Adam Melrod},
 url={https://arxiv.org/abs/2512.08742},
 eprinttype={arXiv},
+year={2025},
 }
 
 @article{GK25coloring,
 title={Dynamic Graph Coloring: Sequential, Parallel, and Distributed},
 author = {Mohsen Ghaffari and Jaehyun Koo},
 url={https://arxiv.org/abs/2512.09218},
-eprinttype={arXiv},}
+eprinttype={arXiv},
+year={2025},}
 
 @inproceedings{BGJV25,
 author = {van den Brand, Jan and Gholizadeh, Hossein and Jiang, Yonggang and de Vos, Tjin},
@@ -15301,8 +15304,6 @@ keywords = {graph algorithms, Dynamic algorithms}
   author={Peter Loubal},
   journal={Highway Research Record},
   year={1967},
-  number = {205},
-  pages = {96-109},
   
 }
 
@@ -15682,3 +15683,211 @@ isbn="978-3-662-48350-3"
   pages={335-344},
   keywords={Heuristic algorithms;Approximation algorithms;Data structures;Laplace equations;Bipartite graph;Clustering algorithms;Algorithm design and analysis;Dynamic Graph Algorithms;Sparsification},
   doi={10.1109/FOCS.2016.44}}
+
+@article{fournier2020survey,
+author = {Fournier-Viger, Philippe and He, Ganghuan and Cheng, Chao and Li, Jiaxuan and Zhou, Min and Lin, Jerry Chun-Wei and Yun, Unil},
+title = {A survey of pattern mining in dynamic graphs},
+journal = {WIREs Data Mining and Knowledge Discovery},
+volume = {10},
+number = {6},
+pages = {e1372},
+keywords = {attributed graphs, dynamic graphs, frequent patterns, graph mining, pattern mining},
+doi = {https://doi.org/10.1002/widm.1372},
+url = {https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/widm.1372},
+eprint = {https://wires.onlinelibrary.wiley.com/doi/pdf/10.1002/widm.1372},
+abstract = {Abstract Graph data is found in numerous domains such as for the analysis of social networks, sensor networks, bioinformatics, industrial systems, and chemistry. Analyzing graphs to identify useful and interesting patterns is an important research area. It helps understanding graphs, and hence support decision making. Since two decades, many graph mining algorithms have been proposed to identify patterns such as frequent subgraphs, paths, cliques, and trees. But most of them assume that graphs are static. This simplifying assumption makes it easy to design algorithms but discard information about how graphs evolve. This article provides a detailed survey of techniques for mining interesting patterns in dynamic graphs, which can serve both as an introduction and as a guide to recent advances and opportunities in this research area. The main tasks related to mining patterns in dynamic graphs are reviewed such as discovering frequent subgraphs, evolution rules, motifs, subgraph sequences, recurrent and triggering patterns, and trend sequences. In addition, an overview of strategies and approaches to solve dynamic graph mining problems is presented, and their advantages and limitations are highlighted. Various extensions are also discussed such as to discover patterns in data streams and big data. Finally, the article mentions several research opportunities. This article is categorized under: Algorithmic Development > Spatial and Temporal Data Mining Algorithmic Development > Association Rules},
+year = {2020}
+}
+
+@article{besta2023practice,
+author = {Besta, Maciej and Fischer, Marc and Kalavri, Vasiliki and Kapralov, Michael and Hoefler, Torsten},
+title = {Practice of Streaming Processing of Dynamic Graphs: Concepts, Models, and Systems},
+year = {2023},
+issue_date = {June 2023},
+publisher = {IEEE Press},
+volume = {34},
+number = {6},
+issn = {1045-9219},
+url = {https://doi.org/10.1109/TPDS.2021.3131677},
+doi = {10.1109/TPDS.2021.3131677},
+abstract = {Graph processing has become an important part of various areas of computing, including machine learning, medical applications, social network analysis, computational sciences, and others. A growing amount of the associated graph processing workloads are <italic>dynamic</italic>, with millions of edges added or removed per second. Graph streaming frameworks are specifically crafted to enable the processing of such highly dynamic workloads. Recent years have seen the development of many such frameworks. However, they differ in their general architectures (with key details such as the support for the concurrent execution of graph updates and queries, or the incorporated graph data organization), the types of updates and workloads allowed, and many others. To facilitate the understanding of this growing field, we provide the first analysis and taxonomy of dynamic and streaming graph processing. We focus on identifying the fundamental system designs and on understanding their support for concurrency, and for different graph updates as well as analytics workloads. We also crystallize the meaning of different concepts associated with streaming graph processing, such as dynamic, temporal, online, and time-evolving graphs, edge-centric processing, models for the maintenance of updates, and graph databases. Moreover, we provide a bridge with the very rich landscape of graph streaming theory by giving a broad overview of recent theoretical related advances, and by discussing which graph streaming models and settings could be helpful in developing more powerful streaming frameworks and designs. We also outline graph streaming workloads and research challenges.<?query id="Q1">Author: Please confirm or add details for any funding or financial support for the research of this article. ?>},
+journal = {IEEE Trans. Parallel Distrib. Syst.},
+month = jun,
+pages = {1860–1876},
+numpages = {17}
+}
+
+
+@article{gao2024survey,
+	abstract = {Graphs that are used to model real-world entities with vertices and relationships among entities with edges, have proven to be a powerful tool for describing real-world problems in applications. In most real-world scenarios, entities and their relationships are subject to constant changes. Graphs that record such changes are called dynamic graphs. In recent years, the widespread application scenarios of dynamic graphs have stimulated extensive research on dynamic graph processing systems that continuously ingest graph updates and produce up-to-date graph analytics results. As the scale of dynamic graphs becomes larger, higher performance requirements are demanded to dynamic graph processing systems. With the massive parallel processing power and high memory bandwidth, GPUs become mainstream vehicles to accelerate dynamic graph processing tasks. GPU-based dynamic graph processing systems mainly address two challenges: maintaining the graph data when updates occur (i.e., graph updating) and producing analytics results in time (i.e., graph computing). In this paper, we survey GPU-based dynamic graph processing systems and review their methods on addressing both graph updating and graph computing. To comprehensively discuss existing dynamic graph processing systems on GPUs, we first introduce the terminologies of dynamic graph processing and then develop a taxonomy to describe the methods employed for graph updating and graph computing. In addition, we discuss the challenges and future research directions of dynamic graph processing on GPUs.},
+	author = {Gao, Hongru and Liao, Xiaofei and Shao, Zhiyuan and Li, Kexin and Chen, Jiajie and Jin, Hai},
+	date = {2023/12/16},
+	date-added = {2026-02-03 13:10:44 -0500},
+	date-modified = {2026-02-03 13:10:44 -0500},
+	doi = {10.1007/s11704-023-2656-1},
+	id = {Gao2023},
+	isbn = {2095-2236},
+	journal = {Frontiers of Computer Science},
+	number = {4},
+	pages = {184106},
+	title = {A survey on dynamic graph processing on GPUs: concepts, terminologies and systems},
+	url = {https://doi.org/10.1007/s11704-023-2656-1},
+	volume = {18},
+	year = {2023},
+	bdsk-url-1 = {https://doi.org/10.1007/s11704-023-2656-1}}
+
+@ARTICLE{dossantos2025current,
+  author={Dos Santos, Gabriel G. and de Rose, César A. F. and Lakhotia, Kartik},
+  journal={IEEE Access}, 
+  title={The Current Landscape of Scalable Dynamic Graph Processing}, 
+  year={2025},
+  volume={13},
+  number={},
+  pages={140364-140381},
+  keywords={Heuristic algorithms;Databases;Surveys;Optimization;Memory management;Social networking (online);Electronic commerce;Diseases;Data structures;Topology;Distributed computing;dynamic graphs;graph algorithms;graph streams;parallel computing},
+  doi={10.1109/ACCESS.2025.3596871}}
+
+
+@article{besta2023demystifying,
+author = {Besta, Maciej and Gerstenberger, Robert and Peter, Emanuel and Fischer, Marc and Podstawski, Micha\l{} and Barthels, Claude and Alonso, Gustavo and Hoefler, Torsten},
+title = {Demystifying Graph Databases: Analysis and Taxonomy of Data Organization, System Designs, and Graph Queries},
+year = {2023},
+issue_date = {February 2024},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {56},
+number = {2},
+issn = {0360-0300},
+url = {https://doi.org/10.1145/3604932},
+doi = {10.1145/3604932},
+abstract = {Numerous irregular graph datasets, for example social networks or web graphs, may contain even trillions of edges. Often, their structure changes over time and they have domain-specific rich data associated with vertices and edges. Graph database systems such as Neo4j enable storing, processing, and analyzing such large, evolving, and rich datasets. Due to the sheer size and irregularity of such datasets, these systems face unique design challenges. To facilitate the understanding of this emerging domain, we present the first survey and taxonomy of graph database systems. We focus on identifying and analyzing fundamental categories of these systems (e.g., document stores, tuple stores, native graph database systems, or object-oriented systems), the associated graph models (e.g., Resource Description Framework or Labeled Property Graph), data organization techniques (e.g., storing graph data in indexing structures or dividing data into records), and different aspects of data distribution and query execution (e.g., support for sharding and Atomicity, Consistency, Isolation, Durability). Fifty-one graph database systems are presented and compared, including Neo4j, OrientDB, and Virtuoso. We outline graph database queries and relationships with associated domains (NoSQL stores, graph streaming, and dynamic graph algorithms). Finally, we outline future research and engineering challenges related to graph databases.},
+journal = {ACM Comput. Surv.},
+month = sep,
+articleno = {31},
+numpages = {40},
+keywords = {Document Stores, Wide-Column Stores, RDBMS, Key-Value Stores, Triple Stores, Labeled Property Graph, RDF, Graph Representations, Graph Transactions, Graph Queries, Data Layout, Graph Models, Graph Database Management Systems, NoSQL Stores, Graph Databases, Graphs}
+}
+
+@article{mcgregor2014graph,
+author = {McGregor, Andrew},
+title = {Graph stream algorithms: a survey},
+year = {2014},
+issue_date = {March 2014},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {43},
+number = {1},
+issn = {0163-5808},
+url = {https://doi.org/10.1145/2627692.2627694},
+doi = {10.1145/2627692.2627694},
+abstract = {Over the last decade, there has been considerable interest in designing algorithms for processing massive graphs in the data stream model. The original motivation was two-fold: a) in many applications, the dynamic graphs that arise are too large to be stored in the main memory of a single machine and b) considering graph problems yields new insights into the complexity of stream computation. However, the techniques developed in this area are now finding applications in other areas including data structures for dynamic graphs, approximation algorithms, and distributed and parallel computation. We survey the state-of-the-art results; identify general techniques; and highlight some simple algorithms that illustrate basic ideas.},
+journal = {SIGMOD Rec.},
+month = may,
+pages = {9–20},
+numpages = {12}
+}
+
+@article{aggarwal2014evolutionary,
+author = {Aggarwal, Charu and Subbian, Karthik},
+title = {Evolutionary Network Analysis: A Survey},
+year = {2014},
+issue_date = {July 2014},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {47},
+number = {1},
+issn = {0360-0300},
+url = {https://doi.org/10.1145/2601412},
+doi = {10.1145/2601412},
+abstract = {Evolutionary network analysis has found an increasing interest in the literature because of the importance of different kinds of dynamic social networks, email networks, biological networks, and social streams. When a network evolves, the results of data mining algorithms such as community detection need to be correspondingly updated. Furthermore, the specific kinds of changes to the structure of the network, such as the impact on community structure or the impact on network structural parameters, such as node degrees, also needs to be analyzed. Some dynamic networks have a much faster rate of edge arrival and are referred to as network streams or graph streams. The analysis of such networks is especially challenging, because it needs to be performed with an online approach, under the one-pass constraint of data streams. The incorporation of content can add further complexity to the evolution analysis process. This survey provides an overview of the vast literature on graph evolution analysis and the numerous applications that arise in different contexts.},
+journal = {ACM Comput. Surv.},
+month = may,
+articleno = {10},
+numpages = {36},
+keywords = {Network analysis, dynamic graphs, temporal graphs}
+}
+
+
+@article{michail2015introduction,
+author = {Othon Michail},
+title = {An Introduction to Temporal Graphs: An Algorithmic Perspective*},
+journal = {Internet Mathematics},
+volume = {12},
+number = {4},
+pages = {239--280},
+year = {2016},
+publisher = {Taylor \& Francis},
+doi = {10.1080/15427951.2016.1177801},
+
+
+URL = { 
+    
+        https://doi.org/10.1080/15427951.2016.1177801
+    
+    
+
+},
+eprint = { 
+    
+        https://doi.org/10.1080/15427951.2016.1177801
+    
+    
+
+}
+
+}
+
+
+@inproceedings{czumaj2024streaming,
+author = {Czumaj, Artur and Mishra, Gopinath and Mukherjee, Anish},
+title = {Streaming Graph Algorithms in the Massively Parallel Computation Model},
+year = {2024},
+isbn = {9798400706684},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3662158.3662770},
+doi = {10.1145/3662158.3662770},
+abstract = {We initiate the study of graph algorithms in the streaming setting on massive distributed and parallel systems inspired by practical data processing systems. The objective is to design algorithms that can efficiently process evolving graphs via large batches of edge insertions and deletions using as little memory as possible.We focus on the nowadays canonical model for the study of theoretical algorithms for massive networks, the Massively Parallel Computation (MPC) model. We design MPC algorithms that efficiently process evolving graphs: in a constant number of rounds they can handle large batches of edge updates for problems such as connectivity, minimum spanning forest, and approximate matching while adhering to the most restrictive memory regime, in which the local memory per machine is strongly sublinear in the number of vertices and the total memory is sublinear in the graph size. These results improve upon earlier works in this area which rely on using larger total space, proportional to the size of the processed graph. Our work demonstrates that parallel algorithms can process dynamically changing graphs with asymptotically optimal utilization of MPC resources: parallel time, local memory, and total memory, while processing large batches of edge updates.},
+booktitle = {Proceedings of the 43rd ACM Symposium on Principles of Distributed Computing},
+pages = {496–507},
+numpages = {12},
+keywords = {MPC, streaming, connectivity, minimum spanning tree, matching},
+location = {Nantes, France},
+series = {PODC '24}
+}
+
+@inproceedings{italiano2019dynamic,
+author = {Italiano, Giuseppe F. and Lattanzi, Silvio and Mirrokni, Vahab S. and Parotsidis, Nikos},
+title = {Dynamic Algorithms for the Massively Parallel Computation Model},
+year = {2019},
+isbn = {9781450361842},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3323165.3323202},
+doi = {10.1145/3323165.3323202},
+abstract = {The Massive Parallel Computing (MPC) model gained popularity during the last decade and it is now seen as the standard model for processing large scale data. One significant shortcoming of the model is that it assumes to work on static datasets while, in practice, real world datasets evolve continuously. To overcome this issue, in this paper we initiate the study of dynamic algorithms in the MPC model. We first discuss the main requirements for a dynamic parallel model and we show how to adapt the classic MPC model to capture them. Then we analyze the connection between classic dynamic algorithms and dynamic algorithms in the MPC model. Finally, we provide new efficient dynamic MPC algorithms for a variety of fundamental graph problems, including connectivity, minimum spanning tree and matching.},
+booktitle = {The 31st ACM Symposium on Parallelism in Algorithms and Architectures},
+pages = {49–58},
+numpages = {10},
+keywords = {dynamic algorithms, mapreduce model, massive parallel computing},
+location = {Phoenix, AZ, USA},
+series = {SPAA '19}
+}
+
+@inproceedings{CHK16,
+author = {Censor-Hillel, Keren and Haramaty, Elad and Karnin, Zohar},
+title = {Optimal Dynamic Distributed MIS},
+year = {2016},
+isbn = {9781450339643},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2933057.2933083},
+doi = {10.1145/2933057.2933083},
+abstract = {Finding a maximal independent set (MIS) in a graph is a cornerstone task in distributed computing. The local nature of an MIS allows for fast solutions in a static distributed setting, which are logarithmic in the number of nodes or in their degrees. The result trivially applies for the dynamic distributed model, in which edges or nodes may be inserted or deleted. In this paper, we take a different approach which exploits locality to the extreme, and show how to update an MIS in a dynamic distributed setting, either synchronous or asynchronous, with only a single adjustment and in a single round, in expectation. These strong guarantees hold for the complete fully dynamic setting: Insertions and deletions, of edges as well as nodes, gracefully and abruptly. This strongly separates the static and dynamic distributed models, as super-constant lower bounds exist for computing an MIS in the former.Our results are obtained by a novel analysis of the surprisingly simple solution of carefully simulating the greedy sequential MIS algorithm with a random ordering of the nodes. As such, our algorithm has a direct application as a 3-approximation algorithm for correlation clustering. This adds to the important toolbox of distributed graph decompositions, which are widely used as crucial building blocks in distributed computing.Finally, our algorithm enjoys a useful history-independence property, meaning the output is independent of the history of topology changes that constructed that graph. This means the output cannot be chosen, or even biased, by the adversary in case its goal is to prevent us from optimizing some objective function.},
+booktitle = {Proceedings of the 2016 ACM Symposium on Principles of Distributed Computing},
+pages = {217–226},
+numpages = {10},
+keywords = {dynamic distributed algorithms, history independence, maximal independent set, randomized algorithms},
+location = {Chicago, Illinois, USA},
+series = {PODC '16}
+}
