@@ -15412,6 +15412,7 @@ keywords = {Graph coloring, dynamic graph algorithms}
 
 
 
+
 @inbook{hayek26mincut,
 author = {Antoine El-Hayek and Monika Henzinger and Jason Li},
 title = {Deterministic and Exact Fully-dynamic Minimum Cut of Superpolylogarithmic Size in Subpolynomial Time},
@@ -15963,5 +15964,223 @@ month = jan}
   title        = {Dynamic treewidth},
   booktitle    = focs,
   year         = {2023},
+}
+
+
+@INPROCEEDINGS{bender24nearly,
+  author={Bender, Michael A. and Conway, Alex and Farach-Colton, Martín and Komlós, Hanna and Koucký, Michal and Kuszmaul, William and Saks, Michael},
+  booktitle={2024 IEEE 65th Annual Symposium on Foundations of Computer Science (FOCS)}, 
+  title={Nearly Optimal List Labeling}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={2253-2274},
+  keywords={Computer science;Costs;Upper bound;Arrays;Labeling;Data structures;probabilistic algorithms;combinatorial algorithms},
+  doi={10.1109/FOCS61266.2024.00132}}
+
+
+
+
+@article{bender22online,
+author = {Bender, Michael A. and Conway, Alex and Farach-Colton, Mart\'{\i}n and Koml\'{o}s, Hanna and Kuszmaul, William and Wein, Nicole},
+title = {Online List Labeling: Breaking the \({\log^2 n}\) Barrier},
+journal = {SIAM Journal on Computing},
+volume = {54},
+number = {5},
+pages = {FOCS22-60-FOCS22-92},
+year = {2025},
+doi = {10.1137/22M1534468},
+
+URL = { 
+    
+        https://doi.org/10.1137/22M1534468
+    
+    
+
+},
+eprint = { 
+    
+        https://doi.org/10.1137/22M1534468
+    
+    
+
+}
+,
+    abstract = { Abstract. The online list-labeling problem is an algorithmic primitive with a large literature of upper bounds, lower bounds, and applications. The goal is to store a dynamically changing set of \(n\) items in an array of \(m\) slots, while maintaining the invariant that the items appear in sorted order and while minimizing the relabeling cost, defined to be the number of items that are moved per insertion/deletion. For the linear regime, where \(m = (1 + \Theta (1)) n\), an upper bound of \(O(\log^2 n)\) on the relabeling cost has been known since 1981. A lower bound of \(\Omega (\log^2 n)\) is known for deterministic algorithms and for so-called smooth algorithms, but the best general lower bound remains \(\Omega (\log n)\). The central open question in the field is whether \(O(\log^2 n)\) is optimal for all algorithms. In this paper, we give a randomized data structure that achieves an expected relabeling cost of \(O(\log^{3/2} n)\) per operation. More generally, if \(m = (1 + \epsilon ) n\) for \(\epsilon = O(1)\), the expected relabeling cost becomes \(O(\epsilon^{-1} \log^{3/2} n)\). Our solution is history independent, meaning that the state of the data structure is independent of the order in which items are inserted/deleted. For history-independent data structures, we also prove a matching lower bound: for all \(\epsilon\) between \(1/ n^{1/3}\) and some sufficiently small positive constant, the optimal expected cost for history-independent list-labeling solutions is \(\Theta (\epsilon^{-1}\log^{3/2} n)\). }
+}
+
+@inproceedings{micciancio97oblivious,
+author = {Micciancio, Daniele},
+title = {Oblivious data structures: applications to cryptography},
+year = {1997},
+isbn = {0897918886},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/258533.258638},
+doi = {10.1145/258533.258638},
+booktitle = {Proceedings of the Twenty-Ninth Annual ACM Symposium on Theory of Computing},
+pages = {456–464},
+numpages = {9},
+location = {El Paso, Texas, USA},
+series = {STOC '97}
+}
+
+@article{alon1986fast,
+title = {A fast and simple randomized parallel algorithm for the maximal independent set problem},
+journal = {Journal of Algorithms},
+volume = {7},
+number = {4},
+pages = {567-583},
+year = {1986},
+issn = {0196-6774},
+doi = {https://doi.org/10.1016/0196-6774(86)90019-2},
+url = {https://www.sciencedirect.com/science/article/pii/0196677486900192},
+author = {Noga Alon and László Babai and Alon Itai},
+abstract = {A simple parallel randomized algorithm to find a maximal independent set in a graph G = (V, E) on n vertices is presented. Its expected running time on a concurrent-read concurrent-write PRAM with O(|E|dmax) processors is O(log n), where dmax denotes the maximum degree. On an exclusive-read exclusive-write PRAM with O(|E|) processors the algorithm runs in O(log2n). Previously, an O(log4n) deterministic algorithm was given by Karp and Wigderson for the EREW-PRAM model. This was recently (independently of our work) improved to O(log2n) by M. Luby. In both cases randomized algorithms depending on pairwise independent choices were turned into deterministic algorithms. We comment on how randomized combinatorial algorithms whose analysis only depends on d-wise rather than fully independent random choices (for some constant d) can be converted into deterministic algorithms. We apply a technique due to A. Joffe (1974) and obtain deterministic construction in fast parallel time of various combinatorial objects whose existence follows from probabilistic arguments.}
+}
+
+
+
+
+
+
+
+@inbook{bateni2023optimal,
+author = {MohammadHossein Bateni and Hossein Esfandiari and Hendrik Fichtenberger and Monika Henzinger and Rajesh Jayaram and Vahab Mirrokni and Andreas Wiese},
+title = {Optimal Fully Dynamic <italic>k</italic>-Center Clustering for Adaptive and Oblivious Adversaries},
+booktitle = {Proceedings of the 2023 Annual ACM-SIAM Symposium on Discrete Algorithms (SODA)},
+chapter = {},
+pages = {2677-2727},
+doi = {10.1137/1.9781611977554.ch101},
+URL = {https://epubs.siam.org/doi/abs/10.1137/1.9781611977554.ch101},
+eprint = {https://epubs.siam.org/doi/pdf/10.1137/1.9781611977554.ch101},
+    abstract = { In fully dynamic clustering problems, a clustering of a given data set in a metric space must be maintained while it is modified through insertions and deletions of individual points. In this paper, we resolve the complexity of fully dynamic k-center clustering against both adaptive and oblivious adversaries. Against oblivious adversaries, we present the first algorithm for fully dynamic k-center in an arbitrary metric space that maintains an optimal (2 + ε)-approximation in O(k · polylog(n, Δ)) amortized update time. Here, n is an upper bound on the number of active points at any time, and Δ is the aspect ratio of the metric space. Previously, the best known amortized update time was O(k2 · polylog(n, Δ)), and is due to Chan, Gourqin, and Sozio (2018). Moreover, we demonstrate that our runtime is optimal up to polylog(n, Δ) factors. In fact, we prove that even offline algorithms for k-clustering tasks in arbitrary metric spaces, including k-medians, k-means, and k-center, must make at least Ω(nk) distance queries to achieve any non-trivial approximation factor. This implies a lower bound of Ω(k) which holds even for the insertions-only setting. For adaptive adversaries, we give the first deterministic algorithm for fully dynamic k-center which achieves a approximation in O(k-polylog(n, Δ)) amortized update time. Further, we demonstrate that any algorithm which achieves a -approximation against adaptive adversaries requires f (k,n) update time, for any arbitrary function f. Thus, in the regime where , we close the complexity of the problem up to polylog(n, Δ) factors in the update time. Our lower bound extends to other k-clustering tasks in arbitrary metric spaces, including k-medians and k-means. Finally, despite the aforementioned lower bounds, we demonstrate that an update time sublinear in k is possible against oblivious adversaries for metric spaces which admit locally sensitive hash functions (LSH), resulting in improved algorithms for a large class of metrics including Euclidean space, ℓp-spaces, the Hamming Metric, and the Jaccard Metric. We also give the first fully dynamic O(1)-approximation algorithms for the closely related k-sum-of-radii and k-sum-of-diameter problems, with O(poly(k, log Δ)) update time. },
+	year={2023},
+}
+
+@article{ailon2008aggregating,
+author = {Ailon, Nir and Charikar, Moses and Newman, Alantha},
+title = {Aggregating inconsistent information: Ranking and clustering},
+year = {2008},
+issue_date = {October 2008},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {55},
+number = {5},
+issn = {0004-5411},
+url = {https://doi.org/10.1145/1411509.1411513},
+doi = {10.1145/1411509.1411513},
+abstract = {We address optimization problems in which we are given contradictory pieces of input information and the goal is to find a globally consistent solution that minimizes the extent of disagreement with the respective inputs. Specifically, the problems we address are rank aggregation, the feedback arc set problem on tournaments, and correlation and consensus clustering. We show that for all these problems (and various weighted versions of them), we can obtain improved approximation factors using essentially the same remarkably simple algorithm. Additionally, we almost settle a long-standing conjecture of Bang-Jensen and Thomassen and show that unless NP⊆BPP, there is no polynomial time algorithm for the problem of minimum feedback arc set in tournaments.},
+journal = {J. ACM},
+month = nov,
+articleno = {23},
+numpages = {27},
+keywords = {tournaments, minimum feedback arc-set, correlation clustering, consensus clustering, Rank aggregation}
+}
+
+@inproceedings{daum2012leader,
+author = {Daum, Sebastian and Gilbert, Seth and Kuhn, Fabian and Newport, Calvin},
+title = {Leader election in shared spectrum radio networks},
+year = {2012},
+isbn = {9781450314503},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2332432.2332470},
+doi = {10.1145/2332432.2332470},
+abstract = {We study the leader election problem in the context of a congested single-hop radio network. We assume a collection of N synchronous devices with access to a shared band of the radio spectrum, divided into F frequencies. To model unpredictable congestion, we assume an abstract interference adversary that can choose up to t < F frequencies in each round to disrupt, preventing communication. The devices are individually activated in arbitrary rounds by an adversary. On activation, a device does not know how many other devices (if any) are also active. The goal of the leader election problem is for each active device to output the id of a leader as soon as possible after activation, while preserving the safety constraint that all devices output the same leader, with high probability.We begin by establishing a lower bound of Ω(log2N ⁄ F-t)log logN + ⁄ Ft F-t ⋅ logN) rounds, through reduction to an existing result in this model [5]. We then set out to prove this bound tight (within log log N factors). For the case where t=0, we present a novel randomized algorithm, based on a strategy of recruiting herald no-des, that works in O(⁄log2NF+log N) time. For 1 ≤ t ≤ F/6, we present a variant of our herald algorithm in which multiple real (potentially disrupted) frequencies are used to simulate each non-disrupted frequency from the t=0 case. This algorithm works in O(⁄log2NF+tlog N) time. Finally, for t > F 6 we show how to improve the trapdoor protocol of [5], used to solve a similar problem in a non-optimal manner, to solve leader election in optimal O(⁄ logN + F t⁄F-t ⋅ logN ) time, for (only) these large values of t. We also observe that if F=ω(1) and t ≤(1-ε)F for a constant ε>0, our protocols beat the classic Ω(log2N) bound on wake-up in a single frequency radio network, underscoring the observation that more frequencies in a radio network allows for more algorithmic efficiency - even if devices can each only participate on a single frequency at a time, and a significant fraction of these frequencies are disrupted adversarially.},
+booktitle = {Proceedings of the 2012 ACM Symposium on Principles of Distributed Computing},
+pages = {215–224},
+numpages = {10},
+keywords = {wireless network, shared spectrum, leader election, disruption},
+location = {Madeira, Portugal},
+series = {PODC '12}
+}
+
+@INPROCEEDINGS{linial1987distributive,
+  author={Linial, Nathan},
+  booktitle={28th Annual Symposium on Foundations of Computer Science (sfcs 1987)}, 
+  title={Distributive graph algorithms Global solutions from local data}, 
+  year={1987},
+  volume={},
+  number={},
+  pages={331-335},
+  keywords={Distributed computing;Tree graphs;Power system modeling;Labeling;Concurrent computing;Mathematics;Computer science;Color;Distributed processing;Computational modeling},
+  doi={10.1109/SFCS.1987.20}}
+
+
+@INPROCEEDINGS{ghaffari2024near,
+  author={Ghaffari, Mohsen and Grunau, Christoph},
+  booktitle={2024 IEEE 65th Annual Symposium on Foundations of Computer Science (FOCS)}, 
+  title={Near-Optimal Deterministic Network Decomposition and Ruling Set, and Improved MIS}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={2148-2179},
+  keywords={Computer science;Costs;Color;Complexity theory;Distributed algorithms;Standards;Network Decomposition;Maximal Independent Set;Ruling Set;Distributed Derandomization},
+  doi={10.1109/FOCS61266.2024.00007}}
+
+@inproceedings{nguyen2008constant,
+author = {Nguyen, Huy N. and Onak, Krzysztof},
+title = {Constant-Time Approximation Algorithms via Local Improvements},
+year = {2008},
+isbn = {9780769534367},
+publisher = {IEEE Computer Society},
+address = {USA},
+url = {https://doi.org/10.1109/FOCS.2008.81},
+doi = {10.1109/FOCS.2008.81},
+abstract = {We present a technique for transforming classical approximation algorithms into constant-time algorithms that approximate the size of the optimal solution. Our technique is applicable to a certain subclass of algorithms that compute a solution in a constant number of phases. The technique is based on greedily considering local improvements in random order.The problems amenable to our technique include Vertex Cover, Maximum Matching, Maximum Weight Matching, Set Cover, and Minimum Dominating Set. For example, for Maximum Matching, we give the first constant-time algorithm that for the class of graphs of degree bounded by $d$, computes the maximum matching size to within $eps n$, for any $eps > 0$, where $n$ is the number of nodes in the graph. The running time of the algorithm is independent of $n$, and only depends on $d$ and $eps$.},
+booktitle = {Proceedings of the 2008 49th Annual IEEE Symposium on Foundations of Computer Science},
+pages = {327–336},
+numpages = {10},
+series = {FOCS '08}
+}
+
+@inproceedings{assadi2018fully,
+author = {Assadi, Sepehr and Onak, Krzysztof and Schieber, Baruch and Solomon, Shay},
+title = {Fully dynamic maximal independent set with sublinear update time},
+year = {2018},
+isbn = {9781450355599},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3188745.3188922},
+doi = {10.1145/3188745.3188922},
+abstract = {A maximal independent set (MIS) can be maintained in an evolving m-edge graph by simply recomputing it from scratch in O(m) time after each update. But can it be maintained in time sublinear in m in fully dynamic graphs? We answer this fundamental open question in the affirmative. We present a deterministic algorithm with amortized update time O(min{Δ,m3/4}), where Δ is a fixed bound on the maximum degree in the graph and m is the (dynamically changing) number of edges. We further present a distributed implementation of our algorithm with O(min{Δ,m3/4}) amortized message complexity, and O(1) amortized round complexity and adjustment complexity (the number of vertices that change their output after each update). This strengthens a similar result by Censor-Hillel, Haramaty, and Karnin (PODC’16) that required an assumption of a non-adaptive oblivious adversary.},
+booktitle = {Proceedings of the 50th Annual ACM SIGACT Symposium on Theory of Computing},
+pages = {815–826},
+numpages = {12},
+keywords = {dynamic distributed algorithms, dynamic graph algorithms, maximal independent set},
+location = {Los Angeles, CA, USA},
+series = {STOC 2018}
+}
+
+
+
+@inbook{assadi2019fully,
+author = {Sepehr Assadi and Krzysztof Onak and Baruch Schieber and Shay Solomon},
+title = {Fully Dynamic Maximal Independent Set with Sublinear in <italic>n</italic> Update Time},
+booktitle = {Proceedings of the 2019 Annual ACM-SIAM Symposium on Discrete Algorithms (SODA)},
+chapter = {},
+pages = {1919-1936},
+doi = {10.1137/1.9781611975482.116},
+URL = {https://epubs.siam.org/doi/abs/10.1137/1.9781611975482.116},
+eprint = {https://epubs.siam.org/doi/pdf/10.1137/1.9781611975482.116},
+    abstract = { Abstract The first fully dynamic algorithm for maintaining a maximal independent set (MIS) with update time that is sublinear in the number of edges was presented recently by the authors of this paper [Assadi et al., STOC’18]. The algorithm is deterministic and its update time is O(m3/4), where m is the (dynamically changing) number of edges. Subsequently, Gupta and Khan and independently Du and Zhang [arXiv, April 2018] presented deterministic algorithms for dynamic MIS with update times of O(m2/3) and O(m2/3 ), respectively. Du and Zhang also gave a randomized algorithm with update time . Moreover, they provided some partial (conditional) hardness results hinting that the update time of m1/2–ε, and in particular n1–ε for n-vertex dense graphs, is a natural barrier for this problem for any constant ε > 0, for deterministic and randomized algorithms that satisfy a certain natural property. In this paper, we break this natural barrier and present the first fully dynamic (randomized) algorithm for maintaining an MIS with update time that is always sublinear in the number of vertices, namely, an expected amortized update. We also show that a simpler variant of our algorithm can already achieve an Õ(m1/3) expected amortized update time, which results in an improved performance over our update time algorithm for sufficiently sparse graphs, and breaks the m1/2 barrier of Du and Zhang for all values of m. }
+}
+
+@ARTICLE{du2018improved,
+       author = {{Du}, Yuhao and {Zhang}, Hengjie},
+        title = "{Improved Algorithms for Fully Dynamic Maximal Independent Set}",
+      journal = {arXiv e-prints},
+     keywords = {Computer Science - Data Structures and Algorithms},
+         year = 2018,
+        month = apr,
+          eid = {arXiv:1804.08908},
+        pages = {arXiv:1804.08908},
+          doi = {10.48550/arXiv.1804.08908},
+archivePrefix = {arXiv},
+       eprint = {1804.08908},
+ primaryClass = {cs.DS},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2018arXiv180408908D},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
 
