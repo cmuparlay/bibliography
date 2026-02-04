@@ -105,6 +105,7 @@
 	year         = {2024},
 	url          = {https://www.vldb.org/pvldb/vol17/p2241-wei.pdf},
 	doi          = {10.14778/3665844.3665854},
+}
 
 @article{zhao2023towards,
 	author       = {Xi Zhao and
@@ -949,10 +950,8 @@ year = { 2023 }
   series       = {LIPIcs},
   volume       = {244},
   pages        = {88:1--88:19},
-  year={2022),
+  year= 2022
 }
-
-
 
 @inproceedings{OLNWL16,
 author = {Oukid, Ismail and Lasperas, Johan and Nica, Anisoara and Willhalm, Thomas and Lehner, Wolfgang},
@@ -15422,7 +15421,7 @@ pages = {613-663},
 doi = {10.1137/1.9781611978971.25},
 URL = {https://epubs.siam.org/doi/abs/10.1137/1.9781611978971.25},
 eprint = {https://epubs.siam.org/doi/pdf/10.1137/1.9781611978971.25},
-    abstract = { Abstract We present an exact fully-dynamic minimum cut algorithm that runs in \(n^{o(1)}\) deterministic update time when the minimum cut size is at most \(2^{\Theta(\log^{3/4-c} n)}\) for any \(c \gt 0\), improving on the previous algorithm of Jin, Sun, and Thorup (SODA 2024) whose minimum cut size limit is \((\log n)^{o(1)}\). Combined with graph sparsification, we obtain the first \((1+\epsilon)\)-approximate fully-dynamic minimum cut algorithm on weighted graphs, for any \(\epsilon \ge 2^{-\Theta(\log^{3/4-c} n)}\), in \(n^{o(1)}\) randomized update time. Our main technical contribution is a deterministic local minimum cut algorithm, which replaces the randomized LocalKCut procedure from El-Hayek, Henzinger, and Li (SODA 2025). }
+    abstract = { Abstract We present an exact fully-dynamic minimum cut algorithm that runs in \(n^{o(1)}\) deterministic update time when the minimum cut size is at most \(2^{\Theta(\log^{3/4-c} n)}\) for any \(c \gt 0\), improving on the previous algorithm of Jin, Sun, and Thorup (SODA 2024) whose minimum cut size limit is \((\log n)^{o(1)}\). Combined with graph sparsification, we obtain the first \((1+\epsilon)\)-approximate fully-dynamic minimum cut algorithm on weighted graphs, for any \(\epsilon \ge 2^{-\Theta(\log^{3/4-c} n)}\), in \(n^{o(1)}\) randomized update time. Our main technical contribution is a deterministic local minimum cut algorithm, which replaces the randomized LocalKCut procedure from El-Hayek, Henzinger, and Li (SODA 2025). },
 year = {2026},
 }
 
@@ -15926,7 +15925,7 @@ month = jan}
   author       = {Hans L. Bodlaender},
   editor       = {Jan van Leeuwen},
   title        = {Dynamic Algorithms for Graphs with Treewidth 2},
-  booktitle    = {Workshop on Graph-Theoretic Concepts in Computer Science}
+  booktitle    = {Workshop on Graph-Theoretic Concepts in Computer Science},
   series       = {Lecture Notes in Computer Science},
   volume       = {790},
   pages        = {112--124},
@@ -15946,13 +15945,6 @@ month = jan}
   pages        = {99--112},
   publisher    = {{CIACO}},
   year         = {1993},
-}
-
-@inproceedings{Korhonen25,
-  author       = {Tuukka Korhonen},
-  title        = {Dynamic Treewidth in Logarithmic Time},
-  booktitle     = focs,
-  year         = {2025},
 }
 
 @inproceedings{KorhonenMNP023,
@@ -16186,7 +16178,7 @@ archivePrefix = {arXiv},
 
 @misc{uciRepository,
   author = {D. Dua and C. Graff},
-  title = {UCI machine learning repository}”,
+  title = {UCI machine learning repository},
   year = 2017,
   howpublished = {\url{http://archive.ics.uci.edu/ml}}
 }
@@ -16198,4 +16190,61 @@ Algorithms and Data Structures},
   year = 2025,
   institution = {Carnegie Mellon University},
   howpublished = {\url{http://www.cs.cmu.edu/~15210}}
+}
+
+@article{fortunato2013community,
+title = {Community detection in graphs},
+journal = {Physics Reports},
+volume = {486},
+number = {3},
+pages = {75-174},
+year = {2010},
+issn = {0370-1573},
+doi = {https://doi.org/10.1016/j.physrep.2009.11.002},
+url = {https://www.sciencedirect.com/science/article/pii/S0370157309002841},
+author = {Santo Fortunato},
+keywords = {Graphs, Clusters, Statistical physics},
+abstract = {The modern science of networks has brought significant advances to our understanding of complex systems. One of the most relevant features of graphs representing real systems is community structure, or clustering, i.e. the organization of vertices in clusters, with many edges joining vertices of the same cluster and comparatively few edges joining vertices of different clusters. Such clusters, or communities, can be considered as fairly independent compartments of a graph, playing a similar role like, e.g., the tissues or the organs in the human body. Detecting communities is of great importance in sociology, biology and computer science, disciplines where systems are often represented as graphs. This problem is very hard and not yet satisfactorily solved, despite the huge effort of a large interdisciplinary community of scientists working on it over the past few years. We will attempt a thorough exposition of the topic, from the definition of the main elements of the problem, to the presentation of most methods developed, with a special focus on techniques designed by statistical physicists, from the discussion of crucial issues like the significance of clustering and how methods should be tested and compared against each other, to the description of applications to real networks.}
+}
+
+@article{hochbaum1985best,
+ ISSN = {0364765X, 15265471},
+ URL = {http://www.jstor.org/stable/3689371},
+ abstract = {In this paper we present a 2-approximation algorithm for the k-center problem with triangle inequality. This result is "best possible" since for any δ < 2 the existence of δ-approximation algorithm would imply that P = NP. It should be noted that no δ-approximation algorithm, for any constant δ, has been reported to date. Linear programming duality theory provides interesting insight to the problem and enables us to derive, on O(|E|log|E|) time, a solution with value no more than twice the k-center optimal value. A by-product of the analysis is an O(|E|) algorithm that identifies a dominating set in G2, the square of a graph G, the size of which is no larger than the size of the minimum dominating set in the graph G. The key combinatorial object used is called a strong stable set, and we prove the NP-completeness of the corresponding decision problem.},
+ author = {Dorit S. Hochbaum and David B. Shmoys},
+ journal = {Mathematics of Operations Research},
+ number = {2},
+ pages = {180--184},
+ publisher = {INFORMS},
+ title = {A Best Possible Heuristic for the k-Center Problem},
+ urldate = {2026-02-04},
+ volume = {10},
+ year = {1985}
+}
+
+@article{solomon2025dynamic,
+title={Dynamic Set Cover with Worst-Case Recourse},
+author={Shay Solomon and Amitai Uzrad},
+year={2025},
+journal={CoRR},
+volume={abs/2511.07354}, }
+
+@article{bhattacharya2025fullyArXiv,
+title={Fully Dynamic Set Cover: Worst-Case Recourse and Update Time},
+author={Sayan Bhattacharya and Ruoxu Cen and Debmalya Panigrahi},
+year = {2025},
+journal={CoRR},
+volume={abs/2511.08485},
+}
+
+@inbook{das2026history,
+author = {Rathish Das and William Kuszmaul},
+title = {History-Independent Maximal Matchings can be Surprisingly Efficient, and Lead to Better Worst-Case Guarantees},
+booktitle = {Proceedings of the 2026 Annual ACM-SIAM Symposium on Discrete Algorithms (SODA)},
+chapter = {},
+pages = {3999-4022},
+doi = {10.1137/1.9781611978971.147},
+URL = {https://epubs.siam.org/doi/abs/10.1137/1.9781611978971.147},
+eprint = {https://epubs.siam.org/doi/pdf/10.1137/1.9781611978971.147},
+    abstract = { Abstract One of the most basic problems in dynamic graph algorithms is to maintain a maximal matching as edges are inserted and deleted over time. In a line of work started by Baswana, Gupta and Sen, and then completed by Solomon, it was shown how to solve this problem in amortized expected time \(O(1)\) per update. (Interestingly, achieving worst-case expected \(O(1)\) remains open.) Recent work by Behnezhad et al. suggests that very simple alternative algorithm may also perform well: simply maintain a randomized greedy matching. They show that this solution can be used to achieve \(O(\log^4 n)\) expected time per update. In this paper, we show that the randomized greedy solution is even much more efficient than Behnezhad et al.’s result might seem to suggest, achieving an expected time bound of \(O((\log \log n)^2)\) per update. This new bound is within a quadratic factor of tight, since one of the log log n factors unavoidably comes from the algorithm’s use of Van Emde Boas trees. Our result comes with several consequences. We obtain a nearly exponential time improvement for the problem of maintaining a history-independent dynamic maximal matching; a nearly exponential time improvement for the problem of maintaining a dynamic maximal matching with worst-case expected time guarantees; and a polynomial improvement for the problem of maintaining a dynamic maximal matching with high-probability time guarantees. Our result on history independence is of special interest given the major push in the data-structures community in recent years to study history independence as a privacy guarantee for data structures. }
 }
