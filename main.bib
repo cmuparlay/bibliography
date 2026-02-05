@@ -413,7 +413,7 @@ year = 2022
 	editor       = {Michel Steuwer and
 	I{-}Ting Angelina Lee and
 	Milind Chabbi},
-	title        = {ParlayANN: Scalable and Deterministic Parallel Graph-Based Approximate
+	title        = {Parlay{ANN}: Scalable and Deterministic Parallel Graph-Based Approximate
 	Nearest Neighbor Search Algorithms},
 	booktitle    = ppopp,
 	xpages        = {270--285},
@@ -756,17 +756,7 @@ journal = popl,
 month = jan,
 articleno = {82},
 numpages = {29},
-keywords = {Linearizability, Verification, Universal, Complete, Forward Reasoning}
-}
-
-@misc{anderson2025bigatomics,
-      title={Big Atomics}, 
-      author={Daniel Anderson and Guy E. Blelloch and Siddhartha Jayanti},
-      year={2025},
-      eprint={2501.07503},
-      archivePrefix={arXiv},
-      primaryClass={cs.DC},
-      url={https://arxiv.org/abs/2501.07503}, 
+keywords = {Linearizability, Verification, Universal, Complete, Forward Reasoning},
 }
 
 @inproceedings{ben2021space,
@@ -775,6 +765,17 @@ keywords = {Linearizability, Verification, Universal, Complete, Forward Reasonin
   booktitle = disc,
   year      = {2021}
 }
+
+
+@article{anderson2025bigatomics,
+      title={Big Atomics}, 
+      author={Daniel Anderson and Guy E. Blelloch and Siddhartha Jayanti},
+	  journal={CoRR},
+	  volume={abs/2501.07503},
+	year={2025}
+
+}
+
 
 @inproceedings{gu2022analysis,
   title        = {Analysis of Work-Stealing and Parallel Cache Complexity},
@@ -786,7 +787,7 @@ keywords = {Linearizability, Verification, Universal, Complete, Forward Reasonin
 }
 
 @inproceedings{gu2023parallel,
-  title     = {Parallel Longest Increasing Subsequence and van Emde Boas Trees},
+  title     = {Parallel Longest Increasing Subsequence and van {E}mde {B}oas Trees},
   author    = {Gu, Yan and Men, Ziyang and Shen, Zheqi and Sun, Yihan and Wan, Zijin},
   booktitle = spaa,
   year      = {2023}
@@ -945,7 +946,7 @@ year = { 2023 }
                   Laxman Dhulipala and
                   Yan Gu and
                   Julian Shun},
-  title        = {ParGeo: {A} Library for Parallel Computational Geometry},
+  title        = {Par{G}eo: {A} Library for Parallel Computational Geometry},
   booktitle    = esa,
   series       = {LIPIcs},
   volume       = {244},
@@ -2006,7 +2007,7 @@ year = {2009},
 
 @misc{dimacs-shortest-paths,
   author = {Camil Demetrescu and Andrew Goldberg and David Johnson},
-  title = {9th DIMACS Implementation Challenge: Shortest Paths},
+  title = {9th {DIMACS} Implementation Challenge: Shortest Paths},
   howpublished = {http://www.dis.uniroma1.it/challenge9/},
   year = {2019}
 }
@@ -3392,13 +3393,6 @@ journal = {Advances in Intelligent Systems and Computing}
 	publisher={Ph.D.\ Thesis, Carnegie Mellon University}
 }
 
-@inproceedings{fischer2018tight,
-	title={Tight analysis of parallel randomized greedy MIS},
-	author={Fischer, Manuela and Noever, Andreas},
-	booktitle=soda,
-	pagesx={2152--2160},
-	year={2018},
-}
 
 @inproceedings{pan2015parallel,
 	title={Parallel correlation clustering on big graphs},
@@ -3720,8 +3714,9 @@ journal = {Advances in Intelligent Systems and Computing}
 @article{yesantharao2021parallel,
   title={Parallel Batch-Dynamic $k$-d Trees},
   author={Yesantharao, Rahul and Wang, Yiqiu and Dhulipala, Laxman and Shun, Julian},
-  journal={arXiv preprint arXiv:2112.06188},
-  year={2021}
+  journal = {CoRR},
+  volume={abs/2112.06188},
+  year={2021},
 }
 
 @inproceedings{blelloch2022parallel,
@@ -8382,7 +8377,7 @@ Jingdong Wang},
 @misc{leskovec2014snap,
   author       = {Jure Leskovec and Andrej Krevl},
   title        = {{SNAP Datasets}: {Stanford} Large Network Dataset Collection},
-  howpublished = {\url{http://snap.stanford.edu/data}},
+  howpublished = {\url{https://snap.stanford.edu/data}},
   month        = jun,
   year         = 2014
 }
@@ -9243,13 +9238,6 @@ BibTeX | EndNote | ACM Ref
 }
 
 
-@article{TDB19,
-	author    = {Tseng, Thomas and Dhulipala, Laxman and Blelloch, Guy},
-	title     = {Batch-Parallel {Euler} Tour Trees},
-	journal   =alenex,
-	year      = {2019},
-}
-
 @inproceedings{kopelowitz2018mst,
 	author = {Kopelowitz, Tsvi and Porat, Ely and Rosenmutter, Yair},
 	title = {Improved Worst-Case Deterministic Parallel Dynamic Minimum Spanning Forest},
@@ -9296,17 +9284,9 @@ BibTeX | EndNote | ACM Ref
   year      = {2020},
 }
 
-@inproceedings{dhulipala2021parallel,
-  title={Parallel batch-dynamic k-clique counting},
-  author={Dhulipala, Laxman and Liu, Quanquan C and Shun, Julian and Yu, Shangdi},
-  booktitle=apocs,
-  pagesx={129--143},
-  year={2021},
-}
-
 
 @inproceedings{DLSY21,
-  title={Parallel batch-dynamic k-clique counting},
+  title={Parallel batch-dynamic $k$-clique counting},
   author={Dhulipala, Laxman and Liu, Quanquan C and Shun, Julian and Yu, Shangdi},
   booktitle=apocs,
   pagesx={129--143},
@@ -12268,7 +12248,7 @@ author = {Sepehr Assadi and Shay Solomon},
 title = {Fully dynamic set cover via hypergraph maximal
 matching: An optimal approximation through a local approach},
 booktitle = esa,
-year = 2021}
+year = {2021}}
 
 @inproceedings{GT24,
 title = {Parallel Dynamic Maximal Matching},
@@ -12279,7 +12259,7 @@ year = 2024}
 
 @article{FN20,
 author = {Fischer, Manuela and Noever, Andreas},
-title = {Tight Analysis of Parallel Randomized Greedy MIS},
+title = {Tight Analysis of Parallel Randomized Greedy {MIS}},
 year = {2019},
 issue_date = {January 2020},
 publisher = {Association for Computing Machinery},
@@ -14091,7 +14071,7 @@ keywords = {Concurrent data structures, Multiversioning, Optimistic Locking},
   author       = {Magdalen Dobson Manohar and
                   Yuanhao Wei and
                   Guy E. Blelloch},
-  title        = {{CLEANN:} Lock-Free Augmented Trees for Low-Dimensional {\(\kappa\)}-Nearest
+  title        = {{CLEANN:} Lock-Free Augmented Trees for Low-Dimensional {$\kappa$}-Nearest
                   Neighbor Search},
   booktitle    = spaa,
   xpages        = {131--143},
@@ -14194,7 +14174,6 @@ xseries = {ISCA '93}
   title = {Writeback-Aware Caching},
   booktitle = apocs,
   year = 2020,
-  note = {Best paper winner.}
 }
 
 @inproceedings{IkramBAB25,
@@ -14234,7 +14213,7 @@ xseries = {ISCA '93}
 
 @inproceedings{WangBGS25,
 author = {Letong Wang and Guy Blelloch and Yan Gu and Yihan Sun},
-title = {Parallel Cluster-BFS and Applications to Shortest Paths},
+title = {Parallel Cluster-{BFS} and Applications to Shortest Paths},
 booktitle = alenex,
 xchapter = {},
 xpages = {42-55},
@@ -14947,16 +14926,11 @@ series = {STOC 2020}
 
 
 
-@inbook{GJS21,
+@inproceedings{GJS21,
 author = {Michael T. Goodrich and Riko Jacob and Nodari Sitchinava},
 title = {Atomic Power in Forks: A Super-Logarithmic Lower Bound for Implementing Butterfly Networks in the Nonatomic Binary Fork-Join Model},
-booktitle = {Proceedings of the 2021 ACM-SIAM Symposium on Discrete Algorithms (SODA)},
-chapter = {},
-pages = {2141-2153},
-doi = {10.1137/1.9781611976465.128},
-URL = {https://epubs.siam.org/doi/abs/10.1137/1.9781611976465.128},
-eprint = {https://epubs.siam.org/doi/pdf/10.1137/1.9781611976465.128},
-    abstract = { We prove an Ω (log n log log n) lower bound for the span of implementing the n input, log n-depth FFT circuit (also known as butterfly network) in the nonatomic binary fork-join model. In this model, memory-access synchronizations occur only through fork operations, which spawn two child threads, and join operations, which resume a parent thread when its child threads terminate. Our bound is asymptotically tight for the nonatomic binary fork-join model, which has been of interest of late, due to its conceptual elegance and ability to capture asynchrony. Our bound implies super-logarithmic lower bound in the nonatomic binary fork-join model for implementing the butterfly merging networks used, e.g., in Batcher's bitonic and odd-even mergesort networks. This lower bound also implies an asymptotic separation result for the atomic and nonatomic versions of the fork-join model, since, as we point out, FFT circuits can be implemented in the atomic binary fork-join model with span equal to their circuit depth. }
+booktitle=soda,
+year={2021},
 }
 
 @article{BURTON82,
@@ -15035,7 +15009,7 @@ keywords = {Spanners, maximal matching}
 }
 
 @article{onak2020fully,
-  title={Fully dynamic MIS in uniformly sparse graphs},
+  title={Fully dynamic {MIS} in uniformly sparse graphs},
   author={Onak, Krzysztof and Schieber, Baruch and Solomon, Shay and Wein, Nicole},
   journal={ACM Transactions on Algorithms (TALG)},
   volume={16},
@@ -15111,7 +15085,6 @@ series = {SPAA '25}
   title={Fully-Dynamic $\alpha$+ 2 Arboricity Decompositions and Implicit Colouring},
   author={Christiansen, Aleksander BG and Rotenberg, Eva},
   booktitle=icalp,
-  pages={42--1},
   year={2022},
   organization={Schloss Dagstuhl--Leibniz-Zentrum f{\"u}r Informatik}
 }
@@ -15128,7 +15101,7 @@ series = {SPAA '25}
 }
 
 @article{HM25,
-title={Parallel Batch-Dynamic Vertex Coloring in $O(\log \Delta)$ Amortized Update Time},
+title={Parallel Batch-Dynamic Vertex Coloring in {$O(\log \Delta)$} Amortized Update Time},
 author = {Chase Hutton and Adam Melrod},
 url={https://arxiv.org/abs/2512.08742},
 	journal      = {CoRR},
@@ -15167,7 +15140,7 @@ series = {SPAA '25}
 
 @inproceedings{GGQ23,
 author = {Ghaffari, Mohsen and Grunau, Christoph and Qu, Jiahao},
-title = {Nearly Work-Efficient Parallel DFS in Undirected Graphs},
+title = {Nearly Work-Efficient Parallel {DFS} in Undirected Graphs},
 year = {2023},
 isbn = {9781450395458},
 publisher = {Association for Computing Machinery},
@@ -15257,7 +15230,7 @@ numpages = {13}
 
 @article{MSGD26,
 author = {Quinten De Man and Atharva Sharma and Kishen Gowda and Laxman Dhulipala},
-title={UFO Trees: Practical and Provably-Efficient Parallel Batch-Dynamic Trees},
+title={{UFO} Trees: Practical and Provably-Efficient Parallel Batch-Dynamic Trees},
 eprinttype={arXiv},
 year={2026},
 journal={CoRR},
@@ -15370,7 +15343,7 @@ series = {STOC '25}
 
 @article{henzinger22coloring,
 author = {Henzinger, Monika and Peng, Pan},
-title = {Constant-time Dynamic $(\Delta +1)$-Coloring},
+title = {Constant-time Dynamic {$(\Delta +1)$}-Coloring},
 year = {2022},
 issue_date = {April 2022},
 publisher = {Association for Computing Machinery},
@@ -15389,7 +15362,7 @@ keywords = {Dynamic graph algorithms, graph coloring, random sampling}
 
 @article{bhattacharya22coloring,
 author = {Bhattacharya, Sayan and Grandoni, Fabrizio and Kulkarni, Janardhan and Liu, Quanquan C. and Solomon, Shay},
-title = {Fully Dynamic $(\Delta +1)$-Coloring in $O(1)$ Update Time},
+title = {Fully Dynamic {$(\Delta +1)$}-Coloring in {$O(1)$} Update Time},
 year = {2022},
 issue_date = {April 2022},
 publisher = {Association for Computing Machinery},
@@ -15413,36 +15386,26 @@ keywords = {Graph coloring, dynamic graph algorithms}
 
 
 
-@inbook{hayek26mincut,
+@inproceedings{hayek26mincut,
 author = {Antoine El-Hayek and Monika Henzinger and Jason Li},
 title = {Deterministic and Exact Fully-dynamic Minimum Cut of Superpolylogarithmic Size in Subpolynomial Time},
 booktitle = soda,
-chapter = {},
-pages = {613-663},
-doi = {10.1137/1.9781611978971.25},
-URL = {https://epubs.siam.org/doi/abs/10.1137/1.9781611978971.25},
-eprint = {https://epubs.siam.org/doi/pdf/10.1137/1.9781611978971.25},
-    abstract = { Abstract We present an exact fully-dynamic minimum cut algorithm that runs in \(n^{o(1)}\) deterministic update time when the minimum cut size is at most \(2^{\Theta(\log^{3/4-c} n)}\) for any \(c \gt 0\), improving on the previous algorithm of Jin, Sun, and Thorup (SODA 2024) whose minimum cut size limit is \((\log n)^{o(1)}\). Combined with graph sparsification, we obtain the first \((1+\epsilon)\)-approximate fully-dynamic minimum cut algorithm on weighted graphs, for any \(\epsilon \ge 2^{-\Theta(\log^{3/4-c} n)}\), in \(n^{o(1)}\) randomized update time. Our main technical contribution is a deterministic local minimum cut algorithm, which replaces the randomized LocalKCut procedure from El-Hayek, Henzinger, and Li (SODA 2025). },
+
 year = {2026},
 }
 
 
 
-@inbook{bernstein26adversary,
+@inproceedings{bernstein26adversary,
 author = {Aaron Bernstein and Sayan Bhattacharya and Nick Fischer and Peter Kiss and Thatchaphol Saranurak},
 title = {Separations between Oblivious and Adaptive Adversaries for Natural Dynamic Graph Problems},
 booktitle = soda,
-chapter = {},
-pages = {5669-5687},
-doi = {10.1137/1.9781611978971.202},
-URL = {https://epubs.siam.org/doi/abs/10.1137/1.9781611978971.202},
-eprint = {https://epubs.siam.org/doi/pdf/10.1137/1.9781611978971.202},
-    abstract = { Abstract We establish the first update-time separation between dynamic algorithms against oblivious adversaries and those against adaptive adversaries in natural dynamic graph problems, based on popular fine-grained complexity hypotheses. Specifically, under the combinatorial BMM hypothesis, we show that every combinatorial algorithm against an adaptive adversary for the incremental maximal independent set problem requires \(n^{1-o(1)}\) amortized update time. Furthermore, assuming either the 3SUM or APSP hypotheses, every algorithm for the decremental maximal clique problem needs \(\Delta / n^{o(1)}\) amortized update time when the initial maximum degree is \(\Delta \le \sqrt{n}\). These lower bounds are matched by existing algorithms against adaptive adversaries. In contrast, both problems admit algorithms against oblivious adversaries that achieve \(\operatorname{polylog}(n)\) amortized update time [BDH+19, CZ19]. Therefore, our separations are exponential. Previously known separations for dynamic algorithms were either engineered for contrived problems and relied on strong cryptographic assumptions [BKM+22], or worked for problems whose inputs are not explicitly given but are accessed through oracle calls [BEF+23]. As a byproduct, we also provide a separation between incremental and decremental algorithms for the triangle detection problem: we show a decremental algorithm with \(\tilde{O}(n^\omega)\) total update time, while every incremental algorithm requires \(n^{3 - o(1)}\) total update time, assuming the OMv hypothesis. To our knowledge this is the first separation of this kind. },
+
 	year = {2026},
 }
 
 @article{flin2025faster,
-  title={Faster Dynamic $($\backslash$Delta+ 1) $-Coloring Against Adaptive Adversaries},
+  title={Faster Dynamic {$($\backslash$Delta+ 1) $}-Coloring Against Adaptive Adversaries},
   author={Flin, Maxime and Halld{\'o}rsson, Magn{\'u}s M},
   booktitle=esa,
   year={2025},
@@ -15467,7 +15430,7 @@ eprint = {https://epubs.siam.org/doi/pdf/10.1137/1.9781611978971.202},
 }
 
 @inproceedings{holm2025fully,
-  title={Fully dynamic biconnectivity in {\~O} (log$^2$ n) time},
+  title={Fully dynamic biconnectivity in $\tilde{O}(\log^2 n)$ time},
   author={Holm, Jacob and Nadara, Wojciech and Rotenberg, Eva and Soko{\l}owski, Marek},
   booktitle=stoc,
   pages={156--165},
@@ -15499,7 +15462,7 @@ eprint = {https://epubs.siam.org/doi/pdf/10.1137/1.9781611978971.202},
 }
 
 @article{das2025dynamic,
-  title={Dynamic Dyck and tree edit distance: Decompositions and reductions to string edit distance},
+  title={Dynamic {D}yck and tree edit distance: Decompositions and reductions to string edit distance},
   author={Das, Debarati and Gilbert, Jacob and Hajiaghayi, MohammadTaghi and Kociumaka, Tomasz and Saha, Barna},
   journal={arXiv preprint arXiv:2510.17799},
   year={2025}
@@ -15524,7 +15487,7 @@ eprint = {https://epubs.siam.org/doi/pdf/10.1137/1.9781611978971.202},
 }
 
 @inproceedings{boneh2026complexity,
-  title={The Complexity of Dynamic LZ77 is},
+  title={The Complexity of Dynamic {LZ}77 is $\tilde{\Theta}(n^{2/3})$},
   author={Boneh, Itai and Golan, Shay and Kraus, Matan},
   booktitle={Proceedings of the 2026 Annual ACM-SIAM Symposium on Discrete Algorithms (SODA)},
   pages={1859--1872},
@@ -15627,7 +15590,7 @@ isbn="978-3-540-39859-2"
 }
 
 @article{ferragina1995technique,
-title = {A Technique to Speed Up Parallel Fully Dynamic Algorithms for MST},
+title = {A Technique to Speed Up Parallel Fully Dynamic Algorithms for {MST}},
 journal = {Journal of Parallel and Distributed Computing},
 volume = {31},
 number = {2},
@@ -15642,7 +15605,7 @@ abstract = {We provide a new EREW PRAM algorithm to maintain the minimum spannin
 
 @article{sun20fully,
 author = {Sun, Bintao and Chan, T.-H. Hubert and Sozio, Mauro},
-title = {Fully Dynamic Approximate k-Core Decomposition in Hypergraphs},
+title = {Fully Dynamic Approximate $k$-Core Decomposition in Hypergraphs},
 year = {2020},
 issue_date = {August 2020},
 publisher = {Association for Computing Machinery},
@@ -15723,7 +15686,7 @@ numpages = {17}
 
 
 @article{gao2024survey,
-	abstract = {Graphs that are used to model real-world entities with vertices and relationships among entities with edges, have proven to be a powerful tool for describing real-world problems in applications. In most real-world scenarios, entities and their relationships are subject to constant changes. Graphs that record such changes are called dynamic graphs. In recent years, the widespread application scenarios of dynamic graphs have stimulated extensive research on dynamic graph processing systems that continuously ingest graph updates and produce up-to-date graph analytics results. As the scale of dynamic graphs becomes larger, higher performance requirements are demanded to dynamic graph processing systems. With the massive parallel processing power and high memory bandwidth, GPUs become mainstream vehicles to accelerate dynamic graph processing tasks. GPU-based dynamic graph processing systems mainly address two challenges: maintaining the graph data when updates occur (i.e., graph updating) and producing analytics results in time (i.e., graph computing). In this paper, we survey GPU-based dynamic graph processing systems and review their methods on addressing both graph updating and graph computing. To comprehensively discuss existing dynamic graph processing systems on GPUs, we first introduce the terminologies of dynamic graph processing and then develop a taxonomy to describe the methods employed for graph updating and graph computing. In addition, we discuss the challenges and future research directions of dynamic graph processing on GPUs.},
+
 	author = {Gao, Hongru and Liao, Xiaofei and Shao, Zhiyuan and Li, Kexin and Chen, Jiajie and Jin, Hai},
 	date = {2023/12/16},
 	date-added = {2026-02-03 13:10:44 -0500},
@@ -15734,7 +15697,7 @@ numpages = {17}
 	journal = {Frontiers of Computer Science},
 	number = {4},
 	pages = {184106},
-	title = {A survey on dynamic graph processing on GPUs: concepts, terminologies and systems},
+	title = {A survey on dynamic graph processing on {GPU}s: concepts, terminologies and systems},
 	url = {https://doi.org/10.1007/s11704-023-2656-1},
 	volume = {18},
 	year = {2023},
@@ -15814,7 +15777,7 @@ keywords = {Network analysis, dynamic graphs, temporal graphs}
 
 @article{michail2015introduction,
 author = {Othon Michail},
-title = {An Introduction to Temporal Graphs: An Algorithmic Perspective*},
+title = {An Introduction to Temporal Graphs: An Algorithmic Perspective},
 journal = {Internet Mathematics},
 volume = {12},
 number = {4},
@@ -15880,7 +15843,7 @@ series = {SPAA '19}
 
 @inproceedings{CHK16,
 author = {Censor-Hillel, Keren and Haramaty, Elad and Karnin, Zohar},
-title = {Optimal Dynamic Distributed MIS},
+title = {Optimal Dynamic Distributed {MIS}},
 year = {2016},
 isbn = {9781450339643},
 publisher = {Association for Computing Machinery},
@@ -15976,11 +15939,10 @@ month = jan}
 
 @article{bender22online,
 author = {Bender, Michael A. and Conway, Alex and Farach-Colton, Mart\'{\i}n and Koml\'{o}s, Hanna and Kuszmaul, William and Wein, Nicole},
-title = {Online List Labeling: Breaking the \({\log^2 n}\) Barrier},
+title = {Online List Labeling: Breaking the $\log^2 n$ Barrier},
 journal = {SIAM Journal on Computing},
 volume = {54},
 number = {5},
-pages = {FOCS22-60-FOCS22-92},
 year = {2025},
 doi = {10.1137/22M1534468},
 
@@ -15998,8 +15960,6 @@ eprint = {
     
 
 }
-,
-    abstract = { Abstract. The online list-labeling problem is an algorithmic primitive with a large literature of upper bounds, lower bounds, and applications. The goal is to store a dynamically changing set of \(n\) items in an array of \(m\) slots, while maintaining the invariant that the items appear in sorted order and while minimizing the relabeling cost, defined to be the number of items that are moved per insertion/deletion. For the linear regime, where \(m = (1 + \Theta (1)) n\), an upper bound of \(O(\log^2 n)\) on the relabeling cost has been known since 1981. A lower bound of \(\Omega (\log^2 n)\) is known for deterministic algorithms and for so-called smooth algorithms, but the best general lower bound remains \(\Omega (\log n)\). The central open question in the field is whether \(O(\log^2 n)\) is optimal for all algorithms. In this paper, we give a randomized data structure that achieves an expected relabeling cost of \(O(\log^{3/2} n)\) per operation. More generally, if \(m = (1 + \epsilon ) n\) for \(\epsilon = O(1)\), the expected relabeling cost becomes \(O(\epsilon^{-1} \log^{3/2} n)\). Our solution is history independent, meaning that the state of the data structure is independent of the order in which items are inserted/deleted. For history-independent data structures, we also prove a matching lower bound: for all \(\epsilon\) between \(1/ n^{1/3}\) and some sufficiently small positive constant, the optimal expected cost for history-independent list-labeling solutions is \(\Theta (\epsilon^{-1}\log^{3/2} n)\). }
 }
 
 @inproceedings{micciancio97oblivious,
@@ -16038,16 +15998,10 @@ abstract = {A simple parallel randomized algorithm to find a maximal independent
 
 
 
-@inbook{bateni2023optimal,
+@inproceedings{bateni2023optimal,
 author = {MohammadHossein Bateni and Hossein Esfandiari and Hendrik Fichtenberger and Monika Henzinger and Rajesh Jayaram and Vahab Mirrokni and Andreas Wiese},
-title = {Optimal Fully Dynamic <italic>k</italic>-Center Clustering for Adaptive and Oblivious Adversaries},
-booktitle = {Proceedings of the 2023 Annual ACM-SIAM Symposium on Discrete Algorithms (SODA)},
-chapter = {},
-pages = {2677-2727},
-doi = {10.1137/1.9781611977554.ch101},
-URL = {https://epubs.siam.org/doi/abs/10.1137/1.9781611977554.ch101},
-eprint = {https://epubs.siam.org/doi/pdf/10.1137/1.9781611977554.ch101},
-    abstract = { In fully dynamic clustering problems, a clustering of a given data set in a metric space must be maintained while it is modified through insertions and deletions of individual points. In this paper, we resolve the complexity of fully dynamic k-center clustering against both adaptive and oblivious adversaries. Against oblivious adversaries, we present the first algorithm for fully dynamic k-center in an arbitrary metric space that maintains an optimal (2 + ε)-approximation in O(k · polylog(n, Δ)) amortized update time. Here, n is an upper bound on the number of active points at any time, and Δ is the aspect ratio of the metric space. Previously, the best known amortized update time was O(k2 · polylog(n, Δ)), and is due to Chan, Gourqin, and Sozio (2018). Moreover, we demonstrate that our runtime is optimal up to polylog(n, Δ) factors. In fact, we prove that even offline algorithms for k-clustering tasks in arbitrary metric spaces, including k-medians, k-means, and k-center, must make at least Ω(nk) distance queries to achieve any non-trivial approximation factor. This implies a lower bound of Ω(k) which holds even for the insertions-only setting. For adaptive adversaries, we give the first deterministic algorithm for fully dynamic k-center which achieves a approximation in O(k-polylog(n, Δ)) amortized update time. Further, we demonstrate that any algorithm which achieves a -approximation against adaptive adversaries requires f (k,n) update time, for any arbitrary function f. Thus, in the regime where , we close the complexity of the problem up to polylog(n, Δ) factors in the update time. Our lower bound extends to other k-clustering tasks in arbitrary metric spaces, including k-medians and k-means. Finally, despite the aforementioned lower bounds, we demonstrate that an update time sublinear in k is possible against oblivious adversaries for metric spaces which admit locally sensitive hash functions (LSH), resulting in improved algorithms for a large class of metrics including Euclidean space, ℓp-spaces, the Hamming Metric, and the Jaccard Metric. We also give the first fully dynamic O(1)-approximation algorithms for the closely related k-sum-of-radii and k-sum-of-diameter problems, with O(poly(k, log Δ)) update time. },
+title = {Optimal Fully Dynamic $k$-Center Clustering for Adaptive and Oblivious Adversaries},
+booktitle=soda,
 	year={2023},
 }
 
@@ -16091,7 +16045,7 @@ series = {PODC '12}
 
 @INPROCEEDINGS{linial1987distributive,
   author={Linial, Nathan},
-  booktitle={28th Annual Symposium on Foundations of Computer Science (sfcs 1987)}, 
+  booktitle={28th Annual Symposium on Foundations of Computer Science}, 
   title={Distributive graph algorithms Global solutions from local data}, 
   year={1987},
   volume={},
@@ -16104,7 +16058,7 @@ series = {PODC '12}
 @INPROCEEDINGS{ghaffari2024near,
   author={Ghaffari, Mohsen and Grunau, Christoph},
   booktitle={2024 IEEE 65th Annual Symposium on Foundations of Computer Science (FOCS)}, 
-  title={Near-Optimal Deterministic Network Decomposition and Ruling Set, and Improved MIS}, 
+  title={Near-Optimal Deterministic Network Decomposition and Ruling Set, and Improved {MIS}}, 
   year={2024},
   volume={},
   number={},
@@ -16148,44 +16102,31 @@ series = {STOC 2018}
 
 
 
-@inbook{assadi2019fully,
+@inproceedings{assadi2019fully,
 author = {Sepehr Assadi and Krzysztof Onak and Baruch Schieber and Shay Solomon},
-title = {Fully Dynamic Maximal Independent Set with Sublinear in <italic>n</italic> Update Time},
-booktitle = {Proceedings of the 2019 Annual ACM-SIAM Symposium on Discrete Algorithms (SODA)},
-chapter = {},
-pages = {1919-1936},
-doi = {10.1137/1.9781611975482.116},
-URL = {https://epubs.siam.org/doi/abs/10.1137/1.9781611975482.116},
-eprint = {https://epubs.siam.org/doi/pdf/10.1137/1.9781611975482.116},
-    abstract = { Abstract The first fully dynamic algorithm for maintaining a maximal independent set (MIS) with update time that is sublinear in the number of edges was presented recently by the authors of this paper [Assadi et al., STOC’18]. The algorithm is deterministic and its update time is O(m3/4), where m is the (dynamically changing) number of edges. Subsequently, Gupta and Khan and independently Du and Zhang [arXiv, April 2018] presented deterministic algorithms for dynamic MIS with update times of O(m2/3) and O(m2/3 ), respectively. Du and Zhang also gave a randomized algorithm with update time . Moreover, they provided some partial (conditional) hardness results hinting that the update time of m1/2–ε, and in particular n1–ε for n-vertex dense graphs, is a natural barrier for this problem for any constant ε > 0, for deterministic and randomized algorithms that satisfy a certain natural property. In this paper, we break this natural barrier and present the first fully dynamic (randomized) algorithm for maintaining an MIS with update time that is always sublinear in the number of vertices, namely, an expected amortized update. We also show that a simpler variant of our algorithm can already achieve an Õ(m1/3) expected amortized update time, which results in an improved performance over our update time algorithm for sufficiently sparse graphs, and breaks the m1/2 barrier of Du and Zhang for all values of m. }
+title = {Fully Dynamic Maximal Independent Set with Sublinear in $n$ Update Time},
+booktitle = soda,
+year= {2019},
+   
 }
 
 @ARTICLE{du2018improved,
        author = {{Du}, Yuhao and {Zhang}, Hengjie},
         title = "{Improved Algorithms for Fully Dynamic Maximal Independent Set}",
-      journal = {arXiv e-prints},
-     keywords = {Computer Science - Data Structures and Algorithms},
-         year = 2018,
-        month = apr,
-          eid = {arXiv:1804.08908},
-        pages = {arXiv:1804.08908},
-          doi = {10.48550/arXiv.1804.08908},
-archivePrefix = {arXiv},
-       eprint = {1804.08908},
- primaryClass = {cs.DS},
-       adsurl = {https://ui.adsabs.harvard.edu/abs/2018arXiv180408908D},
-      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+		journal = {CoRR},
+		volume = {abs/1804.08908},
+		year = {2018},
 }
 
 @misc{uciRepository,
   author = {D. Dua and C. Graff},
-  title = {UCI machine learning repository},
+  title = {{UCI} machine learning repository},
   year = 2017,
   howpublished = {\url{http://archive.ics.uci.edu/ml}}
 }
 
 @misc{15210,
-  author = {Umut Acar, Daniel Anderson and Guy E. Blelloch}, 
+  author = {Umut Acar and Daniel Anderson and Guy E. Blelloch}, 
   title = {15-210: Introduction to Parallel and Sequential
 Algorithms and Data Structures},
   year = 2025,
@@ -16217,7 +16158,7 @@ abstract = {The modern science of networks has brought significant advances to o
  number = {2},
  pages = {180--184},
  publisher = {INFORMS},
- title = {A Best Possible Heuristic for the k-Center Problem},
+ title = {A Best Possible Heuristic for the $k$-Center Problem},
  urldate = {2026-02-04},
  volume = {10},
  year = {1985}
@@ -16238,16 +16179,11 @@ journal={CoRR},
 volume={abs/2511.08485},
 }
 
-@inbook{das2026history,
+@inproceedings{das2026history,
 author = {Rathish Das and William Kuszmaul},
 title = {History-Independent Maximal Matchings can be Surprisingly Efficient, and Lead to Better Worst-Case Guarantees},
-booktitle = {Proceedings of the 2026 Annual ACM-SIAM Symposium on Discrete Algorithms (SODA)},
-chapter = {},
-pages = {3999-4022},
-doi = {10.1137/1.9781611978971.147},
-URL = {https://epubs.siam.org/doi/abs/10.1137/1.9781611978971.147},
-eprint = {https://epubs.siam.org/doi/pdf/10.1137/1.9781611978971.147},
-    abstract = { Abstract One of the most basic problems in dynamic graph algorithms is to maintain a maximal matching as edges are inserted and deleted over time. In a line of work started by Baswana, Gupta and Sen, and then completed by Solomon, it was shown how to solve this problem in amortized expected time \(O(1)\) per update. (Interestingly, achieving worst-case expected \(O(1)\) remains open.) Recent work by Behnezhad et al. suggests that very simple alternative algorithm may also perform well: simply maintain a randomized greedy matching. They show that this solution can be used to achieve \(O(\log^4 n)\) expected time per update. In this paper, we show that the randomized greedy solution is even much more efficient than Behnezhad et al.’s result might seem to suggest, achieving an expected time bound of \(O((\log \log n)^2)\) per update. This new bound is within a quadratic factor of tight, since one of the log log n factors unavoidably comes from the algorithm’s use of Van Emde Boas trees. Our result comes with several consequences. We obtain a nearly exponential time improvement for the problem of maintaining a history-independent dynamic maximal matching; a nearly exponential time improvement for the problem of maintaining a dynamic maximal matching with worst-case expected time guarantees; and a polynomial improvement for the problem of maintaining a dynamic maximal matching with high-probability time guarantees. Our result on history independence is of special interest given the major push in the data-structures community in recent years to study history independence as a privacy guarantee for data structures. }
+booktitle=soda,
+year={2026},
 }
 
 @article{cruz2023survey,
@@ -16264,4 +16200,38 @@ eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/net.22169},
 abstract = {Abstract Network flow problems form an important and much-studied family of combinatorial optimization problems, with a huge array of practical applications. Two network flow problems in particular have received a great deal of attention: the maximum flow and minimum-cost flow problems. We review the progress that has been made on exact solution algorithms for these two problems, with an emphasis on worst-case running times.},
 year = {2023}
 }
+
+
+
+
+
+
+
+
+@article{bodlaender2016approximation,
+author = {Bodlaender, Hans L. and Drange, P\r{a}l Gron\r{a}s and Dregi, Markus S. and Fomin, Fedor V. and Lokshtanov, Daniel and Pilipczuk, Micha\l{}},
+title = {A $c^k n$ $5$-Approximation Algorithm for Treewidth},
+journal = {SIAM Journal on Computing},
+volume = {45},
+number = {2},
+pages = {317-378},
+year = {2016},
+doi = {10.1137/130947374},
+
+URL = { 
+    
+        https://doi.org/10.1137/130947374
+    
+    
+
+},
+eprint = { 
+    
+        https://doi.org/10.1137/130947374
+    
+    
+
+},
+}
+
 
