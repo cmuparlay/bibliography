@@ -2,7 +2,7 @@
 
 @inproceedings{aggregatingfunnels,
 author = {Roh, Younghun and Wei, Yuanhao and Ruppert, Eric and Fatourou, Panagiota and Jayanti, Siddhartha and Shun, Julian},
-title = {Aggregating Funnels for Faster Fetch&Add and Queues},
+title = {Aggregating Funnels for Faster Fetch\&Add and Queues},
 year = {2025},
 isbn = {9798400714436},
 publisher = {Association for Computing Machinery},
@@ -13312,47 +13312,6 @@ author = {Naama Ben-David and Guy Blelloch and Yuanhao Wei},
 year = 2022
 }
 
-@article{cachopo2006versioned,
-  title={Versioned Boxes as the Basis for Memory Transactions},
-  author={Cachopo, Jo{\~a}o and Rito-Silva, Ant{\'o}nio},
-  journal={Science of Computer Programming},
-  volume={63},
-  number={2},
-  year={2006},
-  publisher={Elsevier}
-}
-
-@inproceedings{perelman2010maintaining,
-	title={On Maintaining Multiple Versions in {STM}},
-	author={Perelman, Dmitri and Fan, Rui and Keidar, Idit},
-	booktitle= {ACM Symp.~on Principles of Dist.~Computing},
-	year={2010},
-}
-
-
-@inproceedings{Kumar14,
- author = {Kumar, Priyanka and Peri, Sathya and Vidyasankar, K.},
- title = {A TimeStamp Based Multi-version {STM} Algorithm},
- booktitle = {Intl Conf.~on Dist.~Computing and Networking},
- year = {2014},
-}
-
-@article{DieguesR15,
-author = {Diegues, Nuno and Romano, Paolo},
-title = {Time-Warp: Efficient Abort Reduction in Transactional Memory},
-year = {2015},
-issue_date = {July 2015},
-volume = {2},
-number = {2},
-issn = {2329-4949},
-doi = {10.1145/2775435},
-abstract = {The multicore revolution that took place one decade ago has turned parallel programming into a major concern for the mainstream software development industry. In this context, Transactional Memory (TM) has emerged as a simpler and attractive alternative to that of lock-based synchronization, whose complexity and error-proneness are widely recognized.The notion of permissiveness in TM translates to only aborting a transaction when it cannot be accepted in any history that guarantees a target correctness criterion. This theoretically powerful property is often neglected by state-of-the-art TMs because it imposes considerable algorithmic costs. Instead, these TMs opt to maximize their implementation?s efficiency by aborting transactions under overly conservative conditions. As a result, they risk rejecting a significant number of safe executions.In this article, we seek to identify a sweet spot between permissiveness and efficiency by introducing the Time-Warp Multiversion (TWM) algorithm. TWM is based on the key idea of allowing an update transaction that has performed stale reads (i.e., missed the writes of concurrently committed transactions) to be serialized by ?committing it in the past,? which we call a time-warp commit. At its core, TWM uses a novel, lightweight validation mechanism with little computational overhead. TWM also guarantees that read-only transactions can never be aborted. Further, TWM guarantees Virtual World Consistency, a safety property that is deemed as particularly relevant in the context of TM.We demonstrate the practicality of this approach through an extensive experimental study: we compare TWM with five other TMs, representative of typical alternative design choices, and on a wide variety of benchmarks. This study shows an average performance improvement across all considered workloads and TMs of 65% in high concurrency scenarios, with gains extending up to 9 \texttimes{} with the most favorable benchmarks. These results are a consequence of TWM?s ability to achieve drastic reduction of aborts in scenarios of nonminimal contention, while introducing little overhead (approximately 10%) in worst-case, synthetically designed scenarios (i.e., no contention or contention patterns that cannot be optimized using TWM).},
-journal = topc,
-month = jun,
-articleno = {12},
-keywords = {Multiversion concurrency control, spurious abort, permissiveness, software transactional memory}
-}
-
 @inproceedings{neumann2015fast,
 	title={Fast Serializable Multi-version Concurrency Control for Main-Memory Database Systems},
 	author={Neumann, Thomas and M{\"u}hlbauer, Tobias and Kemper, Alfons},
@@ -13537,24 +13496,6 @@ booktitle = {Proc.~23rd ACM Symposium on Principles and Practice of Parallel Pro
   bibsource = {dblp computer science bibliography, http://dblp.org}
 }
 
-@inproceedings{LKA17,
-author = {Lim, Hyeontaek and Kaminsky, Michael and Andersen, David G.},
-title = {Cicada: Dependably Fast Multi-Core In-Memory Transactions},
-year = {2017},
-doi = {10.1145/3035918.3064015},
-booktitle = sigmod,
-}
-
-@article{papadimitriou1984concurrency,
-  title={On Concurrency Control by Multiple Versions},
-  author={Papadimitriou, Christos H and Kanellakis, Paris C},
-  journal={ACM Transactions on Database Systems},
-  volume={9},
-  number={1},
-  year={1984},
-  publisher={ACM}
-}
-
 @article{Postgres12,
  author = {Ports, Dan R. K. and Grittner, Kevin},
  title = {Serializable Snapshot Isolation in {PostgreSQL}},
@@ -13577,14 +13518,6 @@ booktitle = sigmod,
  booktitle = sigmod,
  year = {2013},
  doi = {10.1145/2463676.2463710},
-}
-
-@inproceedings{riegel2006lazy,
-  title={A Lazy Snapshot Algorithm with Eager Validation},
-  author={Riegel, Torvald and Felber, Pascal and Fetzer, Christof},
-  booktitle={International Symposium on Distributed Computing},
-  year={2006},
-  organization={Springer}
 }
 
 @inproceedings{TZKLM13,
@@ -16380,17 +16313,16 @@ url = {http://lameter.com/gelato2005.pdf},
     pages = {233--245},
 }
 
-@misc{longjumpcpp,
-  title        = {\texttt{\textless csetjmp\textgreater} header -- \texttt{setjmp}, \texttt{longjmp}},
-  author       = {{cppreference.com}},
-  howpublished = {\url{https://en.cppreference.com/w/cpp/header/csetjmp.html}},
+@misc{raii,
+  title = {Resouce Acquisition Is Initialization},
+  author = {cppreference.com},
+  howpublished = {\url{https://en.cppreference.com/w/cpp/language/raii.html}},
   note         = {Accessed: 2026-02-25}
 }
 
-
-@misc{raii,
-  title        = {Resource Acquisition Is Initialization},
-  author       = {{cppreference.com}},
-  howpublished = {\url{https://en.cppreference.com/w/cpp/language/raii.html}},
+@misc{longjmp,
+  title = {csetjmp header -- setjmp, longjmp},
+  author = {cppreference.com},
+  howpublished = {\url{https://en.cppreference.com/w/cpp/header/csetjmp.html}},
   note         = {Accessed: 2026-02-25}
 }
