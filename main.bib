@@ -2494,18 +2494,25 @@ journal = {Journal of Software Engineering for Robotics (JOSER)}
 
 
 
-@article{wang2020closest,
-  author    = {Yiqiu Wang and
-               Shangdi Yu and
-               Yan Gu and
-               Julian Shun},
-  title     = {A Parallel Batch-Dynamic Data Structure for the Closest Pair Problem},
-  journal   = {CoRR},
-  year      = {2020},
-  url       = {https://arxiv.org/abs/2010.02379},
-  archivePrefix = {arXiv},
-  eprint    = {2010.02379}
+@InProceedings{wang2020closest,
+  author =	{Wang, Yiqiu and Yu, Shangdi and Gu, Yan and Shun, Julian},
+  title =	{{A Parallel Batch-Dynamic Data Structure for the Closest Pair Problem}},
+  booktitle =	{37th International Symposium on Computational Geometry (SoCG 2021)},
+  pages =	{60:1--60:16},
+  series =	{Leibniz International Proceedings in Informatics (LIPIcs)},
+  ISBN =	{978-3-95977-184-9},
+  ISSN =	{1868-8969},
+  year =	{2021},
+  volume =	{189},
+  editor =	{Buchin, Kevin and Colin de Verdi\`{e}re, \'{E}ric},
+  publisher =	{Schloss Dagstuhl -- Leibniz-Zentrum f{\"u}r Informatik},
+  address =	{Dagstuhl, Germany},
+  URL =		{https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SoCG.2021.60},
+  URN =		{urn:nbn:de:0030-drops-138594},
+  doi =		{10.4230/LIPIcs.SoCG.2021.60},
+  annote =	{Keywords: Closest Pair, Parallel Algorithms, Dynamic Algorithms, Experimental Algorithms}
 }
+
 
 
 @article{WYGS20,
@@ -15176,14 +15183,22 @@ pages = {889–901},
 numpages = {13}
 }
 
-@article{MSGD26,
-author = {Quinten De Man and Atharva Sharma and Kishen Gowda and Laxman Dhulipala},
-title={{UFO} Trees: Practical and Provably-Efficient Parallel Batch-Dynamic Trees},
-eprinttype={arXiv},
-year={2026},
-journal={CoRR},
-volume={abs/2601.10706},
-
+@inproceedings{man26ufo,
+author = {De Man, Quinten and Sharma, Atharva and Gowda, Kishen N and Dhulipala, Laxman},
+title = {UFO Trees: Practical and Provably-Efficient Parallel Batch-Dynamic Trees},
+year = {2026},
+isbn = {9798400723100},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3774934.3786431},
+doi = {10.1145/3774934.3786431},
+abstract = {The dynamic trees problem is to maintain a tree under edge updates while supporting queries like connectivity queries or path queries. Despite the first data structure for this fundamental problem---the link-cut tree---being invented 40 years ago, our experiments reveal that they are still the fastest sequential data structure for the problem. However, link-cut trees cannot support parallel batch-dynamic updates and have limitations on the kinds of queries they support.    In this paper, we design a new parallel batch-dynamic trees data structure called UFO trees that simultaneously supports a wide range of query functionality, supports work-efficient parallel batch-dynamic updates, and is competitive with link-cut trees when run sequentially. We prove that a key reason for the strong practical performance of both link-cut trees and UFO trees is that they can perform updates and queries in sub-logarithmic time for low-diameter trees. We perform an experimental study of our optimized C++ implementations of UFO trees with ten other dynamic tree implementations, several of which are new, in a broad benchmark of both synthetic and real-world trees of varying diameter and size. Our results show that, in both sequential and parallel settings, UFO trees are the fastest dynamic tree data structure that supports a wide range of queries. Our new implementation of UFO trees has low space usage and easily scales to billion-size inputs, making it a promising building block for implementing more complex dynamic graph algorithms in practice.},
+booktitle = {Proceedings of the 31st ACM SIGPLAN Annual Symposium on Principles and Practice of Parallel Programming},
+pages = {109–122},
+numpages = {14},
+keywords = {Shared memory algorithms, dynamic graph algorithms, trees},
+location = {Sydney, NSW, Australia},
+series = {PPoPP '26}
 }
 
 @inproceedings{LSZ24,
@@ -16366,3 +16381,33 @@ title={Faster Parallel Batch-Dynamic Algorithms for Low Out-Degree Orientation},
 author = {Guy Blelloch and Andrew Brady and Laxman Dhulipala and Jeremy Fineman and Kishen Gowda and Chase Hutton},
 journal={CoRR},
 volume={abs/2602.17811v1}}
+
+
+@inproceedings{karp84fast,
+author = {Karp, Richard M. and Wigderson, Avi},
+title = {A fast parallel algorithm for the maximal independent set problem},
+year = {1984},
+isbn = {0897911334},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/800057.808690},
+doi = {10.1145/800057.808690},
+abstract = {A parallel algorithm is presented which accepts as input a graph G and produces a maximal independent set of vertices in G. On a P-RAM without the concurrent write or concurrent read features, the algorithm executes in O((log n)4) time and uses O((n/log n)3) processors, where n is the number of vertices in G.The algorithm has several novel features that may find other applications. These include the use of balanced incomplete block designs to replace random sampling by deterministic sampling, and the use of a “dynamic pigeonhole principle” that generalizes the conventional pigeonhole principle.},
+booktitle = {Proceedings of the Sixteenth Annual ACM Symposium on Theory of Computing},
+pages = {266–272},
+numpages = {7},
+series = {STOC '84}
+}
+
+
+@inbook{gupta21simple,
+author = {Manoj Gupta and Shahbaz Khan},
+title = {Simple dynamic algorithms for Maximal Independent Set, Maximum Flow and Maximum Matching},
+booktitle = {2021 Symposium on Simplicity in Algorithms (SOSA)},
+chapter = {},
+pages = {86-91},
+doi = {10.1137/1.9781611976496.10},
+URL = {https://epubs.siam.org/doi/abs/10.1137/1.9781611976496.10},
+eprint = {https://epubs.siam.org/doi/pdf/10.1137/1.9781611976496.10},
+    abstract = { Abstract Most graphs in real life keep changing with time. These changes can be in the form of insertion or deletion of edges. Such rapidly changing graphs motivate us to study dynamic graph algorithms. We address three important dynamic graph problems as follows. Maximal Independent Set (MIS) is one of the most prominently studied problems in the distributed setting. Recently, a lot of work studied the dynamic MIS in both deterministic and randomized settings. Allowing randomization the MIS can be maintained in O(poly log n) time under various models [FOCS19], but the best deterministic algorithm [STOC18] requires O(m3/4) amortized update time, which is fairly complex. We present a simple algorithm to improve this to O(m2/3). Additionally, we present simple algorithms to match the lower bound of amortized Ω(n) update time [ICALP16], for maintaining incremental Maximum Flow and Maximum Matching (for unweighted graphs). These algorithms are simple extensions of the incremental reachability algorithm and blossoms algorithm, respectively. Thus, our results either improve an existing upper bound or match the existing lower bounds. A common trait of our results is that they are surprisingly simple, and use no complex data structures or black-box algorithms for their implementation. Further, they are analysed using basic amortization arguments. }
+}
